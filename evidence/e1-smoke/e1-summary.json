@@ -1,0 +1,109 @@
+{
+  "generated": "2026-11-04T12:47:37.420435+00:00",
+  "panel": "D:/minequant/AlphaGPT/data/ashare_v2.duckdb",
+  "eval_years": [
+    2016
+  ],
+  "signal_dates": {
+    "first": "20130131",
+    "last": "20161230",
+    "count": 48
+  },
+  "folds": [
+    {
+      "year": 2016,
+      "train_months": 36,
+      "test_months": 12,
+      "trainable_rows": 55448,
+      "ic_ridge": 0.13403669686546343,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.26,
+      "lambda": 100.0,
+      "ic_mlp": 0.12816242890716886,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 9.46,
+      "mlp_epochs": [
+        21,
+        18
+      ],
+      "ic_diff": -0.005874267958294579,
+      "mlp_wins": 4,
+      "mlp_share": 0.3333333333333333
+    }
+  ],
+  "bootstrap": {
+    "mean": -0.005874267958294579,
+    "lo": -0.020569674031333997,
+    "hi": -0.005874267958294579,
+    "draws": 2000,
+    "n": 12,
+    "block": 6
+  },
+  "verdict": {
+    "folds_compared": 1,
+    "folds_mlp_better": 0,
+    "fold_majority_70pct": false,
+    "mean_fold_share_mlp_better": 0.3333333333333333,
+    "bootstrap_ci_excludes_zero": true,
+    "monetary_clause": "open ¡ª computed by build step 6 from sleeve_scores.parquet",
+    "adopt_nonlinearity": false
+  },
+  "deviation_share": {
+    "mlp": {
+      "deviation_share": 0.9999999999999998,
+      "months": 36.0,
+      "score_sd": 0.008034770074713739,
+      "deviation_sd": 0.008034770074713737
+    },
+    "ridge": {
+      "deviation_share": 1.0,
+      "months": 36.0,
+      "score_sd": 0.004445442245593422,
+      "deviation_sd": 0.004445442245593422
+    }
+  },
+  "mean_coverage": {
+    "mlp/2016": 0.9283279097331829,
+    "ridge/2016": 0.9283279097331829
+  },
+  "refit_cpu_minutes": 0.16,
+  "wall_seconds": 19.5,
+  "features": [
+    "ret_1w",
+    "ret_1m",
+    "ret_6m",
+    "ret_12_1",
+    "vol_21",
+    "vol_63",
+    "turnover_21",
+    "turnover_chg",
+    "log_mv",
+    "ep",
+    "bp",
+    "mom_52w",
+    "illiq_21",
+    "list_age_yr"
+  ],
+  "inputs": [
+    "ret_1w",
+    "ret_1m",
+    "ret_6m",
+    "ret_12_1",
+    "vol_21",
+    "vol_63",
+    "turnover_21",
+    "turnover_chg",
+    "log_mv",
+    "ep",
+    "bp",
+    "mom_52w",
+    "illiq_21",
+    "list_age_yr",
+    "coverage"
+  ],
+  "notes": [
+    "primary measure (net CNY at 75 000 after the gate) belongs to build step 6; this file ends at the score",
+    "index weights are one month stale by construction: at a month-end signal the newest snapshot has available_date after the signal, so the prior month is used",
+    "coverage is reported per fold; a sleeve score over a small covered weight is not a statement about the ETF"
+  ]
+}

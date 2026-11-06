@@ -1,0 +1,6 @@
+# 保留既有源码、行情 manifest 与哈希链账本的原始字节。
+# 避免不同工作站的 core.autocrlf 自动转换历史证据的换行。
+* -text
+
+# 列式数据按二进制展示与合并。
+*.parquet binary

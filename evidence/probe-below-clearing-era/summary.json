@@ -1,0 +1,1673 @@
+{
+ "clearing_cny": {
+  "159920:buy": 4436.0,
+  "159920:sell": 4436.0,
+  "159934:buy": 3669.46,
+  "159934:sell": 3669.46,
+  "510300:buy": 3649.01,
+  "510300:sell": 3649.01,
+  "510500:buy": 3523.18,
+  "510500:sell": 3523.18,
+  "511220:buy": 3345.02,
+  "511220:sell": 3345.02,
+  "511380:buy": 3435.36,
+  "511380:sell": 3435.36,
+  "512100:buy": 5066.23,
+  "512100:sell": 5066.23,
+  "513100:buy": 4026.63,
+  "513100:sell": 4026.63,
+  "513500:buy": 4102.98,
+  "513500:sell": 4102.98,
+  "518880:buy": 3668.88,
+  "518880:sell": 3668.88
+ },
+ "static": {
+  "pooled": {
+   "n_intents": 102,
+   "n_zero_notional": 16,
+   "n_below_clearing": 96,
+   "below_share": 0.9411764705882353,
+   "median_intent_cny": 1573.4,
+   "below_share_ci95": [
+    0.8776,
+    0.9728
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 16,
+     "below": 14,
+     "share": 0.875
+    },
+    "commodity": {
+     "n": 22,
+     "below": 22,
+     "share": 1.0
+    },
+    "equity": {
+     "n": 31,
+     "below": 27,
+     "share": 0.8709677419354839
+    },
+    "overseas": {
+     "n": 33,
+     "below": 33,
+     "share": 1.0
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 80,
+    "zero_lot": 16
+   }
+  },
+  "era_2016_2022": {
+   "n_intents": 72,
+   "n_zero_notional": 11,
+   "n_below_clearing": 66,
+   "below_share": 0.9166666666666666,
+   "median_intent_cny": 1593.3,
+   "below_share_ci95": [
+    0.8299,
+    0.9612
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 10,
+     "below": 8,
+     "share": 0.8
+    },
+    "commodity": {
+     "n": 16,
+     "below": 16,
+     "share": 1.0
+    },
+    "equity": {
+     "n": 22,
+     "below": 18,
+     "share": 0.8181818181818182
+    },
+    "overseas": {
+     "n": 24,
+     "below": 24,
+     "share": 1.0
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 55,
+    "zero_lot": 11
+   }
+  },
+  "era_2023_2025": {
+   "n_intents": 30,
+   "n_zero_notional": 5,
+   "n_below_clearing": 30,
+   "below_share": 1.0,
+   "median_intent_cny": 1522.5,
+   "below_share_ci95": [
+    0.8865,
+    1.0
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 6,
+     "below": 6,
+     "share": 1.0
+    },
+    "commodity": {
+     "n": 6,
+     "below": 6,
+     "share": 1.0
+    },
+    "equity": {
+     "n": 9,
+     "below": 9,
+     "share": 1.0
+    },
+    "overseas": {
+     "n": 9,
+     "below": 9,
+     "share": 1.0
+    }
+   },
+   "suppression_reasons": {
+    "zero_lot": 5,
+    "below_cost_gate": 25
+   }
+  },
+  "by_year": {
+   "2016": {
+    "n_intents": 16,
+    "n_zero_notional": 1,
+    "n_below_clearing": 13,
+    "below_share": 0.8125,
+    "median_intent_cny": 1648.5,
+    "below_share_ci95": [
+     0.5699,
+     0.9341
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "commodity": {
+      "n": 4,
+      "below": 4,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 4,
+      "below": 2,
+      "share": 0.5
+     },
+     "overseas": {
+      "n": 6,
+      "below": 6,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 12,
+     "zero_lot": 1
+    }
+   },
+   "2017": {
+    "n_intents": 9,
+    "n_zero_notional": 1,
+    "n_below_clearing": 8,
+    "below_share": 0.8888888888888888,
+    "median_intent_cny": 1954.2,
+    "below_share_ci95": [
+     0.565,
+     0.9801
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 7,
+     "zero_lot": 1
+    }
+   },
+   "2018": {
+    "n_intents": 9,
+    "n_zero_notional": 1,
+    "n_below_clearing": 8,
+    "below_share": 0.8888888888888888,
+    "median_intent_cny": 1501.2,
+    "below_share_ci95": [
+     0.565,
+     0.9801
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 7,
+     "zero_lot": 1
+    }
+   },
+   "2019": {
+    "n_intents": 9,
+    "n_zero_notional": 2,
+    "n_below_clearing": 9,
+    "below_share": 1.0,
+    "median_intent_cny": 1314.9,
+    "below_share_ci95": [
+     0.7008,
+     1.0
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 2,
+     "below_cost_gate": 7
+    }
+   },
+   "2020": {
+    "n_intents": 9,
+    "n_zero_notional": 2,
+    "n_below_clearing": 9,
+    "below_share": 1.0,
+    "median_intent_cny": 1491.7,
+    "below_share_ci95": [
+     0.7008,
+     1.0
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 7,
+     "zero_lot": 2
+    }
+   },
+   "2021": {
+    "n_intents": 10,
+    "n_zero_notional": 1,
+    "n_below_clearing": 9,
+    "below_share": 0.9,
+    "median_intent_cny": 1684.5,
+    "below_share_ci95": [
+     0.5958,
+     0.9821
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 8,
+     "zero_lot": 1
+    }
+   },
+   "2022": {
+    "n_intents": 10,
+    "n_zero_notional": 3,
+    "n_below_clearing": 10,
+    "below_share": 1.0,
+    "median_intent_cny": 1631.1,
+    "below_share_ci95": [
+     0.7225,
+     1.0
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 7,
+     "zero_lot": 3
+    }
+   },
+   "2023": {
+    "n_intents": 10,
+    "n_zero_notional": 2,
+    "n_below_clearing": 10,
+    "below_share": 1.0,
+    "median_intent_cny": 1162.2,
+    "below_share_ci95": [
+     0.7225,
+     1.0
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 2,
+     "below_cost_gate": 8
+    }
+   },
+   "2024": {
+    "n_intents": 10,
+    "n_zero_notional": 1,
+    "n_below_clearing": 10,
+    "below_share": 1.0,
+    "median_intent_cny": 1522.5,
+    "below_share_ci95": [
+     0.7225,
+     1.0
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 9,
+     "zero_lot": 1
+    }
+   },
+   "2025": {
+    "n_intents": 10,
+    "n_zero_notional": 2,
+    "n_below_clearing": 10,
+    "below_share": 1.0,
+    "median_intent_cny": 1585.1,
+    "below_share_ci95": [
+     0.7225,
+     1.0
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 8,
+     "zero_lot": 2
+    }
+   }
+  },
+  "entry_session0": {
+   "n_intents": 8,
+   "n_zero_notional": 0,
+   "n_below_clearing": 5,
+   "below_share": 0.625,
+   "median_intent_cny": 2453.0,
+   "below_share_ci95": [
+    0.3057,
+    0.8632
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    },
+    "commodity": {
+     "n": 2,
+     "below": 2,
+     "share": 1.0
+    },
+    "equity": {
+     "n": 2,
+     "below": 0,
+     "share": 0.0
+    },
+    "overseas": {
+     "n": 3,
+     "below": 3,
+     "share": 1.0
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 5
+   }
+  },
+  "post_entry": {
+   "n_intents": 94,
+   "n_zero_notional": 16,
+   "n_below_clearing": 91,
+   "below_share": 0.9680851063829787,
+   "median_intent_cny": 1505.7,
+   "below_share_ci95": [
+    0.9103,
+    0.9891
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 15,
+     "below": 14,
+     "share": 0.9333333333333333
+    },
+    "commodity": {
+     "n": 20,
+     "below": 20,
+     "share": 1.0
+    },
+    "equity": {
+     "n": 29,
+     "below": 27,
+     "share": 0.9310344827586207
+    },
+    "overseas": {
+     "n": 30,
+     "below": 30,
+     "share": 1.0
+    }
+   },
+   "suppression_reasons": {
+    "zero_lot": 16,
+    "below_cost_gate": 75
+   }
+  }
+ },
+ "lots": {
+  "pooled": {
+   "n_intents": 65,
+   "n_zero_notional": 6,
+   "n_below_clearing": 49,
+   "below_share": 0.7538461538461538,
+   "median_intent_cny": 1888.5,
+   "below_share_ci95": [
+    0.6369,
+    0.8424
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 12,
+     "below": 6,
+     "share": 0.5
+    },
+    "commodity": {
+     "n": 12,
+     "below": 9,
+     "share": 0.75
+    },
+    "equity": {
+     "n": 31,
+     "below": 27,
+     "share": 0.8709677419354839
+    },
+    "overseas": {
+     "n": 10,
+     "below": 7,
+     "share": 0.7
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 43,
+    "zero_lot": 6,
+    "insufficient_settled_cash": 2
+   }
+  },
+  "era_2016_2022": {
+   "n_intents": 43,
+   "n_zero_notional": 4,
+   "n_below_clearing": 32,
+   "below_share": 0.7441860465116279,
+   "median_intent_cny": 1464.9,
+   "below_share_ci95": [
+    0.5976,
+    0.8507
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 6,
+     "below": 2,
+     "share": 0.3333333333333333
+    },
+    "commodity": {
+     "n": 8,
+     "below": 7,
+     "share": 0.875
+    },
+    "equity": {
+     "n": 22,
+     "below": 18,
+     "share": 0.8181818181818182
+    },
+    "overseas": {
+     "n": 7,
+     "below": 5,
+     "share": 0.7142857142857143
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 28,
+    "zero_lot": 4,
+    "insufficient_settled_cash": 2
+   }
+  },
+  "era_2023_2025": {
+   "n_intents": 22,
+   "n_zero_notional": 2,
+   "n_below_clearing": 17,
+   "below_share": 0.7727272727272727,
+   "median_intent_cny": 2878.1,
+   "below_share_ci95": [
+    0.5656,
+    0.8988
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 6,
+     "below": 4,
+     "share": 0.6666666666666666
+    },
+    "commodity": {
+     "n": 4,
+     "below": 2,
+     "share": 0.5
+    },
+    "equity": {
+     "n": 9,
+     "below": 9,
+     "share": 1.0
+    },
+    "overseas": {
+     "n": 3,
+     "below": 2,
+     "share": 0.6666666666666666
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 15,
+    "zero_lot": 2
+   }
+  },
+  "by_year": {
+   "2016": {
+    "n_intents": 8,
+    "n_zero_notional": 0,
+    "n_below_clearing": 3,
+    "below_share": 0.375,
+    "median_intent_cny": 4886.6,
+    "below_share_ci95": [
+     0.1368,
+     0.6943
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "equity": {
+      "n": 4,
+      "below": 2,
+      "share": 0.5
+     },
+     "overseas": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 3
+    }
+   },
+   "2017": {
+    "n_intents": 5,
+    "n_zero_notional": 0,
+    "n_below_clearing": 4,
+    "below_share": 0.8,
+    "median_intent_cny": 803.1,
+    "below_share_ci95": [
+     0.3755,
+     0.9638
+    ],
+    "by_sleeve": {
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 4
+    }
+   },
+   "2018": {
+    "n_intents": 5,
+    "n_zero_notional": 0,
+    "n_below_clearing": 4,
+    "below_share": 0.8,
+    "median_intent_cny": 1464.9,
+    "below_share_ci95": [
+     0.3755,
+     0.9638
+    ],
+    "by_sleeve": {
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 4
+    }
+   },
+   "2019": {
+    "n_intents": 5,
+    "n_zero_notional": 0,
+    "n_below_clearing": 5,
+    "below_share": 1.0,
+    "median_intent_cny": 1419.0,
+    "below_share_ci95": [
+     0.5655,
+     1.0
+    ],
+    "by_sleeve": {
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 5
+    }
+   },
+   "2020": {
+    "n_intents": 6,
+    "n_zero_notional": 0,
+    "n_below_clearing": 4,
+    "below_share": 0.6666666666666666,
+    "median_intent_cny": 2129.3,
+    "below_share_ci95": [
+     0.3,
+     0.9032
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 4
+    }
+   },
+   "2021": {
+    "n_intents": 7,
+    "n_zero_notional": 2,
+    "n_below_clearing": 6,
+    "below_share": 0.8571428571428571,
+    "median_intent_cny": 534.7,
+    "below_share_ci95": [
+     0.4869,
+     0.9743
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 2,
+     "below_cost_gate": 4,
+     "insufficient_settled_cash": 1
+    }
+   },
+   "2022": {
+    "n_intents": 7,
+    "n_zero_notional": 2,
+    "n_below_clearing": 6,
+    "below_share": 0.8571428571428571,
+    "median_intent_cny": 925.4,
+    "below_share_ci95": [
+     0.4869,
+     0.9743
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 2,
+     "below_cost_gate": 4,
+     "insufficient_settled_cash": 1
+    }
+   },
+   "2023": {
+    "n_intents": 7,
+    "n_zero_notional": 0,
+    "n_below_clearing": 5,
+    "below_share": 0.7142857142857143,
+    "median_intent_cny": 1659.6,
+    "below_share_ci95": [
+     0.3589,
+     0.9178
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 5
+    }
+   },
+   "2024": {
+    "n_intents": 7,
+    "n_zero_notional": 1,
+    "n_below_clearing": 6,
+    "below_share": 0.8571428571428571,
+    "median_intent_cny": 2897.1,
+    "below_share_ci95": [
+     0.4869,
+     0.9743
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 5,
+     "zero_lot": 1
+    }
+   },
+   "2025": {
+    "n_intents": 8,
+    "n_zero_notional": 1,
+    "n_below_clearing": 6,
+    "below_share": 0.75,
+    "median_intent_cny": 3233.7,
+    "below_share_ci95": [
+     0.4093,
+     0.9285
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 5,
+     "zero_lot": 1
+    }
+   }
+  },
+  "entry_session0": {
+   "n_intents": 5,
+   "n_zero_notional": 0,
+   "n_below_clearing": 0,
+   "below_share": 0.0,
+   "median_intent_cny": 9984.9,
+   "below_share_ci95": [
+    0.0,
+    0.4345
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    },
+    "commodity": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    },
+    "equity": {
+     "n": 2,
+     "below": 0,
+     "share": 0.0
+    },
+    "overseas": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    }
+   },
+   "suppression_reasons": {}
+  },
+  "post_entry": {
+   "n_intents": 60,
+   "n_zero_notional": 6,
+   "n_below_clearing": 49,
+   "below_share": 0.8166666666666667,
+   "median_intent_cny": 1649.0,
+   "below_share_ci95": [
+    0.7008,
+    0.8944
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 11,
+     "below": 6,
+     "share": 0.5454545454545454
+    },
+    "commodity": {
+     "n": 11,
+     "below": 9,
+     "share": 0.8181818181818182
+    },
+    "equity": {
+     "n": 29,
+     "below": 27,
+     "share": 0.9310344827586207
+    },
+    "overseas": {
+     "n": 9,
+     "below": 7,
+     "share": 0.7777777777777778
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 43,
+    "zero_lot": 6,
+    "insufficient_settled_cash": 2
+   }
+  }
+ },
+ "lots_deploy": {
+  "pooled": {
+   "n_intents": 67,
+   "n_zero_notional": 8,
+   "n_below_clearing": 44,
+   "below_share": 0.6567164179104478,
+   "median_intent_cny": 2456.3,
+   "below_share_ci95": [
+    0.5373,
+    0.7591
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 13,
+     "below": 7,
+     "share": 0.5384615384615384
+    },
+    "commodity": {
+     "n": 12,
+     "below": 8,
+     "share": 0.6666666666666666
+    },
+    "equity": {
+     "n": 31,
+     "below": 21,
+     "share": 0.6774193548387096
+    },
+    "overseas": {
+     "n": 11,
+     "below": 8,
+     "share": 0.7272727272727273
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 36,
+    "insufficient_settled_cash": 8,
+    "zero_lot": 8
+   }
+  },
+  "era_2016_2022": {
+   "n_intents": 45,
+   "n_zero_notional": 6,
+   "n_below_clearing": 29,
+   "below_share": 0.6444444444444445,
+   "median_intent_cny": 2456.3,
+   "below_share_ci95": [
+    0.4984,
+    0.7678
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 7,
+     "below": 3,
+     "share": 0.42857142857142855
+    },
+    "commodity": {
+     "n": 8,
+     "below": 7,
+     "share": 0.875
+    },
+    "equity": {
+     "n": 22,
+     "below": 13,
+     "share": 0.5909090909090909
+    },
+    "overseas": {
+     "n": 8,
+     "below": 6,
+     "share": 0.75
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 23,
+    "insufficient_settled_cash": 8,
+    "zero_lot": 6
+   }
+  },
+  "era_2023_2025": {
+   "n_intents": 22,
+   "n_zero_notional": 2,
+   "n_below_clearing": 15,
+   "below_share": 0.6818181818181818,
+   "median_intent_cny": 2353.8,
+   "below_share_ci95": [
+    0.4732,
+    0.8364
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 6,
+     "below": 4,
+     "share": 0.6666666666666666
+    },
+    "commodity": {
+     "n": 4,
+     "below": 1,
+     "share": 0.25
+    },
+    "equity": {
+     "n": 9,
+     "below": 8,
+     "share": 0.8888888888888888
+    },
+    "overseas": {
+     "n": 3,
+     "below": 2,
+     "share": 0.6666666666666666
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 13,
+    "zero_lot": 2
+   }
+  },
+  "by_year": {
+   "2016": {
+    "n_intents": 9,
+    "n_zero_notional": 0,
+    "n_below_clearing": 4,
+    "below_share": 0.4444444444444444,
+    "median_intent_cny": 6037.2,
+    "below_share_ci95": [
+     0.1888,
+     0.7334
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "equity": {
+      "n": 4,
+      "below": 2,
+      "share": 0.5
+     },
+     "overseas": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 4
+    }
+   },
+   "2017": {
+    "n_intents": 5,
+    "n_zero_notional": 0,
+    "n_below_clearing": 4,
+    "below_share": 0.8,
+    "median_intent_cny": 1954.2,
+    "below_share_ci95": [
+     0.3755,
+     0.9638
+    ],
+    "by_sleeve": {
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 4,
+     "insufficient_settled_cash": 1
+    }
+   },
+   "2018": {
+    "n_intents": 6,
+    "n_zero_notional": 0,
+    "n_below_clearing": 3,
+    "below_share": 0.5,
+    "median_intent_cny": 5032.2,
+    "below_share_ci95": [
+     0.1876,
+     0.8124
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 1,
+      "share": 0.3333333333333333
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 3,
+     "insufficient_settled_cash": 1
+    }
+   },
+   "2019": {
+    "n_intents": 6,
+    "n_zero_notional": 1,
+    "n_below_clearing": 5,
+    "below_share": 0.8333333333333334,
+    "median_intent_cny": 2246.9,
+    "below_share_ci95": [
+     0.4365,
+     0.9699
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 1,
+     "below_cost_gate": 4,
+     "insufficient_settled_cash": 1
+    }
+   },
+   "2020": {
+    "n_intents": 5,
+    "n_zero_notional": 1,
+    "n_below_clearing": 3,
+    "below_share": 0.6,
+    "median_intent_cny": 2456.3,
+    "below_share_ci95": [
+     0.2307,
+     0.8824
+    ],
+    "by_sleeve": {
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 2,
+     "zero_lot": 1,
+     "insufficient_settled_cash": 1
+    }
+   },
+   "2021": {
+    "n_intents": 7,
+    "n_zero_notional": 3,
+    "n_below_clearing": 5,
+    "below_share": 0.7142857142857143,
+    "median_intent_cny": 702.1,
+    "below_share_ci95": [
+     0.3589,
+     0.9178
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 3,
+     "below_cost_gate": 2,
+     "insufficient_settled_cash": 2
+    }
+   },
+   "2022": {
+    "n_intents": 7,
+    "n_zero_notional": 1,
+    "n_below_clearing": 5,
+    "below_share": 0.7142857142857143,
+    "median_intent_cny": 1850.8,
+    "below_share_ci95": [
+     0.3589,
+     0.9178
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 1,
+      "share": 0.5
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "zero_lot": 1,
+     "below_cost_gate": 4,
+     "insufficient_settled_cash": 2
+    }
+   },
+   "2023": {
+    "n_intents": 7,
+    "n_zero_notional": 1,
+    "n_below_clearing": 3,
+    "below_share": 0.42857142857142855,
+    "median_intent_cny": 4083.0,
+    "below_share_ci95": [
+     0.1582,
+     0.7495
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 2,
+      "share": 0.6666666666666666
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 2,
+     "zero_lot": 1
+    }
+   },
+   "2024": {
+    "n_intents": 7,
+    "n_zero_notional": 0,
+    "n_below_clearing": 6,
+    "below_share": 0.8571428571428571,
+    "median_intent_cny": 2028.0,
+    "below_share_ci95": [
+     0.4869,
+     0.9743
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 6
+    }
+   },
+   "2025": {
+    "n_intents": 8,
+    "n_zero_notional": 1,
+    "n_below_clearing": 6,
+    "below_share": 0.75,
+    "median_intent_cny": 2249.2,
+    "below_share_ci95": [
+     0.4093,
+     0.9285
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 2,
+      "below": 2,
+      "share": 1.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "equity": {
+      "n": 3,
+      "below": 3,
+      "share": 1.0
+     },
+     "overseas": {
+      "n": 1,
+      "below": 1,
+      "share": 1.0
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 5,
+     "zero_lot": 1
+    }
+   }
+  },
+  "entry_session0": {
+   "n_intents": 5,
+   "n_zero_notional": 0,
+   "n_below_clearing": 0,
+   "below_share": 0.0,
+   "median_intent_cny": 9984.9,
+   "below_share_ci95": [
+    0.0,
+    0.4345
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    },
+    "commodity": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    },
+    "equity": {
+     "n": 2,
+     "below": 0,
+     "share": 0.0
+    },
+    "overseas": {
+     "n": 1,
+     "below": 0,
+     "share": 0.0
+    }
+   },
+   "suppression_reasons": {}
+  },
+  "post_entry": {
+   "n_intents": 62,
+   "n_zero_notional": 8,
+   "n_below_clearing": 44,
+   "below_share": 0.7096774193548387,
+   "median_intent_cny": 1991.1,
+   "below_share_ci95": [
+    0.5871,
+    0.8078
+   ],
+   "by_sleeve": {
+    "bond": {
+     "n": 12,
+     "below": 7,
+     "share": 0.5833333333333334
+    },
+    "commodity": {
+     "n": 11,
+     "below": 8,
+     "share": 0.7272727272727273
+    },
+    "equity": {
+     "n": 29,
+     "below": 21,
+     "share": 0.7241379310344828
+    },
+    "overseas": {
+     "n": 10,
+     "below": 8,
+     "share": 0.8
+    }
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 36,
+    "insufficient_settled_cash": 8,
+    "zero_lot": 8
+   }
+  }
+ }
+}

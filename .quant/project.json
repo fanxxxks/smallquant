@@ -1,0 +1,15 @@
+{
+  "revision": 1,
+  "updatedAt": "2026-11-04T08:24:49.135Z",
+  "conditions": {
+    "goal": "Durable net account return with controlled drawdown on a 50,000-100,000 CNY personal account; forward-evidenced by a paper book, not by a backtest score.",
+    "markets": "CN A-share (SSE/SZSE), including exchange-traded funds",
+    "instruments": "exchange-traded funds (primary), cash equity (secondary)",
+    "frequencies": "daily decisions; rebalance weekly to monthly, turnover target <= 6 per year",
+    "capital": "50000-100000 CNY",
+    "dataSources": "local duckdb D:/minequant/AlphaGPT/data/ashare_v2.duckdb (daily_bar 20140102-20261015, stocks only, no ETF panel); akshare fund_etf_hist_em for ETF history (verified reachable 2026-11-04)",
+    "runtime": "single Windows workstation, RTX 5060 / CPU, no paid cloud budget assumed",
+    "constraints": "research and paper trading only until the user approves live trading explicitly; no real money"
+  }
+}
+  

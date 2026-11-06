@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-11-04T11:53:23.279143+00:00",
+  "akshare_version": "1.18.91",
+  "parameters": {
+    "window_start": "20130101",
+    "window_end": "20261104",
+    "period": "daily",
+    "adjust": "",
+    "short_history_threshold": 250,
+    "sources": [
+      "eastmoney:fund_etf_hist_em",
+      "sina:fund_etf_hist_sina"
+    ]
+  },
+  "row_count": 45197,
+  "code_count": 15,
+  "first_date": "2013-01-04",
+  "last_date": "2026-11-04",
+  "parquet_path": "D:\\newquant\\data\\etf_bars.parquet",
+  "per_code": {
+    "510300": {
+      "sleeve": "equity",
+      "rows": 3358,
+      "first_date": "2013-01-04",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "510500": {
+      "sleeve": "equity",
+      "rows": 3311,
+      "first_date": "2013-03-15",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "159915": {
+      "sleeve": "equity",
+      "rows": 3357,
+      "first_date": "2013-01-04",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "512100": {
+      "sleeve": "equity",
+      "rows": 2427,
+      "first_date": "2016-11-04",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "511010": {
+      "sleeve": "bond",
+      "rows": 3307,
+      "first_date": "2013-03-25",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "511260": {
+      "sleeve": "bond",
+      "rows": 2229,
+      "first_date": "2017-08-24",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "511220": {
+      "sleeve": "bond",
+      "rows": 2881,
+      "first_date": "2014-12-16",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "511380": {
+      "sleeve": "bond",
+      "rows": 1595,
+      "first_date": "2020-04-07",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "518880": {
+      "sleeve": "commodity",
+      "rows": 3225,
+      "first_date": "2013-07-29",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "159934": {
+      "sleeve": "commodity",
+      "rows": 3132,
+      "first_date": "2013-12-16",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "513100": {
+      "sleeve": "overseas",
+      "rows": 3274,
+      "first_date": "2013-05-15",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "513500": {
+      "sleeve": "overseas",
+      "rows": 3110,
+      "first_date": "2014-01-15",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "159920": {
+      "sleeve": "overseas",
+      "rows": 3358,
+      "first_date": "2013-01-04",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "511990": {
+      "sleeve": "cash-like",
+      "rows": 3342,
+      "first_date": "2013-01-28",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    },
+    "511880": {
+      "sleeve": "cash-like",
+      "rows": 3291,
+      "first_date": "2013-04-18",
+      "last_date": "2026-11-04",
+      "source": "eastmoney",
+      "volume_unit": "lots",
+      "status": "ok",
+      "error_message": null
+    }
+  },
+  "failures": []
+}

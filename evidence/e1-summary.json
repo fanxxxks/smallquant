@@ -1,0 +1,321 @@
+{
+  "generated": "2026-11-04T12:57:00.519260+00:00",
+  "panel": "D:/minequant/AlphaGPT/data/ashare_v2.duckdb",
+  "eval_years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "signal_dates": {
+    "first": "20130131",
+    "last": "20251231",
+    "count": 156
+  },
+  "folds": [
+    {
+      "year": 2016,
+      "train_months": 36,
+      "test_months": 12,
+      "trainable_rows": 50255,
+      "ic_ridge": 0.09990042731927105,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.24,
+      "lambda": 100.0,
+      "ic_mlp": 0.10628814548350624,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 9.36,
+      "mlp_epochs": [
+        20,
+        28
+      ],
+      "ic_diff": 0.0063877181642351955,
+      "mlp_wins": 8,
+      "mlp_share": 0.6666666666666666
+    },
+    {
+      "year": 2017,
+      "train_months": 48,
+      "test_months": 12,
+      "trainable_rows": 77919,
+      "ic_ridge": -0.05279572954057784,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.26,
+      "lambda": 0.3,
+      "ic_mlp": -0.0371071461902016,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 8.7,
+      "mlp_epochs": [
+        13,
+        24
+      ],
+      "ic_diff": 0.015688583350376234,
+      "mlp_wins": 7,
+      "mlp_share": 0.5833333333333334
+    },
+    {
+      "year": 2018,
+      "train_months": 60,
+      "test_months": 12,
+      "trainable_rows": 108138,
+      "ic_ridge": 0.08398067707817895,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.43,
+      "lambda": 0.3,
+      "ic_mlp": 0.041633826025962634,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 7.83,
+      "mlp_epochs": [
+        21,
+        4
+      ],
+      "ic_diff": -0.042346851052216326,
+      "mlp_wins": 2,
+      "mlp_share": 0.16666666666666666
+    },
+    {
+      "year": 2019,
+      "train_months": 72,
+      "test_months": 12,
+      "trainable_rows": 140541,
+      "ic_ridge": 0.02618865946199776,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.3,
+      "lambda": 100.0,
+      "ic_mlp": 0.032130568813264614,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 9.39,
+      "mlp_epochs": [
+        9,
+        14
+      ],
+      "ic_diff": 0.005941909351266855,
+      "mlp_wins": 6,
+      "mlp_share": 0.5
+    },
+    {
+      "year": 2020,
+      "train_months": 84,
+      "test_months": 12,
+      "trainable_rows": 175336,
+      "ic_ridge": 0.03519799596668343,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.36,
+      "lambda": 100.0,
+      "ic_mlp": 0.03753800654875582,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 15.85,
+      "mlp_epochs": [
+        22,
+        10
+      ],
+      "ic_diff": 0.0023400105820723955,
+      "mlp_wins": 7,
+      "mlp_share": 0.5833333333333334
+    },
+    {
+      "year": 2021,
+      "train_months": 96,
+      "test_months": 12,
+      "trainable_rows": 211698,
+      "ic_ridge": 0.08895048240799515,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.48,
+      "lambda": 100.0,
+      "ic_mlp": 0.10049403379835802,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 29.78,
+      "mlp_epochs": [
+        21,
+        23
+      ],
+      "ic_diff": 0.011543551390362845,
+      "mlp_wins": 6,
+      "mlp_share": 0.5
+    },
+    {
+      "year": 2022,
+      "train_months": 108,
+      "test_months": 12,
+      "trainable_rows": 249838,
+      "ic_ridge": 0.10540082220792006,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.54,
+      "lambda": 100.0,
+      "ic_mlp": 0.1296166145153012,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 19.24,
+      "mlp_epochs": [
+        10,
+        11
+      ],
+      "ic_diff": 0.024215792307381148,
+      "mlp_wins": 10,
+      "mlp_share": 0.8333333333333334
+    },
+    {
+      "year": 2023,
+      "train_months": 120,
+      "test_months": 12,
+      "trainable_rows": 289256,
+      "ic_ridge": 0.12223902142716007,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.62,
+      "lambda": 100.0,
+      "ic_mlp": 0.12770453593186729,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 21.86,
+      "mlp_epochs": [
+        9,
+        12
+      ],
+      "ic_diff": 0.005465514504707217,
+      "mlp_wins": 8,
+      "mlp_share": 0.6666666666666666
+    },
+    {
+      "year": 2024,
+      "train_months": 132,
+      "test_months": 12,
+      "trainable_rows": 329515,
+      "ic_ridge": 0.03555901342161078,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.54,
+      "lambda": 100.0,
+      "ic_mlp": 0.061822260157437275,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 34.16,
+      "mlp_epochs": [
+        19,
+        10
+      ],
+      "ic_diff": 0.02626324673582649,
+      "mlp_wins": 9,
+      "mlp_share": 0.75
+    },
+    {
+      "year": 2025,
+      "train_months": 144,
+      "test_months": 12,
+      "trainable_rows": 368233,
+      "ic_ridge": 0.10219273150151403,
+      "months_ridge": 12,
+      "fit_seconds_ridge": 0.9,
+      "lambda": 100.0,
+      "ic_mlp": 0.09802527105837756,
+      "months_mlp": 12,
+      "fit_seconds_mlp": 16.96,
+      "mlp_epochs": [
+        7,
+        6
+      ],
+      "ic_diff": -0.00416746044313646,
+      "mlp_wins": 5,
+      "mlp_share": 0.4166666666666667
+    }
+  ],
+  "bootstrap": {
+    "mean": 0.005133201489087562,
+    "lo": -0.004474181232104579,
+    "hi": 0.013665437117575929,
+    "draws": 2000,
+    "n": 120,
+    "block": 6
+  },
+  "verdict": {
+    "folds_compared": 10,
+    "folds_mlp_better": 8,
+    "fold_majority_70pct": true,
+    "mean_fold_share_mlp_better": 0.5666666666666667,
+    "bootstrap_ci_excludes_zero": false,
+    "monetary_clause": "open - computed by build step 6 from sleeve_scores.parquet",
+    "adopt_nonlinearity": false
+  },
+  "deviation_share": {
+    "mlp": {
+      "deviation_share": 0.32401453912313616,
+      "months": 360.0,
+      "score_sd": 0.009392072695229299,
+      "deviation_sd": 0.005346181447824316
+    },
+    "ridge": {
+      "deviation_share": 0.40137113712118,
+      "months": 360.0,
+      "score_sd": 0.010054012848137985,
+      "deviation_sd": 0.006369605060982053
+    }
+  },
+  "mean_coverage": {
+    "mlp/2016": 0.9283279097331829,
+    "mlp/2017": 0.9411605016082252,
+    "mlp/2018": 0.9561987983821809,
+    "mlp/2019": 0.9977549874345194,
+    "mlp/2020": 0.99838096214742,
+    "mlp/2021": 0.9980455418265746,
+    "mlp/2022": 0.9990373088872541,
+    "mlp/2023": 0.9995729076776334,
+    "mlp/2024": 0.998707078071575,
+    "mlp/2025": 0.9979076214477176,
+    "ridge/2016": 0.9283279097331829,
+    "ridge/2017": 0.9411605016082252,
+    "ridge/2018": 0.9561987983821809,
+    "ridge/2019": 0.9977549874345194,
+    "ridge/2020": 0.99838096214742,
+    "ridge/2021": 0.9980455418265746,
+    "ridge/2022": 0.9990373088872541,
+    "ridge/2023": 0.9995729076776334,
+    "ridge/2024": 0.998707078071575,
+    "ridge/2025": 0.9979076214477176
+  },
+  "refit_cpu_minutes": 2.96,
+  "wall_seconds": 261.9,
+  "features": [
+    "ret_1w",
+    "ret_1m",
+    "ret_6m",
+    "ret_12_1",
+    "vol_21",
+    "vol_63",
+    "turnover_21",
+    "turnover_chg",
+    "log_mv",
+    "ep",
+    "bp",
+    "mom_52w",
+    "illiq_21",
+    "list_age_yr"
+  ],
+  "inputs": [
+    "ret_1w",
+    "ret_1m",
+    "ret_6m",
+    "ret_12_1",
+    "vol_21",
+    "vol_63",
+    "turnover_21",
+    "turnover_chg",
+    "log_mv",
+    "ep",
+    "bp",
+    "mom_52w",
+    "illiq_21",
+    "list_age_yr",
+    "coverage"
+  ],
+  "notes": [
+    "primary measure (net CNY at 75 000 after the gate) belongs to build step 6; this file ends at the score",
+    "index weights are one month stale by construction: at a month-end signal the newest snapshot has available_date after the signal, so the prior month is used",
+    "coverage is reported per fold; a sleeve score over a small covered weight is not a statement about the ETF"
+  ],
+  "population": {
+    "codes": 3634,
+    "source": "union of index_weight_pit con_code",
+    "note": "scored population, recorded as a scope decision"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-11-04T13:08:30.860642+00:00",
+  "sources": {
+    "bars": "D:\\newquant\\data\\etf_bars.parquet",
+    "bars_sha256": "05a5f67a97f11e72d9e171de6b8d4d24f8f0ad920667b82ddc729f839f9785c1",
+    "qfq": "D:\\newquant\\data\\etf_bars_qfq.parquet",
+    "qfq_sha256": "ac6bcfea4cb87926dedfce946e92e88be308a9bb43491b9ebde608458bcd1813",
+    "akshare_version": "1.18.91"
+  },
+  "parameters": {
+    "split_jump": 0.4,
+    "snap_tolerance": 0.01,
+    "nav_tolerance": 0.03
+  },
+  "row_count": 92,
+  "output_sha256": "14e8fa24e9f50f2ea3547b1d05b7b8bd89a427a4c2748da058f0381b885db917",
+  "checks": {
+    "all_codes_covered": false,
+    "positive_dividends": false,
+    "split_count": 5,
+    "splits_with_unexplained_jump": [],
+    "dividend_events": 87,
+    "dividend_fetch_errors": {},
+    "qfq_usable_as_scale": {
+      "159915": true,
+      "159920": true,
+      "159934": false,
+      "510300": false,
+      "510500": false,
+      "511010": false,
+      "511220": true,
+      "511260": false,
+      "511380": true,
+      "511880": false,
+      "511990": false,
+      "512100": false,
+      "513100": false,
+      "513500": false,
+      "518880": true
+    }
+  },
+  "per_code_status": {
+    "159915": {
+      "events": 0,
+      "error": null
+    },
+    "159920": {
+      "events": 1,
+      "error": null
+    },
+    "159934": {
+      "events": 0,
+      "error": null
+    },
+    "510300": {
+      "events": 14,
+      "error": null
+    },
+    "510500": {
+      "events": 6,
+      "error": null
+    },
+    "511010": {
+      "events": 7,
+      "error": null
+    },
+    "511220": {
+      "events": 38,
+      "error": null
+    },
+    "511260": {
+      "events": 5,
+      "error": null
+    },
+    "511380": {
+      "events": 0,
+      "error": null
+    },
+    "511880": {
+      "events": 13,
+      "error": null
+    },
+    "511990": {
+      "events": 0,
+      "error": null
+    },
+    "512100": {
+      "events": 3,
+      "error": null
+    },
+    "513100": {
+      "events": 0,
+      "error": null
+    },
+    "513500": {
+      "events": 0,
+      "error": null
+    },
+    "518880": {
+      "events": 0,
+      "error": null
+    }
+  },
+  "qfq_drift": {
+    "159915": {
+      "window": [
+        "2013-01-04",
+        "2026-11-04"
+      ],
+      "sessions": 3357,
+      "div_free_drift_pct": 0.0,
+      "usable": true
+    },
+    "159920": {
+      "window": [
+        "2018-06-25",
+        "2026-11-04"
+      ],
+      "sessions": 2029,
+      "div_free_drift_pct": 0.0,
+      "usable": true
+    },
+    "159934": {
+      "window": [
+        "2013-12-16",
+        "2026-11-04"
+      ],
+      "sessions": 3132,
+      "div_free_drift_pct": 5.493,
+      "usable": false
+    },
+    "510300": {
+      "window": [
+        "2024-01-19",
+        "2025-06-17"
+      ],
+      "sessions": 337,
+      "div_free_drift_pct": 1.9663,
+      "usable": false
+    },
+    "510500": {
+      "window": [
+        "2013-03-15",
+        "2022-08-25"
+      ],
+      "sessions": 2298,
+      "div_free_drift_pct": 275.7991,
+      "usable": false
+    },
+    "511010": {
+      "usable": false,
+      "why": "no qfq rows"
+    },
+    "511220": {
+      "window": [
+        "2025-09-19",
+        "2026-11-04"
+      ],
+      "sessions": 269,
+      "div_free_drift_pct": 0.0,
+      "usable": true
+    },
+    "511260": {
+      "usable": false,
+      "why": "no qfq rows"
+    },
+    "511380": {
+      "window": [
+        "2020-04-07",
+        "2026-11-04"
+      ],
+      "sessions": 1595,
+      "div_free_drift_pct": 0.0,
+      "usable": true
+    },
+    "511880": {
+      "usable": false,
+      "why": "no qfq rows"
+    },
+    "511990": {
+      "usable": false,
+      "why": "no qfq rows"
+    },
+    "512100": {
+      "window": [
+        "2016-11-04",
+        "2022-09-01"
+      ],
+      "sessions": 1420,
+      "div_free_drift_pct": 3.3937,
+      "usable": false
+    },
+    "513100": {
+      "window": [
+        "2013-05-15",
+        "2026-11-04"
+      ],
+      "sessions": 3274,
+      "div_free_drift_pct": 401.0582,
+      "usable": false
+    },
+    "513500": {
+      "window": [
+        "2014-01-15",
+        "2026-11-04"
+      ],
+      "sessions": 3110,
+      "div_free_drift_pct": 100.0,
+      "usable": false
+    },
+    "518880": {
+      "window": [
+        "2013-07-29",
+        "2026-11-04"
+      ],
+      "sessions": 3225,
+      "div_free_drift_pct": 0.0,
+      "usable": true
+    }
+  }
+}

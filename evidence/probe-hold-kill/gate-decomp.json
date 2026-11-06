@@ -1,0 +1,134 @@
+{
+  "probe": "open-gate-decomposition",
+  "window": {
+    "start": "2016-01-04",
+    "end": "2025-12-31"
+  },
+  "cell": {
+    "nav0": 50000.0,
+    "cost_mode": "measured",
+    "tolerances": [
+      15.1,
+      200.0,
+      1000.0
+    ]
+  },
+  "arms": {
+    "lots@15.1": {
+      "nav_end": 85111.3,
+      "n_fills": 14,
+      "n_suppressed": 51,
+      "entry_invested": 0.7847332354172876,
+      "cash_share_2025": 0.24786015487955185,
+      "overseas_2025": 0.10290525464891265,
+      "commodity_2025": 0.06556826179367488,
+      "equity_2025": 0.32329784646692034,
+      "cost_bp_of_nav_per_year": 1.6718000000000002,
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.05468769799456652,
+      "cagr_252_per_session": 0.05671370811302512,
+      "vol_annual_252": 0.09137977892109504,
+      "max_drawdown_daily": -0.14496754341813722
+    },
+    "hold@15.1": {
+      "nav_end": 58436.38,
+      "n_fills": 3,
+      "n_suppressed": 5,
+      "entry_invested": 0.5910033405257386,
+      "cash_share_2025": 0.40763099972996275,
+      "overseas_2025": 0.0,
+      "commodity_2025": 0.0,
+      "equity_2025": 0.41766618671450906,
+      "cost_bp_of_nav_per_year": 0.353,
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.015728936196315324,
+      "cagr_252_per_session": 0.016300455019819138,
+      "vol_annual_252": 0.07780448810250983,
+      "max_drawdown_daily": -0.1648907423722925
+    },
+    "lots@200": {
+      "nav_end": 85709.42,
+      "n_fills": 53,
+      "n_suppressed": 45,
+      "entry_invested": 0.7771559067239582,
+      "cash_share_2025": 0.030846317709301966,
+      "overseas_2025": 0.0999866759103025,
+      "commodity_2025": 0.13307055397178047,
+      "equity_2025": 0.4616038703797086,
+      "cost_bp_of_nav_per_year": 5.6644000000000005,
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.055427255604187264,
+      "cagr_252_per_session": 0.057481403381304474,
+      "vol_annual_252": 0.10593682246707477,
+      "max_drawdown_daily": -0.17189952835973044
+    },
+    "hold@200": {
+      "nav_end": 87755.88,
+      "n_fills": 8,
+      "n_suppressed": 0,
+      "entry_invested": 0.8079230979669412,
+      "cash_share_2025": 0.16195701074389546,
+      "overseas_2025": 0.2053127380182388,
+      "commodity_2025": 0.23827349232894707,
+      "equity_2025": 0.27812267394503937,
+      "cost_bp_of_nav_per_year": 0.8976000000000001,
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.05792299041531379,
+      "cagr_252_per_session": 0.06007223548076168,
+      "vol_annual_252": 0.08713279641373478,
+      "max_drawdown_daily": -0.1365308179517607
+    },
+    "lots@1000": {
+      "nav_end": 85482.62,
+      "n_fills": 59,
+      "n_suppressed": 38,
+      "entry_invested": 0.7771559067239582,
+      "cash_share_2025": 0.03334736347575683,
+      "overseas_2025": 0.09517958153364976,
+      "commodity_2025": 0.13342361289347474,
+      "equity_2025": 0.46282858433679275,
+      "cost_bp_of_nav_per_year": 6.259000000000001,
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.05514737241829093,
+      "cagr_252_per_session": 0.05719086930834316,
+      "vol_annual_252": 0.10832289306670698,
+      "max_drawdown_daily": -0.1781290076570461
+    },
+    "hold@1000": {
+      "nav_end": 87755.88,
+      "n_fills": 8,
+      "n_suppressed": 0,
+      "entry_invested": 0.8079230979669412,
+      "cash_share_2025": 0.16195701074389546,
+      "overseas_2025": 0.2053127380182388,
+      "commodity_2025": 0.23827349232894707,
+      "equity_2025": 0.27812267394503937,
+      "cost_bp_of_nav_per_year": 0.8976000000000001,
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.05792299041531379,
+      "cagr_252_per_session": 0.06007223548076168,
+      "vol_annual_252": 0.08713279641373478,
+      "max_drawdown_daily": -0.1365308179517607
+    }
+  },
+  "verdicts": {
+    "tol200": {
+      "lots_over_hold": 0.9766800811523968,
+      "gap_pct": -2.3319918847603205,
+      "gate_free": false,
+      "reading": "trimming destroys value at both gate levels"
+    },
+    "tol1000": {
+      "lots_over_hold": 0.9740956389474983,
+      "gap_pct": -2.590436105250171,
+      "gate_free": false,
+      "reading": "trimming destroys value at both gate levels"
+    }
+  }
+}

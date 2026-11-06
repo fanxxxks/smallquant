@@ -1,0 +1,401 @@
+{
+  "probe": "hold-kill-single-cell",
+  "declared": {
+    "RETURN_TOL": 0.02,
+    "RISK_TOL_PP": 1.0,
+    "rule": "retirement only if every hold arm passes both clauses at all 12 entry starts; a pass here is not retirement, a failure here is a local refutation"
+  },
+  "window": {
+    "start": "2016-01-04",
+    "end": "2025-12-31"
+  },
+  "cell": {
+    "nav0": 50000.0,
+    "tolerance_bp": 15.1,
+    "cost_mode": "measured"
+  },
+  "gate": {
+    "recorded": {
+      "static_nav_end": 62163.64,
+      "static_n_fills": 6,
+      "static_head": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9",
+      "lots_nav_end": 85111.3,
+      "lots_head": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+      "lots_static_annual_cny": 1542.7944763945607
+    },
+    "checks": {
+      "static_nav_end": true,
+      "static_n_fills": true,
+      "static_head": true,
+      "lots_nav_end": true,
+      "lots_head": true,
+      "lots_static_annual_cny": true
+    },
+    "ok": true,
+    "verdict": "control-reproduces-e3"
+  },
+  "arms": {
+    "static": {
+      "nav_end": 62163.64,
+      "net_cny": 12163.64,
+      "cagr_monthly_basis": 0.02201352520276756,
+      "vol_monthly_basis": 0.0939527563728242,
+      "max_drawdown_monthly": -0.19169252191036734,
+      "n_fills": 6,
+      "n_fills_after_entry": 3,
+      "cost_bp_of_nav_per_year": 0.7503999999999998,
+      "turnover_per_year": 0.10585,
+      "entry_cash_share": 0.40899665947426145,
+      "entry": {
+        "entry_date": "2016-01-04",
+        "entry_cash": 0.37394139430874584,
+        "entry_codes": [
+          "510300",
+          "510500",
+          "511220"
+        ],
+        "entry_costs_cny": 17.65,
+        "entry_invested": 0.6260586056912542,
+        "entry_equity": 0.4195769397145804,
+        "entry_bond": 0.20648166597667378,
+        "entry_commodity": 0.0,
+        "entry_overseas": 0.0
+      },
+      "ledger_head": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9",
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.022034870787355665,
+      "cagr_252_per_session": 0.022838082249681868,
+      "vol_annual_252": 0.09636170540418212,
+      "max_drawdown_daily": -0.2096808450915858
+    },
+    "lots": {
+      "nav_end": 85111.3,
+      "net_cny": 35111.3,
+      "cagr_monthly_basis": 0.05463388749503428,
+      "vol_monthly_basis": 0.08626690829521659,
+      "max_drawdown_monthly": -0.12266101889108338,
+      "n_fills": 14,
+      "n_fills_after_entry": 9,
+      "cost_bp_of_nav_per_year": 1.6718000000000002,
+      "turnover_per_year": 0.19538759999999997,
+      "entry_cash_share": 0.2152667645827124,
+      "entry": {
+        "entry_date": "2016-01-04",
+        "entry_cash": 0.1956923438820285,
+        "entry_codes": [
+          "510300",
+          "510500",
+          "511220",
+          "513100",
+          "518880"
+        ],
+        "entry_costs_cny": 29.55,
+        "entry_invested": 0.8043076561179715,
+        "entry_equity": 0.3971644083936978,
+        "entry_bond": 0.20634489930884775,
+        "entry_commodity": 0.10218612103572759,
+        "entry_overseas": 0.09861222737969834
+      },
+      "ledger_head": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.05468769799456652,
+      "cagr_252_per_session": 0.05671370811302512,
+      "vol_annual_252": 0.09137977892109504,
+      "max_drawdown_daily": -0.14496754341813722
+    },
+    "hold": {
+      "nav_end": 58436.38,
+      "net_cny": 8436.379999999997,
+      "cagr_monthly_basis": 0.01571374617343313,
+      "vol_monthly_basis": 0.07741832544645093,
+      "max_drawdown_monthly": -0.14847921499442907,
+      "n_fills": 3,
+      "n_fills_after_entry": 0,
+      "cost_bp_of_nav_per_year": 0.353,
+      "turnover_per_year": 0.06374439999999999,
+      "entry_cash_share": 0.40899665947426145,
+      "entry": {
+        "entry_date": "2016-01-04",
+        "entry_cash": 0.37394139430874584,
+        "entry_codes": [
+          "510300",
+          "510500",
+          "511220"
+        ],
+        "entry_costs_cny": 17.65,
+        "entry_invested": 0.6260586056912542,
+        "entry_equity": 0.4195769397145804,
+        "entry_bond": 0.20648166597667378,
+        "entry_commodity": 0.0,
+        "entry_overseas": 0.0
+      },
+      "ledger_head": "07cf2a3f1a2fbec2acdf854ac6abe49dbba2ea2eab2e58544630ae68fe99d4c8",
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.015728936196315324,
+      "cagr_252_per_session": 0.016300455019819138,
+      "vol_annual_252": 0.07780448810250983,
+      "max_drawdown_daily": -0.1648907423722925
+    },
+    "hold_lot": {
+      "nav_end": 97516.89,
+      "net_cny": 47516.89,
+      "cagr_monthly_basis": 0.06908191717839429,
+      "vol_monthly_basis": 0.08280147766012452,
+      "max_drawdown_monthly": -0.1340124113878326,
+      "n_fills": 5,
+      "n_fills_after_entry": 0,
+      "cost_bp_of_nav_per_year": 0.5910000000000001,
+      "turnover_per_year": 0.0809734,
+      "entry_cash_share": 0.2152667645827124,
+      "entry": {
+        "entry_date": "2016-01-04",
+        "entry_cash": 0.1956923438820285,
+        "entry_codes": [
+          "510300",
+          "510500",
+          "511220",
+          "513100",
+          "518880"
+        ],
+        "entry_costs_cny": 29.55,
+        "entry_invested": 0.8043076561179715,
+        "entry_equity": 0.3971644083936978,
+        "entry_bond": 0.20634489930884775,
+        "entry_commodity": 0.10218612103572759,
+        "entry_overseas": 0.09861222737969834
+      },
+      "ledger_head": "42d48bbc0b3b4bd9f8446f4adf5b213a99b0d574034e71e67b2bc8d794099e99",
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.06915041822757395,
+      "cagr_252_per_session": 0.07173018995479241,
+      "vol_annual_252": 0.09035406706681952,
+      "max_drawdown_daily": -0.1428412619328302
+    },
+    "hold_deploy": {
+      "nav_end": 108654.91,
+      "net_cny": 58654.91,
+      "cagr_monthly_basis": 0.08070692708912608,
+      "vol_monthly_basis": 0.10314475594478023,
+      "max_drawdown_monthly": -0.16253987128474856,
+      "n_fills": 5,
+      "n_fills_after_entry": 0,
+      "cost_bp_of_nav_per_year": 0.6152,
+      "turnover_per_year": 0.0980894,
+      "entry_cash_share": 0.025715994449028542,
+      "entry": {
+        "entry_date": "2016-01-04",
+        "entry_cash": 0.019258024280932942,
+        "entry_codes": [
+          "510300",
+          "510500",
+          "511220",
+          "513100",
+          "518880"
+        ],
+        "entry_costs_cny": 30.76,
+        "entry_invested": 0.9807419757190671,
+        "entry_equity": 0.5197546077698653,
+        "entry_bond": 0.20829844334407321,
+        "entry_commodity": 0.12659754491122738,
+        "entry_overseas": 0.12609137969390127
+      },
+      "ledger_head": "c98c08418384559416357986ccd292a5b4b1dfff7a80d018f8beccf40ddaee16",
+      "sessions": 2430,
+      "years_calendar": 9.990417522245037,
+      "cagr_calendar": 0.08078738451266942,
+      "cagr_252_per_session": 0.08381804435274365,
+      "vol_annual_252": 0.11165145946953102,
+      "max_drawdown_daily": -0.17309930323103562
+    }
+  },
+  "deltas": {
+    "lots-static": {
+      "annual_cny": 1542.7944763945607,
+      "annual_cny_lo": 857.8200460705107,
+      "annual_cny_hi": 2212.5988842622423,
+      "cumulative_cny": 15427.944763945605,
+      "sd_monthly_cny": 454.23966900598043,
+      "mde_annual_cny": 1393.264954078232,
+      "by_year_cny": {
+        "2016": 1673.3798341389659,
+        "2017": 1197.0348041961065,
+        "2018": 770.5684275678634,
+        "2019": 3404.3041897733215,
+        "2020": 1939.2265641338113,
+        "2021": -577.1420506535175,
+        "2022": 693.9407137288575,
+        "2023": 3465.817978481572,
+        "2024": 2729.607440336379,
+        "2025": 131.20686224224477
+      }
+    },
+    "hold-lots": {
+      "annual_cny": -1921.7819538879253,
+      "annual_cny_lo": -2678.133706394649,
+      "annual_cny_hi": -1054.4214333917344,
+      "cumulative_cny": -19217.819538879256,
+      "sd_monthly_cny": 445.4852819139052,
+      "mde_annual_cny": 1366.4130924684466,
+      "by_year_cny": {
+        "2016": -1673.3798341389659,
+        "2017": -500.15788086163457,
+        "2018": 377.00843000130783,
+        "2019": -3846.3071472901347,
+        "2020": -2533.597336879485,
+        "2021": -2399.5876822484497,
+        "2022": 396.7645898190596,
+        "2023": -3525.1664370888393,
+        "2024": -2960.126135239527,
+        "2025": -2553.270104952587
+      }
+    },
+    "hold_lot-lots": {
+      "annual_cny": 669.5503727562718,
+      "annual_cny_lo": 22.621510758235168,
+      "annual_cny_hi": 1250.2137809230642,
+      "cumulative_cny": 6695.503727562718,
+      "sd_monthly_cny": 394.60263718399045,
+      "mde_annual_cny": 1210.3434875655107,
+      "by_year_cny": {
+        "2016": 0.0,
+        "2017": 672.6695962734897,
+        "2018": 1338.8076799978219,
+        "2019": -775.0411241215616,
+        "2020": 348.23070495556556,
+        "2021": -906.2164235748904,
+        "2022": -830.7391757936712,
+        "2023": 2615.08669145577,
+        "2024": 2109.3435821061325,
+        "2025": 2123.3621962640614
+      }
+    },
+    "hold_deploy-lots": {
+      "annual_cny": 1309.414842320219,
+      "annual_cny_lo": 568.7788219331477,
+      "annual_cny_hi": 2159.6478379290124,
+      "cumulative_cny": 13094.14842320219,
+      "sd_monthly_cny": 484.8235272402976,
+      "mde_annual_cny": 1487.0731807608954,
+      "by_year_cny": {
+        "2016": -153.690650644789,
+        "2017": 1670.025390636598,
+        "2018": -155.43396799281302,
+        "2019": 1646.6946032648088,
+        "2020": 2251.247464404955,
+        "2021": -382.58015659607406,
+        "2022": -2254.1503381080356,
+        "2023": 3528.991206846038,
+        "2024": 3471.728186739953,
+        "2025": 3471.3166846515483
+      }
+    },
+    "hold_lot-hold": {
+      "annual_cny": 2591.3323266441976,
+      "annual_cny_lo": 1483.910663450672,
+      "annual_cny_hi": 3550.610249352939,
+      "cumulative_cny": 25913.323266441974,
+      "sd_monthly_cny": 640.6880350674991,
+      "mde_annual_cny": 1965.1480191287285,
+      "by_year_cny": {
+        "2016": 1673.3798341389659,
+        "2017": 1172.8274771351241,
+        "2018": 961.7992499965143,
+        "2019": 3071.2660231685736,
+        "2020": 2881.82804183505,
+        "2021": 1493.3712586735594,
+        "2022": -1227.503765612731,
+        "2023": 6140.253128544608,
+        "2024": 5069.46971734566,
+        "2025": 4676.632301216649
+      }
+    },
+    "hold_deploy-hold_lot": {
+      "annual_cny": 639.8644695639472,
+      "annual_cny_lo": 283.46783180668837,
+      "annual_cny_hi": 1185.6715611991017,
+      "cumulative_cny": 6398.644695639472,
+      "sd_monthly_cny": 299.13219911720483,
+      "mde_annual_cny": 917.512137542672,
+      "by_year_cny": {
+        "2016": -153.690650644789,
+        "2017": 997.3557943631084,
+        "2018": -1494.241647990635,
+        "2019": 2421.7357273863704,
+        "2020": 1903.0167594493882,
+        "2021": 523.6362669788164,
+        "2022": -1423.411162314364,
+        "2023": 913.904515390268,
+        "2024": 1362.3846046338206,
+        "2025": 1347.9544883874873
+      }
+    },
+    "hold-static": {
+      "annual_cny": -378.98747749336496,
+      "annual_cny_lo": -986.3989594936841,
+      "annual_cny_hi": 295.92758287958986,
+      "cumulative_cny": -3789.8747749336494,
+      "sd_monthly_cny": 378.6017712734732,
+      "mde_annual_cny": 1161.2648904521989,
+      "by_year_cny": {
+        "2016": 0.0,
+        "2017": 696.8769233344718,
+        "2018": 1147.5768575691714,
+        "2019": -442.0029575168128,
+        "2020": -594.3707727456726,
+        "2021": -2976.729732901967,
+        "2022": 1090.7053035479175,
+        "2023": -59.348458607266835,
+        "2024": -230.51869490314772,
+        "2025": -2422.063242710343
+      }
+    }
+  },
+  "decisions": {
+    "hold": {
+      "nav_end": 58436.38,
+      "nav_ratio_vs_lots": 0.6865877973900057,
+      "return_gap_pct_of_lots": -31.341220260999425,
+      "pass_return_2pct": false,
+      "daily_maxdd": -0.1648907423722925,
+      "daily_maxdd_gap_pp": -1.9923198954155286,
+      "pass_maxdd_1pp": false,
+      "daily_vol": 0.07780448810250983,
+      "daily_vol_gap_pp": -1.3575290818585217,
+      "pass_vol_1pp": true,
+      "passes_both": false,
+      "verdict": "refutes-retirement-for-this-arm-at-this-start"
+    },
+    "hold_lot": {
+      "nav_end": 97516.89,
+      "nav_ratio_vs_lots": 1.145757261374224,
+      "return_gap_pct_of_lots": 14.575726137422397,
+      "pass_return_2pct": false,
+      "daily_maxdd": -0.1428412619328302,
+      "daily_maxdd_gap_pp": 0.21262814853070244,
+      "pass_maxdd_1pp": true,
+      "daily_vol": 0.09035406706681952,
+      "daily_vol_gap_pp": -0.10257118542755239,
+      "pass_vol_1pp": true,
+      "passes_both": false,
+      "verdict": "refutes-retirement-for-this-arm-at-this-start"
+    },
+    "hold_deploy": {
+      "nav_end": 108654.91,
+      "nav_ratio_vs_lots": 1.2766214356965526,
+      "return_gap_pct_of_lots": 27.662143569655264,
+      "pass_return_2pct": false,
+      "daily_maxdd": -0.17309930323103562,
+      "daily_maxdd_gap_pp": -2.8131759812898394,
+      "pass_maxdd_1pp": false,
+      "daily_vol": 0.11165145946953102,
+      "daily_vol_gap_pp": 2.0271680548435977,
+      "pass_vol_1pp": false,
+      "passes_both": false,
+      "verdict": "refutes-retirement-for-this-arm-at-this-start"
+    }
+  }
+}

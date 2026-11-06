@@ -1,0 +1,416 @@
+{
+ "ref_50k": {
+  "maintenance_below_share": 0.807,
+  "maintenance_median_cny": 1659.6,
+  "maintenance_fills": 9,
+  "pooled_below_share": 0.7538,
+  "pooled_median_cny": 1888.5
+ },
+ "cells": {
+  "nav120000_tol15.1_measured": {
+   "nav0": 120000.0,
+   "intents": {
+    "n_intents": 96,
+    "n_zero_notional": 12,
+    "n_below_clearing": 61,
+    "below_share": 0.6354166666666666,
+    "median_intent_cny": 2490.1,
+    "below_share_ci95": [
+     0.5357,
+     0.7248
+    ]
+   },
+   "maintenance": {
+    "n_intents": 89,
+    "n_zero_notional": 12,
+    "n_below_clearing": 61,
+    "below_share": 0.6853932584269663,
+    "median_intent_cny": 2112.2,
+    "below_share_ci95": [
+     0.583,
+     0.7725
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 14,
+      "below": 6,
+      "share": 0.42857142857142855
+     },
+     "commodity": {
+      "n": 20,
+      "below": 18,
+      "share": 0.9
+     },
+     "equity": {
+      "n": 29,
+      "below": 15,
+      "share": 0.5172413793103449
+     },
+     "overseas": {
+      "n": 26,
+      "below": 22,
+      "share": 0.8461538461538461
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 49,
+     "zero_lot": 12,
+     "insufficient_settled_cash": 6
+    }
+   },
+   "build": {
+    "n_intents": 7,
+    "n_zero_notional": 0,
+    "n_below_clearing": 0,
+    "below_share": 0.0,
+    "median_intent_cny": 5824.8,
+    "below_share_ci95": [
+     0.0,
+     0.3543
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "equity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "overseas": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {}
+   },
+   "entry": {
+    "entry_date": "2016-01-04",
+    "entry_cash": 0.032611721627177036,
+    "entry_codes": [
+     "159934",
+     "510300",
+     "510500",
+     "511220",
+     "513100",
+     "513500",
+     "518880"
+    ],
+    "entry_costs_cny": 54.83,
+    "entry_invested": 0.9673882783728229,
+    "entry_equity": 0.4236362758054035,
+    "entry_bond": 0.34443513799836856,
+    "entry_commodity": 0.10027712390115504,
+    "entry_overseas": 0.09903974066789589
+   },
+   "entry_gap_pp": {
+    "equity": -2.636,
+    "bond": -0.556,
+    "commodity": 0.028,
+    "overseas": -0.096
+   },
+   "entry_codes": 7,
+   "n_fills": 29,
+   "post_entry_intents": 89,
+   "post_entry_fills": 22,
+   "post_entry_fill_notional_cny": 163710.7,
+   "ledger_head": "be32d907b9fc7f3a3a80f54059b126b82f4538f88f0e76505e2c529ee28e93fd",
+   "recorded_ledger_head": "be32d907b9fc7f3a3a80f54059b126b82f4538f88f0e76505e2c529ee28e93fd",
+   "reproduces_recorded_ledger": true,
+   "turnover_per_year": 0.23322383333333327,
+   "cost_bp_of_nav_per_year": 1.6561666666666666,
+   "intent_profile": {
+    "clearing_min": 3345.02,
+    "clearing_median": 3669.17,
+    "clearing_max": 5066.23
+   }
+  },
+  "nav200000_tol15.1_measured": {
+   "nav0": 200000.0,
+   "intents": {
+    "n_intents": 101,
+    "n_zero_notional": 4,
+    "n_below_clearing": 57,
+    "below_share": 0.5643564356435643,
+    "median_intent_cny": 3375.0,
+    "below_share_ci95": [
+     0.4671,
+     0.6569
+    ]
+   },
+   "maintenance": {
+    "n_intents": 93,
+    "n_zero_notional": 4,
+    "n_below_clearing": 57,
+    "below_share": 0.6129032258064516,
+    "median_intent_cny": 2821.0,
+    "below_share_ci95": [
+     0.5113,
+     0.7055
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 14,
+      "below": 4,
+      "share": 0.2857142857142857
+     },
+     "commodity": {
+      "n": 20,
+      "below": 16,
+      "share": 0.8
+     },
+     "equity": {
+      "n": 29,
+      "below": 11,
+      "share": 0.3793103448275862
+     },
+     "overseas": {
+      "n": 30,
+      "below": 26,
+      "share": 0.8666666666666667
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 53,
+     "zero_lot": 4,
+     "insufficient_settled_cash": 6
+    }
+   },
+   "build": {
+    "n_intents": 8,
+    "n_zero_notional": 0,
+    "n_below_clearing": 0,
+    "below_share": 0.0,
+    "median_intent_cny": 9812.0,
+    "below_share_ci95": [
+     0.0,
+     0.3244
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "equity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {}
+   },
+   "entry": {
+    "entry_date": "2016-01-04",
+    "entry_cash": 0.009356021970170693,
+    "entry_codes": [
+     "159920",
+     "159934",
+     "510300",
+     "510500",
+     "511220",
+     "513100",
+     "513500",
+     "518880"
+    ],
+    "entry_costs_cny": 84.98,
+    "entry_invested": 0.9906439780298293,
+    "entry_equity": 0.42770489575380305,
+    "entry_bond": 0.3619910999833898,
+    "entry_commodity": 0.10191394002903789,
+    "entry_overseas": 0.0990340422635986
+   },
+   "entry_gap_pp": {
+    "equity": -2.23,
+    "bond": 1.199,
+    "commodity": 0.191,
+    "overseas": -0.097
+   },
+   "entry_codes": 8,
+   "n_fills": 38,
+   "post_entry_intents": 93,
+   "post_entry_fills": 30,
+   "post_entry_fill_notional_cny": 262194.5,
+   "ledger_head": "ed57655c32d87a0468d7d388b04716b4def6d4662443767507bd6191d35fe4d3",
+   "recorded_ledger_head": null,
+   "reproduces_recorded_ledger": null,
+   "turnover_per_year": 0.23015015,
+   "cost_bp_of_nav_per_year": 1.44135,
+   "intent_profile": {
+    "clearing_min": 3345.02,
+    "clearing_median": 3669.17,
+    "clearing_max": 5066.23
+   }
+  },
+  "nav250000_tol15.1_measured": {
+   "nav0": 250000.0,
+   "intents": {
+    "n_intents": 101,
+    "n_zero_notional": 6,
+    "n_below_clearing": 56,
+    "below_share": 0.5544554455445545,
+    "median_intent_cny": 3168.3,
+    "below_share_ci95": [
+     0.4573,
+     0.6476
+    ]
+   },
+   "maintenance": {
+    "n_intents": 93,
+    "n_zero_notional": 6,
+    "n_below_clearing": 56,
+    "below_share": 0.6021505376344086,
+    "median_intent_cny": 2676.0,
+    "below_share_ci95": [
+     0.5005,
+     0.6957
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 14,
+      "below": 4,
+      "share": 0.2857142857142857
+     },
+     "commodity": {
+      "n": 20,
+      "below": 16,
+      "share": 0.8
+     },
+     "equity": {
+      "n": 29,
+      "below": 11,
+      "share": 0.3793103448275862
+     },
+     "overseas": {
+      "n": 30,
+      "below": 25,
+      "share": 0.8333333333333334
+     }
+    },
+    "suppression_reasons": {
+     "below_cost_gate": 50,
+     "zero_lot": 6,
+     "insufficient_settled_cash": 5
+    }
+   },
+   "build": {
+    "n_intents": 8,
+    "n_zero_notional": 0,
+    "n_below_clearing": 0,
+    "below_share": 0.0,
+    "median_intent_cny": 12265.0,
+    "below_share_ci95": [
+     0.0,
+     0.3244
+    ],
+    "by_sleeve": {
+     "bond": {
+      "n": 1,
+      "below": 0,
+      "share": 0.0
+     },
+     "commodity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "equity": {
+      "n": 2,
+      "below": 0,
+      "share": 0.0
+     },
+     "overseas": {
+      "n": 3,
+      "below": 0,
+      "share": 0.0
+     }
+    },
+    "suppression_reasons": {}
+   },
+   "entry": {
+    "entry_date": "2016-01-04",
+    "entry_cash": 0.03865201601470918,
+    "entry_codes": [
+     "159920",
+     "159934",
+     "510300",
+     "510500",
+     "511220",
+     "513100",
+     "513500",
+     "518880"
+    ],
+    "entry_costs_cny": 98.11,
+    "entry_invested": 0.9613479839852909,
+    "entry_equity": 0.4277070703113219,
+    "entry_bond": 0.3309747383944639,
+    "entry_commodity": 0.10191746491223026,
+    "entry_overseas": 0.10074871036727481
+   },
+   "entry_gap_pp": {
+    "equity": -2.229,
+    "bond": -1.903,
+    "commodity": 0.192,
+    "overseas": 0.075
+   },
+   "entry_codes": 8,
+   "n_fills": 40,
+   "post_entry_intents": 93,
+   "post_entry_fills": 32,
+   "post_entry_fill_notional_cny": 372407.1,
+   "ledger_head": "508d37d18c2f453877e0e50e2cfaee63e0a68beb52d2d2a8c718f489b04258d5",
+   "recorded_ledger_head": null,
+   "reproduces_recorded_ledger": null,
+   "turnover_per_year": 0.24518656,
+   "cost_bp_of_nav_per_year": 1.36644,
+   "intent_profile": {
+    "clearing_min": 3345.02,
+    "clearing_median": 3669.17,
+    "clearing_max": 5066.23
+   }
+  }
+ },
+ "rule": "C1/C2/C3 pre-declared in the module docstring",
+ "nav120000_tol15.1_measured": {
+  "C1_refuted": false,
+  "C2_measured": false,
+  "C3_composition_effect": false,
+  "share": 0.6854,
+  "median_cny": 2112.2,
+  "median_over_bound": 0.576
+ },
+ "nav200000_tol15.1_measured": {
+  "C1_refuted": false,
+  "C2_measured": false,
+  "C3_composition_effect": false,
+  "share": 0.6129,
+  "median_cny": 2821.0,
+  "median_over_bound": 0.769
+ },
+ "nav250000_tol15.1_measured": {
+  "C1_refuted": false,
+  "C2_measured": false,
+  "C3_composition_effect": false,
+  "share": 0.6022,
+  "median_cny": 2676.0,
+  "median_over_bound": 0.729
+ }
+}

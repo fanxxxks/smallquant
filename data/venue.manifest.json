@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-11-04T11:55:43.597263+00:00",
+  "venue_hash": "d6a6e438e32e818f7d6382f413ea2739e016513147974d718632db204f8177ec",
+  "previous_venue_hash": null,
+  "changed": false,
+  "source": {
+    "bars_path": "D:\\newquant\\data\\etf_bars.parquet",
+    "bars_sha256": "05a5f67a97f11e72d9e171de6b8d4d24f8f0ad920667b82ddc729f839f9785c1",
+    "bars_rows": 45197,
+    "bars_first_date": "2013-01-04",
+    "bars_last_date": "2026-11-04",
+    "fetch_manifest_sha256": "6934f76e52253e7c78e4bbcb1eb4a262d8d46a1918ec3e4da0644699c5e65512",
+    "fetch_generated_at": "2026-11-04T11:53:23.279143+00:00",
+    "akshare_version": "1.18.91"
+  },
+  "fees": {
+    "commission_rate": "0.00025",
+    "commission_min": "5.00",
+    "stamp_rate": "0",
+    "transfer_rate": "0.00001",
+    "slippage_rate": "0.0005",
+    "name": "etf_std"
+  },
+  "settle_days": {
+    "equity": 1,
+    "overseas": 1,
+    "bond": 0,
+    "commodity": 0,
+    "cash": 0
+  },
+  "declared": {
+    "lot": 100,
+    "coarse_lot_fraction": 0.1,
+    "min_nav": 50000,
+    "sleeve_map": {
+      "510300": "equity",
+      "510500": "equity",
+      "159915": "equity",
+      "512100": "equity",
+      "511010": "bond",
+      "511260": "bond",
+      "511220": "bond",
+      "511380": "bond",
+      "518880": "commodity",
+      "159934": "commodity",
+      "513100": "overseas",
+      "513500": "overseas",
+      "159920": "overseas",
+      "511990": "cash",
+      "511880": "cash"
+    }
+  },
+  "checks": {
+    "all_codes_mapped": true,
+    "no_duplicate_codes": true,
+    "positive_prices": true,
+    "every_lot_positive": true,
+    "gap_days_max": 6,
+    "tradable_codes": [
+      "159915",
+      "159920",
+      "159934",
+      "510300",
+      "510500",
+      "511220",
+      "511380",
+      "512100",
+      "513100",
+      "513500",
+      "518880"
+    ],
+    "coarse_lot_codes": [
+      "511010",
+      "511260",
+      "511880",
+      "511990"
+    ]
+  },
+  "bar_dtype_note": "unadjusted prices; bond/cash ETFs sit near 100 CNY and need level normalisation before any cross-sectional use"
+}

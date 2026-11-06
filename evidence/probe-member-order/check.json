@@ -1,0 +1,257 @@
+{
+  "probe": "member-order-permutation",
+  "mode": "check",
+  "reproduction": {
+    "max_abs_diff_cny": 0.0,
+    "ok": true,
+    "per_cell": {
+      "2016-01-04|lots@15.1": 0.0,
+      "2016-01-04|hold@200": 0.0,
+      "2017-04-05|lots@15.1": 0.0,
+      "2017-04-05|hold@200": 0.0,
+      "2018-07-02|lots@15.1": 0.0,
+      "2018-07-02|hold@200": 0.0,
+      "2020-01-02|lots@15.1": 0.0,
+      "2020-01-02|hold@200": 0.0,
+      "2021-10-08|lots@15.1": 0.0,
+      "2021-10-08|hold@200": 0.0,
+      "2023-10-09|lots@15.1": 0.0,
+      "2023-10-09|hold@200": 0.0
+    }
+  },
+  "cells": {
+    "513100-513500-159920": {
+      "2016-01-04": {
+        "lots@15.1": {
+          "nav_end": 81604.78,
+          "n_fills": 17,
+          "entry_cash_share": 0.2152667645827124,
+          "cash_end_share": 0.21974055931527542,
+          "realised_overseas_end": 0.12084831305225012,
+          "overseas_bought_cny": {
+            "513100": 4854.0,
+            "513500": 4320.0
+          },
+          "cost_bp_of_nav_per_year": 1.8595419847328247,
+          "sessions": 2631,
+          "years_calendar": 10.833675564681725,
+          "cagr_calendar": 0.04625473016127435,
+          "cagr_252_per_session": 0.048037930830133746,
+          "vol_annual_252": 0.09467640170218951,
+          "max_drawdown_daily": -0.14496754341813722
+        },
+        "hold@200": {
+          "nav_end": 85200.78,
+          "n_fills": 8,
+          "entry_cash_share": 0.19207690203305883,
+          "cash_end_share": 0.17434910807154583,
+          "realised_overseas_end": 0.2343124088770079,
+          "overseas_bought_cny": {
+            "159920": 1565.2,
+            "513100": 1618.0,
+            "513500": 1605.5
+          },
+          "cost_bp_of_nav_per_year": 0.8222290076335879,
+          "sessions": 2631,
+          "years_calendar": 10.833675564681725,
+          "cagr_calendar": 0.050427579312172455,
+          "cagr_252_per_session": 0.05237563913642895,
+          "vol_annual_252": 0.09336591574377254,
+          "max_drawdown_daily": -0.1365308179517607
+        }
+      },
+      "2017-04-05": {
+        "lots@15.1": {
+          "nav_end": 84518.25,
+          "n_fills": 15,
+          "entry_cash_share": 0.39690174738886425,
+          "cash_end_share": 0.06330999517855611,
+          "realised_overseas_end": 0.17813430827069893,
+          "overseas_bought_cny": {
+            "513100": 4802.4,
+            "513500": 4560.0
+          },
+          "cost_bp_of_nav_per_year": 1.8653793103448277,
+          "sessions": 2328,
+          "years_calendar": 9.582477754962355,
+          "cagr_calendar": 0.05631000368118322,
+          "cagr_252_per_session": 0.05846938399529389,
+          "vol_annual_252": 0.10270427321543726,
+          "max_drawdown_daily": -0.14637219620371156
+        },
+        "hold@200": {
+          "nav_end": 77511.36,
+          "n_fills": 9,
+          "entry_cash_share": 0.18363591244697716,
+          "cash_end_share": 0.18340227806607962,
+          "realised_overseas_end": 0.2047906268190882,
+          "overseas_bought_cny": {
+            "159920": 1609.2,
+            "513100": 1600.8,
+            "513500": 1575.0
+          },
+          "cost_bp_of_nav_per_year": 1.0936551724137933,
+          "sessions": 2328,
+          "years_calendar": 9.582477754962355,
+          "cagr_calendar": 0.04681301848092878,
+          "cagr_252_per_session": 0.048599886130703096,
+          "vol_annual_252": 0.09857913044429992,
+          "max_drawdown_daily": -0.14737899206599403
+        }
+      },
+      "2018-07-02": {
+        "lots@15.1": {
+          "nav_end": 82582.93,
+          "n_fills": 14,
+          "entry_cash_share": 0.19914268532951426,
+          "cash_end_share": 0.15806087287045884,
+          "realised_overseas_end": 0.1221317771118075,
+          "overseas_bought_cny": {
+            "513100": 4653.1,
+            "513500": 4320.0
+          },
+          "cost_bp_of_nav_per_year": 1.9967524752475247,
+          "sessions": 2024,
+          "years_calendar": 8.342231348391513,
+          "cagr_calendar": 0.061995169390683724,
+          "cagr_252_per_session": 0.06446740447066546,
+          "vol_annual_252": 0.10634394856740595,
+          "max_drawdown_daily": -0.14397380233400925
+        },
+        "hold@200": {
+          "nav_end": 80496.27,
+          "n_fills": 9,
+          "entry_cash_share": 0.18956769640992646,
+          "cash_end_share": 0.17277906168819995,
+          "realised_overseas_end": 0.1611130553005748,
+          "overseas_bought_cny": {
+            "159920": 1617.0,
+            "513100": 1469.4,
+            "513500": 1508.4
+          },
+          "cost_bp_of_nav_per_year": 1.2556039603960398,
+          "sessions": 2024,
+          "years_calendar": 8.342231348391513,
+          "cagr_calendar": 0.05874219129738667,
+          "cagr_252_per_session": 0.061081010453000184,
+          "vol_annual_252": 0.10856824609585561,
+          "max_drawdown_daily": -0.15658060018207565
+        }
+      },
+      "2020-01-02": {
+        "lots@15.1": {
+          "nav_end": 77352.93,
+          "n_fills": 11,
+          "entry_cash_share": 0.3881313026188763,
+          "cash_end_share": 0.15793881369458146,
+          "realised_overseas_end": 0.11883454188483877,
+          "overseas_bought_cny": {
+            "513100": 4803.0
+          },
+          "cost_bp_of_nav_per_year": 1.9278072289156625,
+          "sessions": 1656,
+          "years_calendar": 6.839151266255989,
+          "cagr_calendar": 0.06588194453640983,
+          "cagr_252_per_session": 0.06865614129504816,
+          "vol_annual_252": 0.11280629044350352,
+          "max_drawdown_daily": -0.16032304364307526
+        },
+        "hold@200": {
+          "nav_end": 70991.33,
+          "n_fills": 9,
+          "entry_cash_share": 0.17172145845786013,
+          "cash_end_share": 0.1707649370704845,
+          "realised_overseas_end": 0.1501958056004867,
+          "overseas_bought_cny": {
+            "159920": 1556.0,
+            "513100": 1601.0,
+            "513500": 1479.8
+          },
+          "cost_bp_of_nav_per_year": 1.528481927710843,
+          "sessions": 1656,
+          "years_calendar": 6.839151266255989,
+          "cagr_calendar": 0.052590354605346556,
+          "cagr_252_per_session": 0.05479057993290559,
+          "vol_annual_252": 0.11099000204172797,
+          "max_drawdown_daily": -0.1684544083261772
+        }
+      },
+      "2021-10-08": {
+        "lots@15.1": {
+          "nav_end": 62772.96,
+          "n_fills": 8,
+          "entry_cash_share": 0.4060100714106918,
+          "cash_end_share": 0.2283110434811422,
+          "realised_overseas_end": 0.16072206886532037,
+          "overseas_bought_cny": {
+            "513100": 4464.0
+          },
+          "cost_bp_of_nav_per_year": 1.8836129032258062,
+          "sessions": 1231,
+          "years_calendar": 5.073237508555784,
+          "cagr_calendar": 0.04586410253513962,
+          "cagr_252_per_session": 0.047673697207957666,
+          "vol_annual_252": 0.09711559881712759,
+          "max_drawdown_daily": -0.13070781348132665
+        },
+        "hold@200": {
+          "nav_end": 58661.97,
+          "n_fills": 9,
+          "entry_cash_share": 0.21318792312732038,
+          "cash_end_share": 0.2022531803824522,
+          "realised_overseas_end": 0.13939865981316343,
+          "overseas_bought_cny": {
+            "159920": 1574.4,
+            "513100": 1488.0,
+            "513500": 1618.8
+          },
+          "cost_bp_of_nav_per_year": 2.05741935483871,
+          "sessions": 1231,
+          "years_calendar": 5.073237508555784,
+          "cagr_calendar": 0.03199357635445366,
+          "cagr_252_per_session": 0.03324723332216939,
+          "vol_annual_252": 0.11196488203997984,
+          "max_drawdown_daily": -0.17037477763587783
+        }
+      },
+      "2023-10-09": {
+        "lots@15.1": {
+          "nav_end": 65326.35,
+          "n_fills": 9,
+          "entry_cash_share": 0.08602864063326937,
+          "cash_end_share": 0.10172388324160159,
+          "realised_overseas_end": 0.15100797763842613,
+          "overseas_bought_cny": {
+            "513100": 4840.0
+          },
+          "cost_bp_of_nav_per_year": 3.387789473684211,
+          "sessions": 746,
+          "years_calendar": 3.0718685831622174,
+          "cagr_calendar": 0.09093926176259592,
+          "cagr_252_per_session": 0.09452321791618457,
+          "vol_annual_252": 0.12380735077192344,
+          "max_drawdown_daily": -0.1336701967331927
+        },
+        "hold@200": {
+          "nav_end": 62800.43,
+          "n_fills": 10,
+          "entry_cash_share": 0.069477249250948,
+          "cash_end_share": 0.0802578899539382,
+          "realised_overseas_end": 0.13272839055401373,
+          "overseas_bought_cny": {
+            "159920": 1584.0,
+            "513100": 1650.0,
+            "513500": 1620.3
+          },
+          "cost_bp_of_nav_per_year": 3.673263157894738,
+          "sessions": 746,
+          "years_calendar": 3.0718685831622174,
+          "cagr_calendar": 0.07702438540801992,
+          "cagr_252_per_session": 0.08004005908927847,
+          "vol_annual_252": 0.1276301926764252,
+          "max_drawdown_daily": -0.15870004494808354
+        }
+      }
+    }
+  }
+}

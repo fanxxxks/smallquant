@@ -1,0 +1,636 @@
+{
+ "e3:static": {
+  "2016": {
+   "fills": 3,
+   "entry_fills": 3,
+   "suppressions": 13,
+   "traded_cny": 31872.2,
+   "entry_share_of_traded": 1.0,
+   "cost_cny": 17.65,
+   "entry_share_of_cost": 1.0,
+   "cost_bp_of_nav": 3.53,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.6374,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 1.0,
+    "equity": 0.8431372549019608,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": null,
+    "commodity": 0.0,
+    "equity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 12,
+    "zero_lot": 1
+   }
+  },
+  "2017": {
+   "fills": 1,
+   "entry_fills": 0,
+   "suppressions": 8,
+   "traded_cny": 7129.2,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 8.72,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 1.74,
+   "cost_bp_of_nav_post_entry": 1.74,
+   "turnover": 0.1426,
+   "turnover_post_entry": 0.1426,
+   "fill_ratio_all": {
+    "equity": 0.8863636363636364,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.8863636363636364,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 7,
+    "zero_lot": 1
+   }
+  },
+  "2018": {
+   "fills": 1,
+   "entry_fills": 0,
+   "suppressions": 8,
+   "traded_cny": 4695.9,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 5.65,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 1.13,
+   "cost_bp_of_nav_post_entry": 1.13,
+   "turnover": 0.0939,
+   "turnover_post_entry": 0.0939,
+   "fill_ratio_all": {
+    "equity": 0.3793103448275862,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.3793103448275862,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 7,
+    "zero_lot": 1
+   }
+  },
+  "2019": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 9,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": null,
+    "equity": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": null,
+    "equity": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "zero_lot": 2,
+    "below_cost_gate": 7
+   }
+  },
+  "2020": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 9,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "equity": 0.0,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.0,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 7,
+    "zero_lot": 2
+   }
+  },
+  "2021": {
+   "fills": 1,
+   "entry_fills": 0,
+   "suppressions": 9,
+   "traded_cny": 9227.7,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 5.5,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 1.1,
+   "cost_bp_of_nav_post_entry": 1.1,
+   "turnover": 0.1846,
+   "turnover_post_entry": 0.1846,
+   "fill_ratio_all": {
+    "equity": 0.0,
+    "bond": 1.0,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.0,
+    "bond": 1.0,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 8,
+    "zero_lot": 1
+   }
+  },
+  "2022": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 10,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "equity": 0.0,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.0,
+    "bond": null,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 7,
+    "zero_lot": 3
+   }
+  },
+  "2023": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 10,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": null,
+    "equity": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": null,
+    "equity": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "zero_lot": 2,
+    "below_cost_gate": 8
+   }
+  },
+  "2024": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 10,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "equity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "equity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 9,
+    "zero_lot": 1
+   }
+  },
+  "2025": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 10,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "equity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 8,
+    "zero_lot": 2
+   }
+  }
+ },
+ "e3:lots": {
+  "2016": {
+   "fills": 5,
+   "entry_fills": 5,
+   "suppressions": 3,
+   "traded_cny": 40486.7,
+   "entry_share_of_traded": 1.0,
+   "cost_cny": 29.55,
+   "entry_share_of_cost": 1.0,
+   "cost_bp_of_nav": 5.91,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.8097,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "equity": 0.82,
+    "bond": 1.0,
+    "commodity": 0.88,
+    "overseas": 1.0
+   },
+   "fill_ratio_post_entry": {
+    "commodity": 0.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 3
+   }
+  },
+  "2017": {
+   "fills": 1,
+   "entry_fills": 0,
+   "suppressions": 4,
+   "traded_cny": 7220.6,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 8.77,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 1.75,
+   "cost_bp_of_nav_post_entry": 1.75,
+   "turnover": 0.1444,
+   "turnover_post_entry": 0.1444,
+   "fill_ratio_all": {
+    "equity": 0.9186046511627907,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.9186046511627907,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 4
+   }
+  },
+  "2018": {
+   "fills": 1,
+   "entry_fills": 0,
+   "suppressions": 4,
+   "traded_cny": 3842.1,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 5.53,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 1.11,
+   "cost_bp_of_nav_post_entry": 1.11,
+   "turnover": 0.0768,
+   "turnover_post_entry": 0.0768,
+   "fill_ratio_all": {
+    "equity": 0.3103448275862069,
+    "overseas": 0.0,
+    "commodity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.3103448275862069,
+    "overseas": 0.0,
+    "commodity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 4
+   }
+  },
+  "2019": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 5,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "overseas": 0.0,
+    "commodity": 0.0,
+    "equity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "overseas": 0.0,
+    "commodity": 0.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 5
+   }
+  },
+  "2020": {
+   "fills": 2,
+   "entry_fills": 0,
+   "suppressions": 4,
+   "traded_cny": 14319.2,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 11.39,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 2.28,
+   "cost_bp_of_nav_post_entry": 2.28,
+   "turnover": 0.2864,
+   "turnover_post_entry": 0.2864,
+   "fill_ratio_all": {
+    "overseas": 1.0,
+    "commodity": 0.0,
+    "bond": 1.0,
+    "equity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "overseas": 1.0,
+    "commodity": 0.0,
+    "bond": 1.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 4
+   }
+  },
+  "2021": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 7,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "equity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "equity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "zero_lot": 2,
+    "below_cost_gate": 4,
+    "insufficient_settled_cash": 1
+   }
+  },
+  "2022": {
+   "fills": 0,
+   "entry_fills": 0,
+   "suppressions": 7,
+   "traded_cny": 0.0,
+   "entry_share_of_traded": null,
+   "cost_cny": 0.0,
+   "entry_share_of_cost": null,
+   "cost_bp_of_nav": 0.0,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.0,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "equity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "zero_lot": 2,
+    "below_cost_gate": 4,
+    "insufficient_settled_cash": 1
+   }
+  },
+  "2023": {
+   "fills": 2,
+   "entry_fills": 0,
+   "suppressions": 5,
+   "traded_cny": 17665.6,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 10.62,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 2.12,
+   "cost_bp_of_nav_post_entry": 2.12,
+   "turnover": 0.3533,
+   "turnover_post_entry": 0.3533,
+   "fill_ratio_all": {
+    "bond": 1.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "equity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "bond": 1.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 5
+   }
+  },
+  "2024": {
+   "fills": 1,
+   "entry_fills": 0,
+   "suppressions": 6,
+   "traded_cny": 4185.9,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 5.61,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 1.12,
+   "cost_bp_of_nav_post_entry": 1.12,
+   "turnover": 0.0837,
+   "turnover_post_entry": 0.0837,
+   "fill_ratio_all": {
+    "commodity": 1.0,
+    "overseas": 0.0,
+    "bond": 0.0,
+    "equity": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "commodity": 1.0,
+    "overseas": 0.0,
+    "bond": 0.0,
+    "equity": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 5,
+    "zero_lot": 1
+   }
+  },
+  "2025": {
+   "fills": 2,
+   "entry_fills": 0,
+   "suppressions": 6,
+   "traded_cny": 9973.7,
+   "entry_share_of_traded": 0.0,
+   "cost_cny": 12.12,
+   "entry_share_of_cost": 0.0,
+   "cost_bp_of_nav": 2.42,
+   "cost_bp_of_nav_post_entry": 2.42,
+   "turnover": 0.1995,
+   "turnover_post_entry": 0.1995,
+   "fill_ratio_all": {
+    "overseas": 1.0,
+    "commodity": 0.6363636363636364,
+    "equity": 0.0,
+    "bond": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "overseas": 1.0,
+    "commodity": 0.6363636363636364,
+    "equity": 0.0,
+    "bond": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 5,
+    "zero_lot": 1
+   }
+  }
+ },
+ "fwd:static": {
+  "2026": {
+   "fills": 5,
+   "entry_fills": 5,
+   "suppressions": 15,
+   "traded_cny": 37850.5,
+   "entry_share_of_traded": 1.0,
+   "cost_cny": 31.05,
+   "entry_share_of_cost": 1.0,
+   "cost_bp_of_nav": 6.21,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.757,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 1.0,
+    "equity": 0.9795918367346939,
+    "commodity": 0.0,
+    "overseas": 0.0
+   },
+   "fill_ratio_post_entry": {
+    "equity": 0.0,
+    "commodity": 0.0,
+    "overseas": 0.0,
+    "bond": null
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 11,
+    "zero_lot": 4
+   }
+  }
+ },
+ "fwd:lots": {
+  "2026": {
+   "fills": 7,
+   "entry_fills": 7,
+   "suppressions": 7,
+   "traded_cny": 46549.4,
+   "entry_share_of_traded": 1.0,
+   "cost_cny": 42.81,
+   "entry_share_of_cost": 1.0,
+   "cost_bp_of_nav": 8.56,
+   "cost_bp_of_nav_post_entry": 0.0,
+   "turnover": 0.931,
+   "turnover_post_entry": 0.0,
+   "fill_ratio_all": {
+    "bond": 1.0,
+    "equity": 0.9583333333333334,
+    "overseas": 0.9259259259259259,
+    "commodity": 0.8333333333333334
+   },
+   "fill_ratio_post_entry": {
+    "commodity": 0.0,
+    "bond": null,
+    "equity": 0.0,
+    "overseas": 0.0
+   },
+   "suppression_reasons": {
+    "below_cost_gate": 3,
+    "zero_lot": 4
+   }
+  }
+ }
+}

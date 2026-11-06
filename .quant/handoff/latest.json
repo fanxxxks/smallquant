@@ -1,0 +1,18 @@
+{
+  "task": "etf-implementable-frontier",
+  "at": "2026-11-06T02:41:55.114Z",
+  "seq": 235,
+  "hash": "f17ca99062fcbd6b02a85b07e35cf36244b1468852c4dfb27ecf72607d38e563",
+  "markdown": {
+    "question": "在5万—10万元ETF研究账户中，如何把名义45/35/10/10目标明确成可验证的成员与执行政策，并区分指数选择、构建规则及执行成本。项目长期净收益目标仍未完成。",
+    "progress": "本轮完成 docs/account-holding-policy.md（105行）的起草与主会话读回，明确海外513100、商品518880单成员；权益510300/510500/512100、债券511220/511380保留成员。未修改回放代码，未新增实验或真实交易。政策文档完成不代表新政策运行验收。",
+    "facts": "seq233：MANDATE 45/35/10/10合计100%，现金是执行残差；replay.py:76-96 measured成本是固定整段历史中位价格代理。seq234：同为513100第一，第二成员换序会改变旧prefix终值，2016 81605/81225，2017 84518/83490，2018 82583/82203 CNY；证据evidence/probe-member-order/report.md:24-35。replay.py:573-576遍历静态TRADED后用当前SLEEVE_MEMBERS查类别，缩短成员表时可能StopIteration。账本234记录时链完整性检查chain=ok，旧review孤立调用报告并未由本轮处理。",
+    "unverified": "固定单成员政策尚无成功全路径回放；其终值、成员、现金、成本和风险均未测得；100k适用性及独立窗口/前向纸面尚未验证；基金指数身份的官方映射未核验；measured历史价格成本代理不等同前向可得估计；Book结算内部与真实执行未于本轮重核。",
+    "contradictions": "上一交接声称pinned ORDER与单成员规格provably same target，只有六入场composition转述，且原始排序表直接显示同首成员不同后续成员有不同终值。文档明确其全路径等价未成立。所谓one fund per sleeve仅海外与商品，不能泛化至权益债券。",
+    "superseded": "不沿用seq231 next中研究问题已完全回答、只剩写政策的强结论；完成的只是规格文档。0.023均值/0.136最差pp/yr仅seq230转述的旧多成员prefix历史事后相对最佳排序差距，未于本轮复算，更不是固定单成员实测差距或未来成本上限。seq230算术19.77%-1.12%=16.5pp错误，正确18.65pp。原先board lot唯一约束、fixpoint C*及排序band混用等旧撤销继续有效，详见seq231 superseded。",
+    "probes": "probe/spec_check.py:3-10预设单成员必须复现旧prefix终值的P0无证据，不得原样当验收标准。该探针未成功，且模块旧TRADED/新成员表不一致导致类别查找失败。probe/constraint_control.py、probe/path_law.py、probe/sleeve_dispersion.py、probe/rebuild_dispersion.py等仍是一次性测量脚本而非基础设施，本轮未删除或运行。",
+    "evidence": "docs/account-holding-policy.md为本轮完整交付；newquant/replay.py:56-63,76-108,349-415,515-516,573-598,734-750,800-820；newquant/order.py:74-97；evidence/probe-member-order/report.md:24-35；probe/spec_check.py:3-10,25-39；决策seq230、233、234。政策对历史交接改引用不可变seq231，避免本文件刷新使引用错位。",
+    "running": "无仍在运行的本轮任务。子代理663086d8-5299-45c7-9b61-faec6001122a已结束。没有后台实验或作业。",
+    "next": "建议的下一最小步骤：先按已有StopIteration证据定位并修复成员类别映射与政策允许成员的边界，再对固定单成员政策做小范围完整路径验证；判据应检查政策成员约束、账户守恒与结果可复现，不应预设与旧prefix终值相等。此为后续提案，尚未设计或实现。月度放宽gate20分钟扩展实验不优先，因为它不能补足单成员政策尚未运行的缺口。"
+  }
+}

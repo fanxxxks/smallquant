@@ -1,0 +1,128 @@
+{
+ "checks": {
+  "a_sleeves_held": {
+   "rule": "commodity and overseas realised weight > 0 in >= 10 of every 12 months",
+   "measured": {
+    "commodity": 120,
+    "overseas": 120
+   },
+   "months_total": 120,
+   "years_below": {
+    "commodity": {},
+    "overseas": {}
+   },
+   "pass": true
+  },
+  "b_cost_bp_per_year": {
+   "rule": "<= 2.0 bp of NAV per year",
+   "measured": 1.6718,
+   "pass": true
+  },
+  "c_suppression_reasons": {
+   "rule": "every suppression in ['below_cost_gate', 'insufficient_settled_cash', 'zero_lot'], none unexplained",
+   "measured": {
+    "below_cost_gate": 43,
+    "zero_lot": 6,
+    "insufficient_settled_cash": 2
+   },
+   "outside_allowed": [],
+   "pass": true
+  },
+  "d_reproduces_from_ledger": {
+   "rule": "chain verifies and head matches the recorded head, fills match n_fills",
+   "heads": {
+    "lots": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+    "static": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9"
+   },
+   "recorded_heads": {
+    "lots": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+    "static": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9"
+   },
+   "counts": {
+    "lots": {
+     "records": 237,
+     "fills": 14,
+     "suppressions": 51
+    },
+    "static": {
+     "records": 274,
+     "fills": 6,
+     "suppressions": 96
+    }
+   },
+   "recorded_n_fills": {
+    "lots": 14,
+    "static": 6
+   },
+   "pass": true
+  }
+ },
+ "intent_fill": {
+  "equity": {
+   "filled_lots": 129,
+   "intended_lots": 386,
+   "fill_ratio": 0.33419689119170987,
+   "suppressed_by_reason": {
+    "below_cost_gate": 25,
+    "zero_lot": 2
+   },
+   "settlement_suppressions": 0
+  },
+  "bond": {
+   "filled_lots": 19,
+   "intended_lots": 40,
+   "fill_ratio": 0.475,
+   "suppressed_by_reason": {
+    "zero_lot": 4,
+    "insufficient_settled_cash": 2,
+    "below_cost_gate": 2
+   },
+   "settlement_suppressions": 2
+  },
+  "commodity": {
+   "filled_lots": 38,
+   "intended_lots": 75,
+   "fill_ratio": 0.5066666666666667,
+   "suppressed_by_reason": {
+    "below_cost_gate": 9
+   },
+   "settlement_suppressions": 0
+  },
+  "overseas": {
+   "filled_lots": 78,
+   "intended_lots": 139,
+   "fill_ratio": 0.5611510791366906,
+   "suppressed_by_reason": {
+    "below_cost_gate": 7
+   },
+   "settlement_suppressions": 0
+  }
+ },
+ "monthly_mark_gap": {
+  "equity": {
+   "aimed_mean": 0.4393,
+   "realised_mean": 0.3715,
+   "gap_mean_monthly_mark": 0.0677,
+   "months_short": 106
+  },
+  "bond": {
+   "aimed_mean": 0.2735,
+   "realised_mean": 0.2519,
+   "gap_mean_monthly_mark": 0.0217,
+   "months_short": 60
+  },
+  "commodity": {
+   "aimed_mean": 0.095,
+   "realised_mean": 0.1193,
+   "gap_mean_monthly_mark": -0.0243,
+   "months_short": 9
+  },
+  "overseas": {
+   "aimed_mean": 0.0982,
+   "realised_mean": 0.1252,
+   "gap_mean_monthly_mark": -0.027,
+   "months_short": 0
+  }
+ },
+ "failed": []
+}

@@ -1,0 +1,644 @@
+{
+  "probe": "member-order-permutation",
+  "run": "run-cab8a2f4-fdf3-4570-9070-6276c1b02284",
+  "starts": [
+    "2016-01-04",
+    "2017-04-05",
+    "2018-07-02",
+    "2020-01-02",
+    "2021-10-08",
+    "2023-10-09"
+  ],
+  "end": "2026-11-04",
+  "nav0": 50000.0,
+  "reproduction": {
+    "max_abs_diff_cny": 0.0,
+    "ok": true,
+    "per_cell": {
+      "2016-01-04|lots@15.1": 0.0,
+      "2016-01-04|hold@200": 0.0,
+      "2017-04-05|lots@15.1": 0.0,
+      "2017-04-05|hold@200": 0.0,
+      "2018-07-02|lots@15.1": 0.0,
+      "2018-07-02|hold@200": 0.0,
+      "2020-01-02|lots@15.1": 0.0,
+      "2020-01-02|hold@200": 0.0,
+      "2021-10-08|lots@15.1": 0.0,
+      "2021-10-08|hold@200": 0.0,
+      "2023-10-09|lots@15.1": 0.0,
+      "2023-10-09|hold@200": 0.0
+    }
+  },
+  "per_order": [
+    {
+      "order": [
+        "513100",
+        "513500",
+        "159920"
+      ],
+      "tag": "513100-513500-159920",
+      "gap_mean_pp": -0.7758780964397287,
+      "gap_min_pp": -1.3262264329623963,
+      "gap_max_pp": 0.3988368253546426,
+      "n_hold_ahead": 1,
+      "pairs": [
+        {
+          "start": "2016-01-04",
+          "years": 10.833675564681725,
+          "lots_nav": 81604.78,
+          "hold200_nav": 85200.78,
+          "ratio": 1.0440660461311213,
+          "gap_pp_yr": 0.3988368253546426,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100",
+            "513500"
+          ],
+          "lots_overseas_end": 0.12084831305225012,
+          "hold_overseas_end": 0.2343124088770079
+        },
+        {
+          "start": "2017-04-05",
+          "years": 9.582477754962355,
+          "lots_nav": 84518.25,
+          "hold200_nav": 77511.36,
+          "ratio": 0.9170961301257421,
+          "gap_pp_yr": -0.8990717845289709,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100",
+            "513500"
+          ],
+          "lots_overseas_end": 0.17813430827069893,
+          "hold_overseas_end": 0.2047906268190882
+        },
+        {
+          "start": "2018-07-02",
+          "years": 8.342231348391513,
+          "lots_nav": 82582.93,
+          "hold200_nav": 80496.27,
+          "ratio": 0.9747325506614988,
+          "gap_pp_yr": -0.30630818171831775,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100",
+            "513500"
+          ],
+          "lots_overseas_end": 0.1221317771118075,
+          "hold_overseas_end": 0.1611130553005748
+        },
+        {
+          "start": "2020-01-02",
+          "years": 6.839151266255989,
+          "lots_nav": 77352.93,
+          "hold200_nav": 70991.33,
+          "ratio": 0.917758771387199,
+          "gap_pp_yr": -1.2470039481571438,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.11883454188483877,
+          "hold_overseas_end": 0.1501958056004867
+        },
+        {
+          "start": "2021-10-08",
+          "years": 5.073237508555784,
+          "lots_nav": 62772.96,
+          "hold200_nav": 58661.97,
+          "ratio": 0.9345101776306232,
+          "gap_pp_yr": -1.3262264329623963,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.16072206886532037,
+          "hold_overseas_end": 0.13939865981316343
+        },
+        {
+          "start": "2023-10-09",
+          "years": 3.0718685831622174,
+          "lots_nav": 65326.35,
+          "hold200_nav": 62800.43,
+          "ratio": 0.9613338262431622,
+          "gap_pp_yr": -1.2754950566261858,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.15100797763842613,
+          "hold_overseas_end": 0.13272839055401373
+        }
+      ]
+    },
+    {
+      "order": [
+        "513100",
+        "159920",
+        "513500"
+      ],
+      "tag": "513100-159920-513500",
+      "gap_mean_pp": -0.7383609298197129,
+      "gap_min_pp": -1.3262264329623963,
+      "gap_max_pp": 0.4421191753990694,
+      "n_hold_ahead": 1,
+      "pairs": [
+        {
+          "start": "2016-01-04",
+          "years": 10.833675564681725,
+          "lots_nav": 81224.62,
+          "hold200_nav": 85200.78,
+          "ratio": 1.0489526451462623,
+          "gap_pp_yr": 0.4421191753990694,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.06348567712597486,
+          "hold_overseas_end": 0.2343124088770079
+        },
+        {
+          "start": "2017-04-05",
+          "years": 9.582477754962355,
+          "lots_nav": 83490.05,
+          "hold200_nav": 77511.36,
+          "ratio": 0.9283903890343819,
+          "gap_pp_yr": -0.7724059229800018,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "159920",
+            "513100"
+          ],
+          "lots_overseas_end": 0.16772537565853654,
+          "hold_overseas_end": 0.2047906268190882
+        },
+        {
+          "start": "2018-07-02",
+          "years": 8.342231348391513,
+          "lots_nav": 82202.77,
+          "hold200_nav": 80496.27,
+          "ratio": 0.9792403589319435,
+          "gap_pp_yr": -0.2511533935916188,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.06545764820333913,
+          "hold_overseas_end": 0.1611130553005748
+        },
+        {
+          "start": "2020-01-02",
+          "years": 6.839151266255989,
+          "lots_nav": 77352.93,
+          "hold200_nav": 70991.33,
+          "ratio": 0.917758771387199,
+          "gap_pp_yr": -1.2470039481571438,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.11883454188483877,
+          "hold_overseas_end": 0.1501958056004867
+        },
+        {
+          "start": "2021-10-08",
+          "years": 5.073237508555784,
+          "lots_nav": 62772.96,
+          "hold200_nav": 58661.97,
+          "ratio": 0.9345101776306232,
+          "gap_pp_yr": -1.3262264329623963,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.16072206886532037,
+          "hold_overseas_end": 0.13939865981316343
+        },
+        {
+          "start": "2023-10-09",
+          "years": 3.0718685831622174,
+          "lots_nav": 65326.35,
+          "hold200_nav": 62800.43,
+          "ratio": 0.9613338262431622,
+          "gap_pp_yr": -1.2754950566261858,
+          "overseas_first_bought": "513100",
+          "overseas_members_bought": [
+            "513100"
+          ],
+          "lots_overseas_end": 0.15100797763842613,
+          "hold_overseas_end": 0.13272839055401373
+        }
+      ]
+    },
+    {
+      "order": [
+        "513500",
+        "513100",
+        "159920"
+      ],
+      "tag": "513500-513100-159920",
+      "gap_mean_pp": -0.35873295425969026,
+      "gap_min_pp": -0.910728549537354,
+      "gap_max_pp": 0.5150083726171761,
+      "n_hold_ahead": 1,
+      "pairs": [
+        {
+          "start": "2016-01-04",
+          "years": 10.833675564681725,
+          "lots_nav": 80588.78,
+          "hold200_nav": 85200.78,
+          "ratio": 1.057228810263662,
+          "gap_pp_yr": 0.5150083726171761,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513100",
+            "513500"
+          ],
+          "lots_overseas_end": 0.12237187360324848,
+          "hold_overseas_end": 0.2343124088770079
+        },
+        {
+          "start": "2017-04-05",
+          "years": 9.582477754962355,
+          "lots_nav": 77741.57,
+          "hold200_nav": 77511.36,
+          "ratio": 0.9970387786096936,
+          "gap_pp_yr": -0.030943516912518287,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513100",
+            "513500"
+          ],
+          "lots_overseas_end": 0.12060728899609308,
+          "hold_overseas_end": 0.2047906268190882
+        },
+        {
+          "start": "2018-07-02",
+          "years": 8.342231348391513,
+          "lots_nav": 83528.11,
+          "hold200_nav": 80496.27,
+          "ratio": 0.9637027582690426,
+          "gap_pp_yr": -0.4422145996751614,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513100",
+            "513500"
+          ],
+          "lots_overseas_end": 0.16500792367982467,
+          "hold_overseas_end": 0.1611130553005748
+        },
+        {
+          "start": "2020-01-02",
+          "years": 6.839151266255989,
+          "lots_nav": 74156.11,
+          "hold200_nav": 70991.33,
+          "ratio": 0.9573227344314582,
+          "gap_pp_yr": -0.635691947559347,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.05992493403443088,
+          "hold_overseas_end": 0.1501958056004867
+        },
+        {
+          "start": "2021-10-08",
+          "years": 5.073237508555784,
+          "lots_nav": 61448.95,
+          "hold200_nav": 58661.97,
+          "ratio": 0.9546456041966543,
+          "gap_pp_yr": -0.910728549537354,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.14463387901664718,
+          "hold_overseas_end": 0.13939865981316343
+        },
+        {
+          "start": "2023-10-09",
+          "years": 3.0718685831622174,
+          "lots_nav": 64066.85,
+          "hold200_nav": 62800.43,
+          "ratio": 0.9802328349216483,
+          "gap_pp_yr": -0.6478274844909371,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.13464373541074676,
+          "hold_overseas_end": 0.13272839055401373
+        }
+      ]
+    },
+    {
+      "order": [
+        "513500",
+        "159920",
+        "513100"
+      ],
+      "tag": "513500-159920-513100",
+      "gap_mean_pp": -0.3343353556057342,
+      "gap_min_pp": -0.910728549537354,
+      "gap_max_pp": 0.574996360539104,
+      "n_hold_ahead": 2,
+      "pairs": [
+        {
+          "start": "2016-01-04",
+          "years": 10.833675564681725,
+          "lots_nav": 80069.56,
+          "hold200_nav": 85200.78,
+          "ratio": 1.0640845285024672,
+          "gap_pp_yr": 0.574996360539104,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.11752780956957926,
+          "hold_overseas_end": 0.2343124088770079
+        },
+        {
+          "start": "2017-04-05",
+          "years": 9.582477754962355,
+          "lots_nav": 77241.45,
+          "hold200_nav": 77511.36,
+          "ratio": 1.0034943673377443,
+          "gap_pp_yr": 0.03640928057055959,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.11506257326862715,
+          "hold_overseas_end": 0.2047906268190882
+        },
+        {
+          "start": "2018-07-02",
+          "years": 8.342231348391513,
+          "lots_nav": 82679.85,
+          "hold200_nav": 80496.27,
+          "ratio": 0.9735899375724557,
+          "gap_pp_yr": -0.32032415676308545,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.10433255503003452,
+          "hold_overseas_end": 0.1611130553005748
+        },
+        {
+          "start": "2020-01-02",
+          "years": 6.839151266255989,
+          "lots_nav": 74683.18,
+          "hold200_nav": 70991.33,
+          "ratio": 0.9505665131024149,
+          "gap_pp_yr": -0.738537583952692,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.1610054633452941,
+          "hold_overseas_end": 0.1501958056004867
+        },
+        {
+          "start": "2021-10-08",
+          "years": 5.073237508555784,
+          "lots_nav": 61448.95,
+          "hold200_nav": 58661.97,
+          "ratio": 0.9546456041966543,
+          "gap_pp_yr": -0.910728549537354,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.14463387901664718,
+          "hold_overseas_end": 0.13939865981316343
+        },
+        {
+          "start": "2023-10-09",
+          "years": 3.0718685831622174,
+          "lots_nav": 64066.85,
+          "hold200_nav": 62800.43,
+          "ratio": 0.9802328349216483,
+          "gap_pp_yr": -0.6478274844909371,
+          "overseas_first_bought": "513500",
+          "overseas_members_bought": [
+            "513500"
+          ],
+          "lots_overseas_end": 0.13464373541074676,
+          "hold_overseas_end": 0.13272839055401373
+        }
+      ]
+    },
+    {
+      "order": [
+        "159920",
+        "513100",
+        "513500"
+      ],
+      "tag": "159920-513100-513500",
+      "gap_mean_pp": 0.9675873576351172,
+      "gap_min_pp": 0.34913800215972124,
+      "gap_max_pp": 1.7384946411984403,
+      "n_hold_ahead": 6,
+      "pairs": [
+        {
+          "start": "2016-01-04",
+          "years": 10.833675564681725,
+          "lots_nav": 70688.73,
+          "hold200_nav": 85200.78,
+          "ratio": 1.2052951014963773,
+          "gap_pp_yr": 1.7384946411984403,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.08701811448585935,
+          "hold_overseas_end": 0.2343124088770079
+        },
+        {
+          "start": "2017-04-05",
+          "years": 9.582477754962355,
+          "lots_nav": 67967.28,
+          "hold200_nav": 77511.36,
+          "ratio": 1.1404216852579654,
+          "gap_pp_yr": 1.3806774785512177,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.07404739456985773,
+          "hold_overseas_end": 0.2047906268190882
+        },
+        {
+          "start": "2018-07-02",
+          "years": 8.342231348391513,
+          "lots_nav": 73507.33,
+          "hold200_nav": 80496.27,
+          "ratio": 1.0950781371055105,
+          "gap_pp_yr": 1.0946945126955265,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.06276108790783178,
+          "hold_overseas_end": 0.1611130553005748
+        },
+        {
+          "start": "2020-01-02",
+          "years": 6.839151266255989,
+          "lots_nav": 67335.66,
+          "hold200_nav": 70991.33,
+          "ratio": 1.0542902527427518,
+          "gap_pp_yr": 0.7760123776076044,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.06436114237240713,
+          "hold_overseas_end": 0.1501958056004867
+        },
+        {
+          "start": "2021-10-08",
+          "years": 5.073237508555784,
+          "lots_nav": 57633.84,
+          "hold200_nav": 58661.97,
+          "ratio": 1.0178389987548981,
+          "gap_pp_yr": 0.34913800215972124,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.08974935558692602,
+          "hold_overseas_end": 0.13939865981316343
+        },
+        {
+          "start": "2023-10-09",
+          "years": 3.0718685831622174,
+          "lots_nav": 61908.95,
+          "hold200_nav": 62800.43,
+          "ratio": 1.0143998565635501,
+          "gap_pp_yr": 0.46650713359819296,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.10613328121378252,
+          "hold_overseas_end": 0.13272839055401373
+        }
+      ]
+    },
+    {
+      "order": [
+        "159920",
+        "513500",
+        "513100"
+      ],
+      "tag": "159920-513500-513100",
+      "gap_mean_pp": 0.9675873576351172,
+      "gap_min_pp": 0.34913800215972124,
+      "gap_max_pp": 1.7384946411984403,
+      "n_hold_ahead": 6,
+      "pairs": [
+        {
+          "start": "2016-01-04",
+          "years": 10.833675564681725,
+          "lots_nav": 70688.73,
+          "hold200_nav": 85200.78,
+          "ratio": 1.2052951014963773,
+          "gap_pp_yr": 1.7384946411984403,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.08701811448585935,
+          "hold_overseas_end": 0.2343124088770079
+        },
+        {
+          "start": "2017-04-05",
+          "years": 9.582477754962355,
+          "lots_nav": 67967.28,
+          "hold200_nav": 77511.36,
+          "ratio": 1.1404216852579654,
+          "gap_pp_yr": 1.3806774785512177,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.07404739456985773,
+          "hold_overseas_end": 0.2047906268190882
+        },
+        {
+          "start": "2018-07-02",
+          "years": 8.342231348391513,
+          "lots_nav": 73507.33,
+          "hold200_nav": 80496.27,
+          "ratio": 1.0950781371055105,
+          "gap_pp_yr": 1.0946945126955265,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.06276108790783178,
+          "hold_overseas_end": 0.1611130553005748
+        },
+        {
+          "start": "2020-01-02",
+          "years": 6.839151266255989,
+          "lots_nav": 67335.66,
+          "hold200_nav": 70991.33,
+          "ratio": 1.0542902527427518,
+          "gap_pp_yr": 0.7760123776076044,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.06436114237240713,
+          "hold_overseas_end": 0.1501958056004867
+        },
+        {
+          "start": "2021-10-08",
+          "years": 5.073237508555784,
+          "lots_nav": 57633.84,
+          "hold200_nav": 58661.97,
+          "ratio": 1.0178389987548981,
+          "gap_pp_yr": 0.34913800215972124,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.08974935558692602,
+          "hold_overseas_end": 0.13939865981316343
+        },
+        {
+          "start": "2023-10-09",
+          "years": 3.0718685831622174,
+          "lots_nav": 61908.95,
+          "hold200_nav": 62800.43,
+          "ratio": 1.0143998565635501,
+          "gap_pp_yr": 0.46650713359819296,
+          "overseas_first_bought": "159920",
+          "overseas_members_bought": [
+            "159920"
+          ],
+          "lots_overseas_end": 0.10613328121378252,
+          "hold_overseas_end": 0.13272839055401373
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "order_means_pp": [
+      -0.7758780964397287,
+      -0.7383609298197129,
+      -0.35873295425969026,
+      -0.3343353556057342,
+      0.9675873576351172,
+      0.9675873576351172
+    ],
+    "grand_mean_pp": -0.04535543680910529,
+    "spread_pp": 1.7434654540748458,
+    "any_ordering_puts_simple_ahead": true,
+    "grand_mean_inside_band": true,
+    "verdict": "order-dependent: the edge follows the member tuple"
+  }
+}

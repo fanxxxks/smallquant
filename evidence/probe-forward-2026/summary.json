@@ -1,0 +1,390 @@
+{
+ "cells": {
+  "primary": {
+   "arms": {
+    "static": {
+     "nav_end": 47087.53,
+     "cagr": -0.06337349716753726,
+     "vol_annual": 0.1484446176700001,
+     "max_drawdown": -0.13908211299270123,
+     "total_return": -0.05824940000000001,
+     "months": 11,
+     "cost_cny": 31.050000000000004,
+     "cost_cash_cny": 25.37,
+     "cost_bp_of_nav_per_year": 6.774545454545456,
+     "traded_notional": 37850.5,
+     "turnover_per_year": 0.8258290909090908,
+     "n_fills": 5,
+     "n_intents": 20,
+     "suppressed": 15,
+     "suppressed_share": 0.75,
+     "no_bar_intents": 0,
+     "dividend_cash": 472.80000000000007,
+     "split_residual_cash": 0.0,
+     "mean_tracking_error": 0.24945513586586301,
+     "mean_granularity_te": 0.0694233479494414,
+     "mean_gate_te": 0.1938607350156854,
+     "max_tracking_error": 0.2732518325308493,
+     "mean_target_equity": 0.45,
+     "min_target_equity": 0.45,
+     "max_target_equity": 0.45,
+     "equity_below_mandate": 0.0,
+     "daily_sessions": 201,
+     "suppressed_by_reason": {
+      "below_cost_gate": 11,
+      "zero_lot": 4
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 1681.95,
+      "n_intents_sized": 20,
+      "intents_below_clearing_share": 0.75
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "511220": 1,
+       "511380": 1,
+       "510300": 1,
+       "510500": 1,
+       "512100": 1
+      },
+      "gate_suppressed_by_code": {
+       "159934": 2,
+       "518880": 2,
+       "159920": 2,
+       "513100": 2,
+       "513500": 2,
+       "510300": 1
+      },
+      "codes_never_filled": [
+       "159920",
+       "159934",
+       "513100",
+       "513500",
+       "518880"
+      ],
+      "cash_weight_first": 0.23975871907729085,
+      "cash_weight_last": 0.26735592204560316,
+      "cash_weight_mean": 0.24841410314389864,
+      "realised_equity_last": 0.39548050195030404,
+      "equity_target_last": 0.45
+     },
+     "ledger_head": "88b37cb6711b0cabc169303d18724264e6f24bdc217115d8ea2006d1d64a0f33",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.45,
+       "aimed_last": 0.45,
+       "aimed_mean": 0.45,
+       "realised_first": 0.43525167183468955,
+       "realised_last": 0.39548050195030404,
+       "realised_mean": 0.42469780701051896,
+       "gap_mean": 0.025302192989481085,
+       "gap_last": 0.05451949804969597,
+       "members_first": 3,
+       "members_last_decision": 3,
+       "months_short": 6
+      },
+      "bond": {
+       "aimed_first": 0.35,
+       "aimed_last": 0.35,
+       "aimed_mean": 0.35000000000000003,
+       "realised_first": 0.32498960908801966,
+       "realised_last": 0.3371635760040928,
+       "realised_mean": 0.32688808984558243,
+       "gap_mean": 0.023111910154417516,
+       "gap_last": 0.012836423995907176,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 8
+      },
+      "commodity": {
+       "aimed_first": 0.1,
+       "aimed_last": 0.1,
+       "aimed_mean": 0.1,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.1,
+       "gap_last": 0.1,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 11
+      },
+      "overseas": {
+       "aimed_first": 0.1,
+       "aimed_last": 0.1,
+       "aimed_mean": 0.1,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.1,
+       "gap_last": 0.1,
+       "members_first": 3,
+       "members_last_decision": 3,
+       "months_short": 11
+      }
+     },
+     "entry": {
+      "entry_date": "2026-01-05",
+      "entry_cash": 0.24027643254893136,
+      "entry_codes": [
+       "510300",
+       "510500",
+       "511220",
+       "511380",
+       "512100"
+      ],
+      "entry_costs_cny": 31.05,
+      "entry_invested": 0.7597235674510686,
+      "entry_equity": 0.43300495980505777,
+      "entry_bond": 0.3267186076460109,
+      "entry_commodity": 0.0,
+      "entry_overseas": 0.0
+     },
+     "idle_cash_drag_cny_first_order": -1325.5282940414295,
+     "idle_cash_drag_bp_of_nav0_per_year": -306.21838623500446,
+     "months_priced": 10
+    },
+    "lots": {
+     "nav_end": 47399.33,
+     "cagr": -0.0566055705654942,
+     "vol_annual": 0.1724746430426838,
+     "max_drawdown": -0.13583179047538418,
+     "total_return": -0.05201339999999999,
+     "months": 11,
+     "cost_cny": 42.81,
+     "cost_cash_cny": 35.47,
+     "cost_bp_of_nav_per_year": 9.340363636363637,
+     "traded_notional": 46549.4,
+     "turnover_per_year": 1.0156232727272727,
+     "n_fills": 7,
+     "n_intents": 14,
+     "suppressed": 7,
+     "suppressed_share": 0.5,
+     "no_bar_intents": 0,
+     "dividend_cash": 456.4,
+     "split_residual_cash": 0.0,
+     "mean_tracking_error": 0.05442865440525902,
+     "mean_granularity_te": 0.055971204297734056,
+     "mean_gate_te": 0.07923471848401026,
+     "max_tracking_error": 0.10861245162579022,
+     "mean_target_equity": 0.43228946057738044,
+     "min_target_equity": 0.43228946057738044,
+     "max_target_equity": 0.43228946057738044,
+     "equity_below_mandate": 1.0,
+     "daily_sessions": 201,
+     "suppressed_by_reason": {
+      "zero_lot": 4,
+      "below_cost_gate": 3
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 2851.05,
+      "n_intents_sized": 14,
+      "intents_below_clearing_share": 0.5
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "511220": 1,
+       "511380": 1,
+       "510300": 1,
+       "510500": 1,
+       "512100": 1,
+       "513100": 1,
+       "518880": 1
+      },
+      "gate_suppressed_by_code": {
+       "518880": 1,
+       "510300": 1,
+       "513100": 1
+      },
+      "codes_never_filled": [],
+      "cash_weight_first": 0.0708633646516063,
+      "cash_weight_last": 0.0815228822854669,
+      "cash_weight_mean": 0.07476500178626268,
+      "realised_equity_last": 0.37847581389863527,
+      "equity_target_last": 0.43228946057738044
+     },
+     "ledger_head": "f035aa550a829333070ceee0ce4ae60fb76e2749481d2f28e7ab1f62f60a7dae",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.43228946057738044,
+       "aimed_last": 0.43228946057738044,
+       "aimed_mean": 0.43228946057738044,
+       "realised_first": 0.41438516059997454,
+       "realised_last": 0.37847581389863527,
+       "realised_mean": 0.4066701569110717,
+       "gap_mean": 0.025619303666308744,
+       "gap_last": 0.053813646678745164,
+       "members_first": 3,
+       "members_last_decision": 3,
+       "months_short": 6
+      },
+      "bond": {
+       "aimed_first": 0.3207913921020792,
+       "aimed_last": 0.3207913921020792,
+       "aimed_mean": 0.32079139210207913,
+       "realised_first": 0.32079139210207924,
+       "realised_last": 0.3349456627340513,
+       "realised_mean": 0.32470617145882874,
+       "gap_mean": -0.003914779356749513,
+       "gap_last": -0.01415427063197211,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 0
+      },
+      "commodity": {
+       "aimed_first": 0.08368008425016385,
+       "aimed_last": 0.08368008425016385,
+       "aimed_mean": 0.08368008425016384,
+       "realised_first": 0.1046001053127048,
+       "realised_last": 0.08680502445920649,
+       "realised_mean": 0.09080436927666925,
+       "gap_mean": -0.0071242850265054,
+       "gap_last": -0.003124940209042637,
+       "members_first": 1,
+       "members_last_decision": 1,
+       "months_short": 0
+      },
+      "overseas": {
+       "aimed_first": 0.0965087755203259,
+       "aimed_last": 0.0965087755203259,
+       "aimed_mean": 0.0965087755203259,
+       "realised_first": 0.08935997733363508,
+       "realised_last": 0.11825061662264003,
+       "realised_mean": 0.10305430056716768,
+       "gap_mean": -0.006545525046841771,
+       "gap_last": -0.021741841102314127,
+       "members_first": 1,
+       "members_last_decision": 1,
+       "months_short": 0
+      }
+     },
+     "entry": {
+      "entry_date": "2026-01-05",
+      "entry_cash": 0.06748380971957442,
+      "entry_codes": [
+       "510300",
+       "510500",
+       "511220",
+       "511380",
+       "512100",
+       "513100",
+       "518880"
+      ],
+      "entry_costs_cny": 42.81,
+      "entry_invested": 0.9325161902804255,
+      "entry_equity": 0.41663919027111823,
+      "entry_bond": 0.32631462423479474,
+      "entry_commodity": 0.0940138290926611,
+      "entry_overseas": 0.09554854668185146
+     },
+     "idle_cash_drag_cny_first_order": -393.12624809066483,
+     "idle_cash_drag_bp_of_nav0_per_year": -89.64530173815328,
+     "months_priced": 10
+    }
+   }
+  }
+ },
+ "cell": {
+  "nav0": 50000.0,
+  "tolerance_bp": 15.1,
+  "cost_mode": "measured",
+  "key": "nav50000_tol15.1_measured"
+ },
+ "deltas": {
+  "lots-static": {
+   "annual_cny": 535.6100366057562,
+   "annual_cny_lo": NaN,
+   "annual_cny_hi": NaN,
+   "cumulative_cny": 490.97586688860986,
+   "sd_monthly_cny": 549.2420135391304,
+   "mde_annual_cny": 5564.250652826257,
+   "bootstrap": {
+    "block": 6,
+    "draws": 0,
+    "n": 11
+   },
+   "by_year_cny": {
+    "2026": 490.97586688860986
+   }
+  }
+ },
+ "run": {
+  "start": "2026-01-02",
+  "end": "2026-11-04",
+  "elapsed_s": 1.5
+ }
+}

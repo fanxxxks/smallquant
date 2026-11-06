@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-11-04T13:04:34.943198+00:00",
+ "akshare_version": "1.18.91",
+ "parameters": {
+  "window_start": "20130101",
+  "window_end": "20261104",
+  "period": "daily",
+  "adjust": "qfq",
+  "source": "eastmoney:fund_etf_hist_em",
+  "codes": [
+   "510300",
+   "510500",
+   "159915",
+   "512100",
+   "511220",
+   "511380",
+   "518880",
+   "159934",
+   "513100",
+   "513500",
+   "159920"
+  ]
+ },
+ "row_count": 33028,
+ "code_count": 11,
+ "first_date": "2013-01-04",
+ "last_date": "2026-11-04",
+ "parquet_path": "D:\\newquant\\data\\etf_bars_qfq.parquet",
+ "parquet_sha256": "ac6bcfea4cb87926dedfce946e92e88be308a9bb43491b9ebde608458bcd1813",
+ "per_code": {
+  "510300": {
+   "rows": 3358,
+   "first_date": "2013-01-04",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "510500": {
+   "rows": 3311,
+   "first_date": "2013-03-15",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "159915": {
+   "rows": 3357,
+   "first_date": "2013-01-04",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "512100": {
+   "rows": 2427,
+   "first_date": "2016-11-04",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "511220": {
+   "rows": 2881,
+   "first_date": "2014-12-16",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "511380": {
+   "rows": 1595,
+   "first_date": "2020-04-07",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "518880": {
+   "rows": 3225,
+   "first_date": "2013-07-29",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "159934": {
+   "rows": 3132,
+   "first_date": "2013-12-16",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "513100": {
+   "rows": 3274,
+   "first_date": "2013-05-15",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "513500": {
+   "rows": 3110,
+   "first_date": "2014-01-15",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  },
+  "159920": {
+   "rows": 3358,
+   "first_date": "2013-01-04",
+   "last_date": "2026-11-04",
+   "status": "ok",
+   "error_message": null
+  }
+ }
+}

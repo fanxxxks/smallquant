@@ -1,0 +1,15 @@
+{
+  "probe": "retirement-dominance",
+  "mode": "check",
+  "reproduction": {
+    "lots@15.1": {
+      "max_abs_diff_cny": 0.0,
+      "n_match_cent": 32
+    },
+    "hold_lot@15.1": {
+      "max_abs_diff_cny": 0.0,
+      "n_match_cent": 32
+    },
+    "ok": true
+  }
+}

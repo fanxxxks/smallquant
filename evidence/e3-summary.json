@@ -1,0 +1,1372 @@
+{
+ "runId": "run-e3c00001-50k0-4c01-9a00-000000000001",
+ "window": {
+  "start": "2016-01-04",
+  "end": "2025-12-31"
+ },
+ "primary_arm": "static",
+ "arm_names": [
+  "static",
+  "lots",
+  "lots_deploy",
+  "cash"
+ ],
+ "cells": {
+  "primary": {
+   "cell": {
+    "nav0": 50000.0,
+    "tolerance_bp": 15.1,
+    "cost_mode": "measured",
+    "key": "nav50000_tol15.1_measured"
+   },
+   "arms": {
+    "static": {
+     "nav_end": 62163.64,
+     "cagr": 0.02201352520276756,
+     "vol_annual": 0.0939527563728242,
+     "max_drawdown": -0.19169252191036734,
+     "total_return": 0.24327279999999996,
+     "months": 120,
+     "cost_cny": 37.519999999999996,
+     "cost_cash_cny": 30.53,
+     "cost_bp_of_nav_per_year": 0.7503999999999998,
+     "traded_notional": 52925.0,
+     "turnover_per_year": 0.10585,
+     "n_fills": 6,
+     "n_intents": 102,
+     "suppressed": 96,
+     "suppressed_share": 0.9411764705882353,
+     "no_bar_intents": 0,
+     "dividend_cash": 5245.8,
+     "split_residual_cash": 140.87,
+     "mean_tracking_error": 0.33172281464518955,
+     "mean_granularity_te": 0.12352473458246942,
+     "mean_gate_te": 0.26787414416781535,
+     "max_tracking_error": 0.48281120173290376,
+     "mean_target_equity": 0.4500000000000001,
+     "min_target_equity": 0.45,
+     "max_target_equity": 0.45,
+     "equity_below_mandate": 0.0,
+     "daily_sessions": 2430,
+     "suppressed_by_reason": {
+      "below_cost_gate": 80,
+      "zero_lot": 16
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 1573.4,
+      "n_intents_sized": 102,
+      "intents_below_clearing_share": 0.9411764705882353
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "510300": 2,
+       "511220": 1,
+       "510500": 1,
+       "512100": 1,
+       "511380": 1
+      },
+      "gate_suppressed_by_code": {
+       "159934": 11,
+       "518880": 11,
+       "159920": 11,
+       "513100": 11,
+       "513500": 11,
+       "510500": 8,
+       "512100": 8,
+       "510300": 7,
+       "511220": 1,
+       "511380": 1
+      },
+      "codes_never_filled": [
+       "159920",
+       "159934",
+       "513100",
+       "513500",
+       "518880"
+      ],
+      "cash_weight_first": 0.40899665947426145,
+      "cash_weight_last": 0.19075684757198902,
+      "cash_weight_mean": 0.2764692635445192,
+      "realised_equity_last": 0.44720354213492003,
+      "equity_target_last": 0.45
+     },
+     "ledger_head": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.45,
+       "aimed_last": 0.45,
+       "aimed_mean": 0.4500000000000001,
+       "realised_first": 0.36732342167327364,
+       "realised_last": 0.44720354213492003,
+       "realised_mean": 0.43971325204094297,
+       "gap_mean": 0.010286747959057098,
+       "gap_last": 0.002796457865079982,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 65
+      },
+      "bond": {
+       "aimed_first": 0.35,
+       "aimed_last": 0.35,
+       "aimed_mean": 0.3499999999999999,
+       "realised_first": 0.22367991885246488,
+       "realised_last": 0.36203961029309095,
+       "realised_mean": 0.2838174844145379,
+       "gap_mean": 0.06618251558546209,
+       "gap_last": -0.012039610293090974,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 61
+      },
+      "commodity": {
+       "aimed_first": 0.1,
+       "aimed_last": 0.1,
+       "aimed_mean": 0.10000000000000002,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.10000000000000002,
+       "gap_last": 0.1,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 120
+      },
+      "overseas": {
+       "aimed_first": 0.1,
+       "aimed_last": 0.1,
+       "aimed_mean": 0.10000000000000002,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.10000000000000002,
+       "gap_last": 0.1,
+       "members_first": 3,
+       "members_last_decision": 3,
+       "months_short": 120
+      }
+     },
+     "entry": {
+      "entry_date": "2016-01-04",
+      "entry_cash": 0.37394139430874584,
+      "entry_codes": [
+       "510300",
+       "510500",
+       "511220"
+      ],
+      "entry_costs_cny": 17.65,
+      "entry_invested": 0.6260586056912542,
+      "entry_equity": 0.4195769397145804,
+      "entry_bond": 0.20648166597667378,
+      "entry_commodity": 0.0,
+      "entry_overseas": 0.0
+     },
+     "idle_cash_drag_cny_first_order": 11252.440768925877,
+     "idle_cash_drag_bp_of_nav0_per_year": 254.1908699774544,
+     "months_priced": 119
+    },
+    "lots": {
+     "nav_end": 85111.3,
+     "cagr": 0.05463388749503428,
+     "vol_annual": 0.08626690829521659,
+     "max_drawdown": -0.12266101889108338,
+     "total_return": 0.702226,
+     "months": 120,
+     "cost_cny": 83.59,
+     "cost_cash_cny": 70.97,
+     "cost_bp_of_nav_per_year": 1.6718000000000002,
+     "traded_notional": 97693.79999999999,
+     "turnover_per_year": 0.19538759999999997,
+     "n_fills": 14,
+     "n_intents": 65,
+     "suppressed": 51,
+     "suppressed_share": 0.7846153846153846,
+     "no_bar_intents": 0,
+     "dividend_cash": 6397.800000000001,
+     "split_residual_cash": 239.07,
+     "mean_tracking_error": 0.1630157252296124,
+     "mean_granularity_te": 0.062378079530062386,
+     "mean_gate_te": 0.17812727776337925,
+     "max_tracking_error": 0.36281164507303976,
+     "mean_target_equity": 0.43925928190397634,
+     "min_target_equity": 0.4365650991127452,
+     "max_target_equity": 0.44202276277414076,
+     "equity_below_mandate": 1.0,
+     "daily_sessions": 2430,
+     "suppressed_by_reason": {
+      "below_cost_gate": 43,
+      "zero_lot": 6,
+      "insufficient_settled_cash": 2
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 1888.5,
+      "n_intents_sized": 65,
+      "intents_below_clearing_share": 0.7538461538461538
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "511220": 3,
+       "518880": 3,
+       "513100": 3,
+       "510300": 2,
+       "510500": 1,
+       "512100": 1,
+       "511380": 1
+      },
+      "gate_suppressed_by_code": {
+       "510300": 9,
+       "518880": 8,
+       "510500": 8,
+       "512100": 8,
+       "513100": 7,
+       "511380": 2,
+       "159934": 1
+      },
+      "codes_never_filled": [
+       "159934"
+      ],
+      "cash_weight_first": 0.2152667645827124,
+      "cash_weight_last": 0.24786015487955185,
+      "cash_weight_mean": 0.13209664110602376,
+      "realised_equity_last": 0.32329784646692034,
+      "equity_target_last": 0.4418359506631485
+     },
+     "ledger_head": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.43722592469288696,
+       "aimed_last": 0.4418359506631485,
+       "aimed_mean": 0.43925928190397634,
+       "realised_first": 0.34745141406257163,
+       "realised_last": 0.32329784646692034,
+       "realised_mean": 0.37154647560146403,
+       "gap_mean": 0.06771280630251236,
+       "gap_last": 0.11853810419622818,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 106
+      },
+      "bond": {
+       "aimed_first": 0.22325126734501366,
+       "aimed_last": 0.3283273994574419,
+       "aimed_mean": 0.27354061190107415,
+       "realised_first": 0.22325126734501366,
+       "realised_last": 0.2603684822109402,
+       "realised_mean": 0.25185587215701155,
+       "gap_mean": 0.0216847397440626,
+       "gap_last": 0.06795891724650166,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 60
+      },
+      "commodity": {
+       "aimed_first": 0.09510034456938218,
+       "aimed_last": 0.08381630822778423,
+       "aimed_mean": 0.0949943436446251,
+       "realised_first": 0.11623375447368933,
+       "realised_last": 0.06556826179367488,
+       "realised_mean": 0.11928584293180283,
+       "gap_mean": -0.02429149928717773,
+       "gap_last": 0.01824804643410935,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 9
+      },
+      "overseas": {
+       "aimed_first": 0.09779679953601299,
+       "aimed_last": 0.09870928861536572,
+       "aimed_mean": 0.09818757164981864,
+       "realised_first": 0.09779679953601299,
+       "realised_last": 0.10290525464891265,
+       "realised_mean": 0.12521516820369794,
+       "gap_mean": -0.027027596553879284,
+       "gap_last": -0.0041959660335469245,
+       "members_first": 1,
+       "members_last_decision": 1,
+       "months_short": 0
+      }
+     },
+     "entry": {
+      "entry_date": "2016-01-04",
+      "entry_cash": 0.1956923438820285,
+      "entry_codes": [
+       "510300",
+       "510500",
+       "511220",
+       "513100",
+       "518880"
+      ],
+      "entry_costs_cny": 29.55,
+      "entry_invested": 0.8043076561179715,
+      "entry_equity": 0.3971644083936978,
+      "entry_bond": 0.20634489930884775,
+      "entry_commodity": 0.10218612103572759,
+      "entry_overseas": 0.09861222737969834
+     },
+     "idle_cash_drag_cny_first_order": 6297.173494123213,
+     "idle_cash_drag_bp_of_nav0_per_year": 141.97955386065,
+     "months_priced": 119
+    },
+    "lots_deploy": {
+     "nav_end": 91610.12,
+     "cagr": 0.06242270830946639,
+     "vol_annual": 0.08985264024663596,
+     "max_drawdown": -0.13687179999999988,
+     "total_return": 0.8322023999999999,
+     "months": 120,
+     "cost_cny": 92.95999999999998,
+     "cost_cash_cny": 76.18,
+     "cost_bp_of_nav_per_year": 1.8591999999999995,
+     "traded_notional": 117919.9,
+     "turnover_per_year": 0.2358398,
+     "n_fills": 15,
+     "n_intents": 67,
+     "suppressed": 52,
+     "suppressed_share": 0.7761194029850746,
+     "no_bar_intents": 0,
+     "dividend_cash": 7515.999999999999,
+     "split_residual_cash": 0.0,
+     "mean_tracking_error": 0.2248787678433957,
+     "mean_granularity_te": 0.05499246806785284,
+     "mean_gate_te": 0.23947507829487513,
+     "max_tracking_error": 0.5532395184812038,
+     "mean_target_equity": 0.4917341932754119,
+     "min_target_equity": 0.45,
+     "max_target_equity": 0.5628207122280542,
+     "equity_below_mandate": 0.0,
+     "daily_sessions": 2430,
+     "suppressed_by_reason": {
+      "below_cost_gate": 36,
+      "insufficient_settled_cash": 8,
+      "zero_lot": 8
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 2456.3,
+      "n_intents_sized": 67,
+      "intents_below_clearing_share": 0.6567164179104478
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "511220": 3,
+       "513100": 3,
+       "518880": 3,
+       "510300": 2,
+       "510500": 1,
+       "511380": 1,
+       "512100": 1,
+       "159934": 1
+      },
+      "gate_suppressed_by_code": {
+       "518880": 8,
+       "510500": 8,
+       "510300": 8,
+       "513100": 7,
+       "512100": 2,
+       "511380": 2,
+       "511220": 1
+      },
+      "codes_never_filled": [],
+      "cash_weight_first": 0.025715994449028542,
+      "cash_weight_last": 0.10716195983587841,
+      "cash_weight_mean": 0.07600283976616672,
+      "realised_equity_last": 0.36893194769311516,
+      "equity_target_last": 0.46072544025355333
+     },
+     "ledger_head": "2a7eff33336d8cdec410eb5f5676248ee8c8ccab3ae60c841778de38e8bb0452",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.5321300429691049,
+       "aimed_last": 0.46072544025355333,
+       "aimed_mean": 0.4917341932754119,
+       "realised_first": 0.4667000800112891,
+       "realised_last": 0.36893194769311516,
+       "realised_mean": 0.35865584606699674,
+       "gap_mean": 0.13307834720841513,
+       "gap_last": 0.09179349256043817,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 119
+      },
+      "bond": {
+       "aimed_first": 0.23136771571129294,
+       "aimed_last": 0.3345076974115341,
+       "aimed_mean": 0.2897172763799606,
+       "realised_first": 0.23136771571129292,
+       "realised_last": 0.27910016928260767,
+       "realised_mean": 0.28955874866482234,
+       "gap_mean": 0.00015852771513826108,
+       "gap_last": 0.05540752812892641,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 48
+      },
+      "commodity": {
+       "aimed_first": 0.11825112065980109,
+       "aimed_last": 0.1023834311674563,
+       "aimed_mean": 0.10927426517231377,
+       "realised_first": 0.14783667130792388,
+       "realised_last": 0.13465215415065498,
+       "realised_mean": 0.1401099791842525,
+       "gap_mean": -0.030835714011938763,
+       "gap_last": -0.03226872298319869,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 0
+      },
+      "overseas": {
+       "aimed_first": 0.11825112065980109,
+       "aimed_last": 0.1023834311674563,
+       "aimed_mean": 0.10927426517231377,
+       "realised_first": 0.12837953852046544,
+       "realised_last": 0.11015376903774388,
+       "realised_mean": 0.13567258631776163,
+       "gap_mean": -0.02639832114544791,
+       "gap_last": -0.00777033787028758,
+       "members_first": 1,
+       "members_last_decision": 1,
+       "months_short": 0
+      }
+     },
+     "entry": {
+      "entry_date": "2016-01-04",
+      "entry_cash": 0.019258024280932942,
+      "entry_codes": [
+       "510300",
+       "510500",
+       "511220",
+       "513100",
+       "518880"
+      ],
+      "entry_costs_cny": 30.76,
+      "entry_invested": 0.9807419757190671,
+      "entry_equity": 0.5197546077698653,
+      "entry_bond": 0.20829844334407321,
+      "entry_commodity": 0.12659754491122738,
+      "entry_overseas": 0.12609137969390127
+     },
+     "idle_cash_drag_cny_first_order": 3009.6576557827184,
+     "idle_cash_drag_bp_of_nav0_per_year": 70.32440595933755,
+     "months_priced": 119
+    },
+    "cash": {
+     "nav_end": 50000.0,
+     "cagr": 0.0,
+     "vol_annual": 0.0,
+     "max_drawdown": 0.0,
+     "total_return": 0.0,
+     "months": 120,
+     "cost_cny": 0.0,
+     "cost_cash_cny": 0.0,
+     "cost_bp_of_nav_per_year": 0.0,
+     "traded_notional": 0.0,
+     "turnover_per_year": 0.0,
+     "n_fills": 0,
+     "n_intents": 0,
+     "suppressed": 0,
+     "suppressed_share": 0.0,
+     "no_bar_intents": 0,
+     "dividend_cash": 0.0,
+     "split_residual_cash": 0.0,
+     "mean_tracking_error": 0.0,
+     "mean_granularity_te": 0.0,
+     "mean_gate_te": 0.0,
+     "max_tracking_error": 0.0,
+     "mean_target_equity": 0.0,
+     "min_target_equity": 0.0,
+     "max_target_equity": 0.0,
+     "equity_below_mandate": 1.0,
+     "daily_sessions": 2430,
+     "suppressed_by_reason": {},
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": NaN,
+      "n_intents_sized": 0,
+      "intents_below_clearing_share": NaN
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {},
+      "gate_suppressed_by_code": {},
+      "codes_never_filled": [],
+      "cash_weight_first": 1.0,
+      "cash_weight_last": 1.0,
+      "cash_weight_mean": 1.0,
+      "realised_equity_last": 0.0,
+      "equity_target_last": 0.0
+     },
+     "ledger_head": "36182accb8355623bb2d2002029f147edce6748ad8c95a51f92f12e44fb4f646",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.0,
+       "aimed_last": 0.0,
+       "aimed_mean": 0.0,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.0,
+       "gap_last": 0.0,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 0
+      },
+      "bond": {
+       "aimed_first": 0.0,
+       "aimed_last": 0.0,
+       "aimed_mean": 0.0,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.0,
+       "gap_last": 0.0,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 0
+      },
+      "commodity": {
+       "aimed_first": 0.0,
+       "aimed_last": 0.0,
+       "aimed_mean": 0.0,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.0,
+       "gap_last": 0.0,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 0
+      },
+      "overseas": {
+       "aimed_first": 0.0,
+       "aimed_last": 0.0,
+       "aimed_mean": 0.0,
+       "realised_first": 0.0,
+       "realised_last": 0.0,
+       "realised_mean": 0.0,
+       "gap_mean": 0.0,
+       "gap_last": 0.0,
+       "members_first": 3,
+       "members_last_decision": 3,
+       "months_short": 0
+      }
+     },
+     "entry": {
+      "entry_date": null,
+      "entry_cash": 1.0
+     },
+     "idle_cash_drag_cny_first_order": 48947.59551661535,
+     "idle_cash_drag_bp_of_nav0_per_year": 987.178396973755,
+     "months_priced": 119
+    }
+   },
+   "monthly": {
+    "static": "           date       nav  ...  members_commodity  members_overseas\n0    2016-01-29  44639.68  ...                  2                 3\n1    2016-02-29  44234.98  ...                  0                 0\n2    2016-03-31  46626.78  ...                  0                 0\n3    2016-04-29  46022.38  ...                  0                 0\n4    2016-05-31  46172.88  ...                  0                 0\n..          ...       ...  ...                ...               ...\n115  2025-08-29  60608.34  ...                  0                 0\n116  2025-09-30  61751.64  ...                  0                 0\n117  2025-10-31  61667.74  ...                  0                 0\n118  2025-11-28  60735.84  ...                  0                 0\n119  2025-12-31  62163.64  ...                  0                 0\n\n[120 rows x 23 columns]",
+    "lots": "           date       nav  ...  members_commodity  members_overseas\n0    2016-01-29  44725.39  ...                  1                 1\n1    2016-02-29  44851.39  ...                  0                 0\n2    2016-03-31  47248.09  ...                  0                 0\n3    2016-04-29  46823.59  ...                  0                 0\n4    2016-05-31  47000.79  ...                  0                 0\n..          ...       ...  ...                ...               ...\n115  2025-08-29  81556.90  ...                  0                 0\n116  2025-09-30  83718.50  ...                  0                 0\n117  2025-10-31  84702.80  ...                  0                 0\n118  2025-11-28  83781.30  ...                  0                 0\n119  2025-12-31  85111.30  ...                  0                 0\n\n[120 rows x 23 columns]",
+    "lots_deploy": "           date       nav  ...  members_commodity  members_overseas\n0    2016-01-29  43156.41  ...                  1                 1\n1    2016-02-29  43280.41  ...                  0                 0\n2    2016-03-31  46354.41  ...                  0                 0\n3    2016-04-29  45845.11  ...                  0                 0\n4    2016-05-31  46049.91  ...                  0                 0\n..          ...       ...  ...                ...               ...\n115  2025-08-29  86032.22  ...                  0                 0\n116  2025-09-30  89392.02  ...                  0                 0\n117  2025-10-31  90768.92  ...                  0                 0\n118  2025-11-28  89817.02  ...                  0                 0\n119  2025-12-31  91610.12  ...                  0                 0\n\n[120 rows x 23 columns]",
+    "cash": "           date      nav  ...  members_commodity  members_overseas\n0    2016-01-29  50000.0  ...                  2                 3\n1    2016-02-29  50000.0  ...                  2                 3\n2    2016-03-31  50000.0  ...                  2                 3\n3    2016-04-29  50000.0  ...                  2                 3\n4    2016-05-31  50000.0  ...                  2                 3\n..          ...      ...  ...                ...               ...\n115  2025-08-29  50000.0  ...                  2                 3\n116  2025-09-30  50000.0  ...                  2                 3\n117  2025-10-31  50000.0  ...                  2                 3\n118  2025-11-28  50000.0  ...                  2                 3\n119  2025-12-31  50000.0  ...                  2                 3\n\n[120 rows x 23 columns]"
+   },
+   "deltas": {
+    "lots-static": {
+     "annual_cny": 1542.7944763945607,
+     "annual_cny_lo": 857.8200460705107,
+     "annual_cny_hi": 2212.5988842622423,
+     "cumulative_cny": 15427.944763945605,
+     "sd_monthly_cny": 454.23966900598043,
+     "mde_annual_cny": 1393.264954078232,
+     "bootstrap": {
+      "block": 6,
+      "draws": 2000,
+      "n": 120
+     },
+     "by_year_cny": {
+      "2016": 1673.3798341389659,
+      "2017": 1197.0348041961065,
+      "2018": 770.5684275678634,
+      "2019": 3404.3041897733215,
+      "2020": 1939.2265641338113,
+      "2021": -577.1420506535175,
+      "2022": 693.9407137288575,
+      "2023": 3465.817978481572,
+      "2024": 2729.607440336379,
+      "2025": 131.20686224224477
+     }
+    },
+    "lots_deploy-static": {
+     "annual_cny": 1929.957747324632,
+     "annual_cny_lo": 1150.0647196264465,
+     "annual_cny_hi": 2783.644519762718,
+     "cumulative_cny": 19299.57747324632,
+     "sd_monthly_cny": 543.4942932948751,
+     "mde_annual_cny": 1667.0308721524182,
+     "bootstrap": {
+      "block": 6,
+      "draws": 2000,
+      "n": 120
+     },
+     "by_year_cny": {
+      "2016": 1519.6891834941773,
+      "2017": 2867.060194832705,
+      "2018": 3146.3522446976035,
+      "2019": 3283.582464592777,
+      "2020": 1007.5043036425035,
+      "2021": -1633.8232563069155,
+      "2022": 1405.0771848602985,
+      "2023": 2622.3020815858754,
+      "2024": 2617.3044374246947,
+      "2025": 2464.5286344226024
+     }
+    },
+    "lots_deploy-lots": {
+     "annual_cny": 387.1632709300716,
+     "annual_cny_lo": -71.57840129353038,
+     "annual_cny_hi": 973.7254953526115,
+     "cumulative_cny": 3871.6327093007153,
+     "sd_monthly_cny": 304.2568088574999,
+     "mde_annual_cny": 933.2305779204256,
+     "bootstrap": {
+      "block": 6,
+      "draws": 2000,
+      "n": 120
+     },
+     "by_year_cny": {
+      "2016": -153.690650644789,
+      "2017": 1670.025390636598,
+      "2018": 2375.78381712974,
+      "2019": -120.72172518054481,
+      "2020": -931.7222604913079,
+      "2021": -1056.6812056533981,
+      "2022": 711.1364711314402,
+      "2023": -843.5158968956969,
+      "2024": -112.30300291168436,
+      "2025": 2333.321772180358
+     }
+    },
+    "lots-cash": {
+     "annual_cny": 2851.2157789657463,
+     "annual_cny_lo": 1264.0507849799847,
+     "annual_cny_hi": 5026.623037816293,
+     "cumulative_cny": 28512.157789657464,
+     "sd_monthly_cny": 1245.1555681600016,
+     "mde_annual_cny": 3819.198836792607,
+     "bootstrap": {
+      "block": 6,
+      "draws": 2000,
+      "n": 120
+     },
+     "by_year_cny": {
+      "2016": -406.53591939456237,
+      "2017": 2960.864920731987,
+      "2018": -5666.784185425123,
+      "2019": 9852.728556191265,
+      "2020": 7941.127599172919,
+      "2021": 3858.253212554519,
+      "2022": -5629.930201477922,
+      "2023": 2536.7989619649366,
+      "2024": 5789.844261505883,
+      "2025": 7275.790583833557
+     }
+    },
+    "lots_deploy-cash": {
+     "annual_cny": 3238.379049895818,
+     "annual_cny_lo": 1768.424250903266,
+     "annual_cny_hi": 5494.049366881735,
+     "cumulative_cny": 32383.79049895818,
+     "sd_monthly_cny": 1296.9111508448468,
+     "mde_annual_cny": 3977.9459574271623,
+     "bootstrap": {
+      "block": 6,
+      "draws": 2000,
+      "n": 120
+     },
+     "by_year_cny": {
+      "2016": -560.2265700393514,
+      "2017": 4630.890311368586,
+      "2018": -3291.0003682953825,
+      "2019": 9732.00683101072,
+      "2020": 7009.405338681613,
+      "2021": 2801.5720069011213,
+      "2022": -4918.793730346481,
+      "2023": 1693.2830650692397,
+      "2024": 5677.5412585942,
+      "2025": 9609.112356013915
+     }
+    }
+   },
+   "seconds": 22.8
+  },
+  "capital_floor": {
+   "cell": {
+    "nav0": 120000.0,
+    "tolerance_bp": 15.1,
+    "cost_mode": "measured",
+    "key": "nav120000_tol15.1_measured"
+   },
+   "arms": {
+    "static": {
+     "nav_end": 204382.67,
+     "cagr": 0.05469353093437879,
+     "vol_annual": 0.0982566975927393,
+     "max_drawdown": -0.13219729880262265,
+     "total_return": 0.7031889166666667,
+     "months": 120,
+     "cost_cny": 176.37,
+     "cost_cash_cny": 141.85,
+     "cost_bp_of_nav_per_year": 1.4697500000000001,
+     "traded_notional": 245340.3,
+     "turnover_per_year": 0.20445025,
+     "n_fills": 26,
+     "n_intents": 102,
+     "suppressed": 76,
+     "suppressed_share": 0.7450980392156863,
+     "no_bar_intents": 0,
+     "dividend_cash": 17198.8,
+     "split_residual_cash": 114.12,
+     "mean_tracking_error": 0.18278218733692123,
+     "mean_granularity_te": 0.03635986320790337,
+     "mean_gate_te": 0.15912518527875194,
+     "max_tracking_error": 0.32532162006294546,
+     "mean_target_equity": 0.4500000000000001,
+     "min_target_equity": 0.45,
+     "max_target_equity": 0.45,
+     "equity_below_mandate": 0.0,
+     "daily_sessions": 2430,
+     "suppressed_by_reason": {
+      "below_cost_gate": 63,
+      "zero_lot": 9,
+      "insufficient_settled_cash": 4
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 2970.5,
+      "n_intents_sized": 102,
+      "intents_below_clearing_share": 0.7058823529411765
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "510500": 6,
+       "510300": 5,
+       "511220": 3,
+       "512100": 3,
+       "159934": 2,
+       "518880": 2,
+       "513100": 2,
+       "513500": 1,
+       "159920": 1,
+       "511380": 1
+      },
+      "gate_suppressed_by_code": {
+       "159920": 10,
+       "513500": 9,
+       "518880": 9,
+       "159934": 9,
+       "513100": 8,
+       "512100": 6,
+       "510300": 5,
+       "510500": 4,
+       "511220": 2,
+       "511380": 1
+      },
+      "codes_never_filled": [],
+      "cash_weight_first": 0.14325240709975937,
+      "cash_weight_last": 0.029347742643737847,
+      "cash_weight_mean": 0.09352461704910277,
+      "realised_equity_last": 0.4432430596977718,
+      "equity_target_last": 0.45
+     },
+     "ledger_head": "a0b7b690e61ca4f9dcc771ccf25afd994d98c234110e08389834fab02dc76d87",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.45,
+       "aimed_last": 0.45,
+       "aimed_mean": 0.4500000000000001,
+       "realised_first": 0.3716381363559143,
+       "realised_last": 0.4432430596977718,
+       "realised_mean": 0.43825091825362145,
+       "gap_mean": 0.01174908174637856,
+       "gap_last": 0.0067569403022282315,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 52
+      },
+      "bond": {
+       "aimed_first": 0.35,
+       "aimed_last": 0.35,
+       "aimed_mean": 0.3499999999999999,
+       "realised_first": 0.3711808979938388,
+       "realised_last": 0.278631255771343,
+       "realised_mean": 0.27982033374962245,
+       "gap_mean": 0.07017966625037757,
+       "gap_last": 0.07136874422865697,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 94
+      },
+      "commodity": {
+       "aimed_first": 0.1,
+       "aimed_last": 0.1,
+       "aimed_mean": 0.10000000000000002,
+       "realised_first": 0.11392855855048747,
+       "realised_last": 0.14426027412206718,
+       "realised_mean": 0.1292367165035983,
+       "gap_mean": -0.02923671650359829,
+       "gap_last": -0.04426027412206718,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 0
+      },
+      "overseas": {
+       "aimed_first": 0.1,
+       "aimed_last": 0.1,
+       "aimed_mean": 0.10000000000000002,
+       "realised_first": 0.0,
+       "realised_last": 0.10451766776508006,
+       "realised_mean": 0.05916741444405507,
+       "gap_mean": 0.04083258555594493,
+       "gap_last": -0.004517667765080058,
+       "members_first": 3,
+       "members_last_decision": 3,
+       "months_short": 61
+      }
+     },
+     "entry": {
+      "entry_date": "2016-01-04",
+      "entry_cash": 0.12948086808383544,
+      "entry_codes": [
+       "159934",
+       "510300",
+       "510500",
+       "511220",
+       "518880"
+      ],
+      "entry_costs_cny": 41.72,
+      "entry_invested": 0.8705191319161646,
+      "entry_equity": 0.42625258196480165,
+      "entry_bond": 0.3440899285910171,
+      "entry_commodity": 0.10017662136034577,
+      "entry_overseas": 0.0
+     },
+     "idle_cash_drag_cny_first_order": 4249.6502294334505,
+     "idle_cash_drag_bp_of_nav0_per_year": 39.82584772084592,
+     "months_priced": 119
+    },
+    "lots": {
+     "nav_end": 219060.99,
+     "cagr": 0.06203390098458117,
+     "vol_annual": 0.10169628639118433,
+     "max_drawdown": -0.15206895692484412,
+     "total_return": 0.8255082499999999,
+     "months": 120,
+     "cost_cny": 198.74,
+     "cost_cash_cny": 156.71,
+     "cost_bp_of_nav_per_year": 1.6561666666666666,
+     "traded_notional": 279868.5999999999,
+     "turnover_per_year": 0.23322383333333327,
+     "n_fills": 29,
+     "n_intents": 96,
+     "suppressed": 67,
+     "suppressed_share": 0.6979166666666666,
+     "no_bar_intents": 0,
+     "dividend_cash": 15685.300000000001,
+     "split_residual_cash": 134.1,
+     "mean_tracking_error": 0.13039601925711727,
+     "mean_granularity_te": 0.033154056828248214,
+     "mean_gate_te": 0.12433596990511916,
+     "max_tracking_error": 0.2871398315250041,
+     "mean_target_equity": 0.445468566400695,
+     "min_target_equity": 0.4439769611710764,
+     "max_target_equity": 0.4469350191216735,
+     "equity_below_mandate": 1.0,
+     "daily_sessions": 2430,
+     "suppressed_by_reason": {
+      "below_cost_gate": 49,
+      "zero_lot": 12,
+      "insufficient_settled_cash": 6
+     },
+     "slippage_bp": {
+      "510300": 1.2768,
+      "510500": 0.8035,
+      "512100": 5.1256,
+      "511220": 0.0524,
+      "511380": 0.4455,
+      "518880": 1.3624,
+      "159934": 1.374,
+      "513100": 2.5826,
+      "513500": 2.8137,
+      "159920": 3.7286
+     },
+     "intent_profile": {
+      "clearing_min_cny": 3345.02,
+      "clearing_median_cny": 3669.17,
+      "clearing_max_cny": 5066.23,
+      "clearing_by_code": {
+       "159920:buy": 4436.0,
+       "159920:sell": 4436.0,
+       "159934:buy": 3669.46,
+       "159934:sell": 3669.46,
+       "510300:buy": 3649.01,
+       "510300:sell": 3649.01,
+       "510500:buy": 3523.18,
+       "510500:sell": 3523.18,
+       "511220:buy": 3345.02,
+       "511220:sell": 3345.02,
+       "511380:buy": 3435.36,
+       "511380:sell": 3435.36,
+       "512100:buy": 5066.23,
+       "512100:sell": 5066.23,
+       "513100:buy": 4026.63,
+       "513100:sell": 4026.63,
+       "513500:buy": 4102.98,
+       "513500:sell": 4102.98,
+       "518880:buy": 3668.88,
+       "518880:sell": 3668.88
+      },
+      "median_intent_cny": 2490.1499999999996,
+      "n_intents_sized": 96,
+      "intents_below_clearing_share": 0.6354166666666666
+     },
+     "sleeve_diagnostic": {
+      "fills_by_code": {
+       "511220": 5,
+       "510300": 5,
+       "510500": 5,
+       "512100": 4,
+       "513100": 2,
+       "513500": 2,
+       "159934": 2,
+       "518880": 2,
+       "511380": 1,
+       "159920": 1
+      },
+      "gate_suppressed_by_code": {
+       "518880": 9,
+       "159934": 9,
+       "513500": 7,
+       "513100": 6,
+       "512100": 5,
+       "159920": 4,
+       "510300": 3,
+       "510500": 3,
+       "511380": 3
+      },
+      "codes_never_filled": [],
+      "cash_weight_first": 0.03886860561442703,
+      "cash_weight_last": 0.01609410237760726,
+      "cash_weight_mean": 0.049381940616921804,
+      "realised_equity_last": 0.46429991939687665,
+      "equity_target_last": 0.44669031710399515
+     },
+     "ledger_head": "be32d907b9fc7f3a3a80f54059b126b82f4538f88f0e76505e2c529ee28e93fd",
+     "sleeves": {
+      "equity": {
+       "aimed_first": 0.44450608560708005,
+       "aimed_last": 0.44669031710399515,
+       "aimed_mean": 0.445468566400695,
+       "realised_first": 0.3719979608437009,
+       "realised_last": 0.46429991939687665,
+       "realised_mean": 0.42980482421094723,
+       "gap_mean": 0.01566374218974775,
+       "gap_last": -0.0176096022928815,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 51
+      },
+      "bond": {
+       "aimed_first": 0.280711980418102,
+       "aimed_last": 0.34429375650621485,
+       "aimed_mean": 0.31325697408084446,
+       "realised_first": 0.37428264055746935,
+       "realised_last": 0.2537243166845909,
+       "realised_mean": 0.2871234189642934,
+       "gap_mean": 0.026133555116551126,
+       "gap_last": 0.09056943982162396,
+       "members_first": 1,
+       "members_last_decision": 2,
+       "months_short": 74
+      },
+      "commodity": {
+       "aimed_first": 0.09720665574618502,
+       "aimed_last": 0.09820984775563829,
+       "aimed_mean": 0.09734822897068098,
+       "realised_first": 0.1148805931545823,
+       "realised_last": 0.13883987285915217,
+       "realised_mean": 0.12328528589252156,
+       "gap_mean": -0.02593705692184062,
+       "gap_last": -0.04063002510351388,
+       "members_first": 2,
+       "members_last_decision": 2,
+       "months_short": 0
+      },
+      "overseas": {
+       "aimed_first": 0.09888970938274289,
+       "aimed_last": 0.09881062911243223,
+       "aimed_mean": 0.0984395113945526,
+       "realised_first": 0.0999701998298204,
+       "realised_last": 0.12704178868177307,
+       "realised_mean": 0.11040453031531605,
+       "gap_mean": -0.011965018920763449,
+       "gap_last": -0.028231159569340844,
+       "members_first": 2,
+       "members_last_decision": 3,
+       "months_short": 24
+      }
+     },
+     "entry": {
+      "entry_date": "2016-01-04",
+      "entry_cash": 0.032611721627177036,
+      "entry_codes": [
+       "159934",
+       "510300",
+       "510500",
+       "511220",
+       "513100",
+       "513500",
+       "518880"
+      ],
+      "entry_costs_cny": 54.83,
+      "entry_invested": 0.9673882783728229,
+      "entry_equity": 0.4236362758054035,
+      "entry_bond": 0.34443513799836856,
+      "entry_commodity": 0.10027712390115504,
+      "entry_overseas": 0.09903974066789589
+     },
+     "idle_cash_drag_cny_first_order": 3782.765286714537,
+     "idle_cash_drag_bp_of_nav0_per_year": 35.746646359134914,
+     "months_priced": 119
+    }
+   },
+   "monthly": {
+    "static": "           date        nav  ...  members_commodity  members_overseas\n0    2016-01-29  107602.52  ...                  2                 3\n1    2016-02-29  107702.88  ...                  0                 0\n2    2016-03-31  114272.18  ...                  0                 0\n3    2016-04-29  112919.28  ...                  0                 0\n4    2016-05-31  113008.18  ...                  0                 0\n..          ...        ...  ...                ...               ...\n115  2025-08-29  191596.17  ...                  0                 0\n116  2025-09-30  199650.97  ...                  0                 0\n117  2025-10-31  201840.37  ...                  0                 0\n118  2025-11-28  199633.37  ...                  0                 0\n119  2025-12-31  204382.67  ...                  0                 0\n\n[120 rows x 23 columns]",
+    "lots": "           date        nav  ...  members_commodity  members_overseas\n0    2016-01-29  106710.80  ...                  2                 2\n1    2016-02-29  106970.46  ...                  0                 0\n2    2016-03-31  113785.36  ...                  0                 0\n3    2016-04-29  112623.46  ...                  0                 0\n4    2016-05-31  113064.36  ...                  0                 0\n..          ...        ...  ...                ...               ...\n115  2025-08-29  205239.89  ...                  0                 0\n116  2025-09-30  214078.79  ...                  0                 0\n117  2025-10-31  216603.79  ...                  0                 0\n118  2025-11-28  214021.59  ...                  0                 0\n119  2025-12-31  219060.99  ...                  0                 0\n\n[120 rows x 23 columns]"
+   },
+   "deltas": {
+    "lots-static": {
+     "annual_cny": 878.4478678996179,
+     "annual_cny_lo": 98.10312690792057,
+     "annual_cny_hi": 1808.0930443814414,
+     "cumulative_cny": 8784.47867899618,
+     "sd_monthly_cny": 498.950440926349,
+     "mde_annual_cny": 1530.4039048060567,
+     "bootstrap": {
+      "block": 6,
+      "draws": 2000,
+      "n": 120
+     },
+     "by_year_cny": {
+      "2016": 2120.4687664384724,
+      "2017": 1570.0422056584882,
+      "2018": -676.1520867783768,
+      "2019": 4344.123948105048,
+      "2020": -547.5710854441738,
+      "2021": 3860.0187756118394,
+      "2022": -1448.8530850954985,
+      "2023": -617.3857870036015,
+      "2024": -366.6513425080219,
+      "2025": 546.4383700120035
+     }
+    }
+   },
+   "seconds": 19.7
+  }
+ },
+ "control": {
+  "ok": true,
+  "clauses": {
+   "nav_end": {
+    "measured": 62163.64,
+    "e2": 62163.64,
+    "ok": true
+   },
+   "n_fills": {
+    "measured": 6,
+    "e2": 6,
+    "ok": true
+   },
+   "ledger_head": {
+    "measured": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9",
+    "e2": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9",
+    "ok": true
+   }
+  },
+  "verdict": "control-reproduces-e2"
+ },
+ "probe_congruence": {
+  "available": true,
+  "at": "2016-01-04",
+  "nav": "50000",
+  "sleeves": {
+   "equity": {
+    "probe_max_feasible_k": 3,
+    "engine_k_at_2016_01_04": 2,
+    "unlisted_at_ref": [
+     "512100"
+    ],
+    "cause": "probe counted 1 unlisted member(s): 512100",
+    "agrees": false
+   },
+   "bond": {
+    "probe_max_feasible_k": 1,
+    "engine_k_at_2016_01_04": 1,
+    "unlisted_at_ref": [
+     "511380"
+    ],
+    "cause": null,
+    "agrees": true
+   },
+   "commodity": {
+    "probe_max_feasible_k": 1,
+    "engine_k_at_2016_01_04": 1,
+    "unlisted_at_ref": [],
+    "cause": null,
+    "agrees": true
+   },
+   "overseas": {
+    "probe_max_feasible_k": 1,
+    "engine_k_at_2016_01_04": 1,
+    "unlisted_at_ref": [],
+    "cause": null,
+    "agrees": true
+   }
+  },
+  "agrees": false,
+  "total_probe": 6,
+  "total_engine": 5
+ },
+ "decision": {
+  "pairs": {
+   "lots-static": {
+    "annual_cny": 1542.7944763945607,
+    "annual_cny_lo": 857.8200460705107,
+    "annual_cny_hi": 2212.5988842622423,
+    "mde_annual_cny": 1393.264954078232,
+    "separates_from_zero": true,
+    "reading": "measurable"
+   },
+   "lots_deploy-static": {
+    "annual_cny": 1929.957747324632,
+    "annual_cny_lo": 1150.0647196264465,
+    "annual_cny_hi": 2783.644519762718,
+    "mde_annual_cny": 1667.0308721524182,
+    "separates_from_zero": true,
+    "reading": "measurable"
+   },
+   "lots_deploy-lots": {
+    "annual_cny": 387.1632709300716,
+    "annual_cny_lo": -71.57840129353038,
+    "annual_cny_hi": 973.7254953526115,
+    "mde_annual_cny": 933.2305779204256,
+    "separates_from_zero": false,
+    "reading": "unmeasurable at this capital"
+   },
+   "lots-cash": {
+    "annual_cny": 2851.2157789657463,
+    "annual_cny_lo": 1264.0507849799847,
+    "annual_cny_hi": 5026.623037816293,
+    "mde_annual_cny": 3819.198836792607,
+    "separates_from_zero": true,
+    "reading": "measurable"
+   },
+   "lots_deploy-cash": {
+    "annual_cny": 3238.379049895818,
+    "annual_cny_lo": 1768.424250903266,
+    "annual_cny_hi": 5494.049366881735,
+    "mde_annual_cny": 3977.9459574271623,
+    "separates_from_zero": true,
+    "reading": "measurable"
+   }
+  },
+  "adopted_arm": "lots",
+  "tie_break": "redeploy's gain over cash-residual does not separate from zero, so the lower-risk form is kept",
+  "deploy_gain_separates": false,
+  "default_when_unmeasured": "lots (residual to cash)",
+  "verdict": "adopt-measurable-composition"
+ },
+ "reading": [
+  "The E2 execution left 40.90 % of the account in cash at entry and never bought the commodity or overseas sleeve at all; the lot-defined composition enters with 21.53 % cash and holds 1 commodity and 1 overseas member(s) on day one.",
+  "Terminal value: `lots` 85,111 vs `lots_deploy` 91,610 vs `static` 62,164 vs `cash` 50,000 on the same 2016-01-04 .. 2025-12-31 window.",
+  "`lots-static`: +1,543 CNY/yr, 90 % interval [858, 2,213], MDE 1,393 \u2014 measurable.",
+  "`lots_deploy-lots`: +387 CNY/yr, 90 % interval [-72, 974], MDE 933 \u2014 unmeasurable at this capital.",
+  "Adoption rule (P4) returns `adopt-measurable-composition`: a composition whose interval excludes zero is adopted.",
+  "The idle cash is worth 6,297 first-order for `lots` and 3,010 for `lots_deploy`: that is the size of the object design v13 did not have.",
+  "The composition probe's instrument counts are one too high at 2016-01-04 for equity: it skipped members without a price instead of dropping them from the tree, so it counted a fund that had not listed. The bond conclusion the probe was run for is unaffected (bond agrees), the instrument total is: probe 6 vs engine 5."
+ ]
+}

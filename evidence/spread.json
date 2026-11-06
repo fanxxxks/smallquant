@@ -1,0 +1,57 @@
+{
+  "codes": 15,
+  "tradable_codes": 11,
+  "cs_resolves": true,
+  "cs_oneway_median_bp": 8.685,
+  "cs_negative_share_median": 0.472,
+  "roll_defined": 4,
+  "estimators_failed": true,
+  "tick_floor_min_bp": 2.652,
+  "tick_floor_max_bp": 7.502,
+  "half_tick_max_bp": 4.902,
+  "one_bp_reachable": true,
+  "impact_bp": 0.0,
+  "impact_note": "unmeasured; no quote or depth data",
+  "gate_scenarios": [
+    {
+      "scenario": "measured_tick_floor_min",
+      "half_spread_bp": 2.652,
+      "infimum_bp": 5.252,
+      "min_order_7.6bp": 19986.85,
+      "min_order_10bp": 10200.0,
+      "min_order_15.1bp": 5000.0
+    },
+    {
+      "scenario": "measured_tick_floor_max",
+      "half_spread_bp": 7.502,
+      "infimum_bp": 10.102,
+      "min_order_7.6bp": NaN,
+      "min_order_10bp": NaN,
+      "min_order_15.1bp": 6668.45
+    },
+    {
+      "scenario": "tick_floor_plus_2bp_impact",
+      "half_spread_bp": 9.502,
+      "infimum_bp": 12.102,
+      "min_order_7.6bp": NaN,
+      "min_order_10bp": NaN,
+      "min_order_15.1bp": 9094.22
+    },
+    {
+      "scenario": "inherited_5bp",
+      "half_spread_bp": 5.0,
+      "infimum_bp": 7.6,
+      "min_order_7.6bp": NaN,
+      "min_order_10bp": 10204.09,
+      "min_order_15.1bp": 5000.0
+    },
+    {
+      "scenario": "optimistic_1bp",
+      "half_spread_bp": 1.0,
+      "infimum_bp": 3.6,
+      "min_order_7.6bp": 19986.85,
+      "min_order_10bp": 10200.0,
+      "min_order_15.1bp": 5000.0
+    }
+  ]
+}

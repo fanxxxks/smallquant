@@ -1,0 +1,250 @@
+{
+ "checks": {
+  "a_sleeves_held": {
+   "rule": "every sleeve realised > 0 in >= 10 of every 12 months",
+   "measured": {
+    "equity": 120,
+    "bond": 120,
+    "commodity": 120,
+    "overseas": 120
+   },
+   "months_total": 120,
+   "pass": true
+  },
+  "b_entry_composition": {
+   "rule": "every sleeve realised > 0 at entry, and entry cash <= the control arm's",
+   "measured": {
+    "equity": 0.3972,
+    "bond": 0.2063,
+    "commodity": 0.1022,
+    "overseas": 0.0986
+   },
+   "gaps_pp": {
+    "equity": -5.284,
+    "bond": -14.366,
+    "commodity": 0.219,
+    "overseas": -0.139
+   },
+   "entry_cash": 0.1957,
+   "control_entry_cash": 0.3739,
+   "pass": true
+  },
+  "c_suppression_reasons": {
+   "rule": "every suppression in ['below_cost_gate', 'insufficient_settled_cash', 'zero_lot']",
+   "measured": {
+    "below_cost_gate": 43,
+    "zero_lot": 6,
+    "insufficient_settled_cash": 2
+   },
+   "outside_allowed": [],
+   "pass": true
+  },
+  "d_reproduces_from_ledger": {
+   "rule": "chain verifies, head matches the recorded head, fills match the recorded count",
+   "heads": {
+    "lots": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+    "static": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9"
+   },
+   "recorded_heads": {
+    "lots": "02fb6458194299f5fcf7bc8e9468e5a7d6e77a67a726bbc5b32a2da8c4b8f306",
+    "static": "db6a4f19b62d1e759bd1c6177dee140f6c5cc46c5e6357053ed78b35cf07f1e9"
+   },
+   "counts": {
+    "lots": {
+     "records": 237,
+     "fills": 14,
+     "suppressions": 51
+    },
+    "static": {
+     "records": 274,
+     "fills": 6,
+     "suppressions": 96
+    }
+   },
+   "recorded_n_fills": {
+    "lots": 14,
+    "static": 6
+   },
+   "pass": true
+  },
+  "e_maintenance_rate": {
+   "rule": "post-entry fills <= 2.0 per year and post-entry turnover <= 0.25 of NAV per year",
+   "measured": {
+    "post_entry_fills": 9,
+    "post_entry_fills_per_year": 0.9,
+    "post_entry_turnover": 0.1144,
+    "window_years": 10.0
+   },
+   "register": [
+    {
+     "session": 263,
+     "sleeve": "equity",
+     "code": "512100",
+     "side": "buy",
+     "lots": 79,
+     "notional": 7220.6
+    },
+    {
+     "session": 510,
+     "sleeve": "equity",
+     "code": "510300",
+     "side": "sell",
+     "lots": 9,
+     "notional": 3842.1
+    },
+    {
+     "session": 991,
+     "sleeve": "overseas",
+     "code": "513100",
+     "side": "sell",
+     "lots": 14,
+     "notional": 4618.6
+    },
+    {
+     "session": 992,
+     "sleeve": "bond",
+     "code": "511220",
+     "side": "buy",
+     "lots": 1,
+     "notional": 9700.6
+    },
+    {
+     "session": 1719,
+     "sleeve": "bond",
+     "code": "511220",
+     "side": "sell",
+     "lots": 9,
+     "notional": 8474.4
+    },
+    {
+     "session": 1720,
+     "sleeve": "bond",
+     "code": "511380",
+     "side": "buy",
+     "lots": 8,
+     "notional": 9191.2
+    },
+    {
+     "session": 1967,
+     "sleeve": "commodity",
+     "code": "518880",
+     "side": "sell",
+     "lots": 9,
+     "notional": 4185.9
+    },
+    {
+     "session": 2205,
+     "sleeve": "overseas",
+     "code": "513100",
+     "side": "sell",
+     "lots": 34,
+     "notional": 5494.4
+    },
+    {
+     "session": 2205,
+     "sleeve": "commodity",
+     "code": "518880",
+     "side": "sell",
+     "lots": 7,
+     "notional": 4479.3
+    }
+   ],
+   "pass": true
+  }
+ },
+ "reported": {
+  "cost_bp_of_nav_per_year": 1.6718,
+  "cost_bp_per_unit_turnover": 8.5563,
+  "turnover_per_year": 0.1954,
+  "entry_cash": 0.1957,
+  "control_entry_cash": 0.3739,
+  "entry_gap_pp": {
+   "equity": -5.284,
+   "bond": -14.366,
+   "commodity": 0.219,
+   "overseas": -0.139
+  },
+  "fill_ratio": {
+   "equity": 0.3342,
+   "bond": 0.475,
+   "commodity": 0.5067,
+   "overseas": 0.5612
+  }
+ },
+ "intent_fill": {
+  "equity": {
+   "filled_lots": 129,
+   "intended_lots": 386,
+   "fill_ratio": 0.33419689119170987,
+   "suppressed_by_reason": {
+    "below_cost_gate": 25,
+    "zero_lot": 2
+   },
+   "settlement_suppressions": 0
+  },
+  "bond": {
+   "filled_lots": 19,
+   "intended_lots": 40,
+   "fill_ratio": 0.475,
+   "suppressed_by_reason": {
+    "zero_lot": 4,
+    "insufficient_settled_cash": 2,
+    "below_cost_gate": 2
+   },
+   "settlement_suppressions": 2
+  },
+  "commodity": {
+   "filled_lots": 38,
+   "intended_lots": 75,
+   "fill_ratio": 0.5066666666666667,
+   "suppressed_by_reason": {
+    "below_cost_gate": 9
+   },
+   "settlement_suppressions": 0
+  },
+  "overseas": {
+   "filled_lots": 78,
+   "intended_lots": 139,
+   "fill_ratio": 0.5611510791366906,
+   "suppressed_by_reason": {
+    "below_cost_gate": 7
+   },
+   "settlement_suppressions": 0
+  }
+ },
+ "occupancy": {
+  "equity": {
+   "months_held": 120,
+   "months": 120,
+   "first_held": "2016-01-29",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  },
+  "bond": {
+   "months_held": 120,
+   "months": 120,
+   "first_held": "2016-01-29",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  },
+  "commodity": {
+   "months_held": 120,
+   "months": 120,
+   "first_held": "2016-01-29",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  },
+  "overseas": {
+   "months_held": 120,
+   "months": 120,
+   "first_held": "2016-01-29",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  }
+ },
+ "failed": []
+}

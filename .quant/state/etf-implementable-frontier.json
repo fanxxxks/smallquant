@@ -1,0 +1,770 @@
+{
+  "head": {
+    "seq": 151,
+    "hash": "7d61b05d1afd7c0a51993ec77ef6761371fa5b68db2b4e28ee75a31fb13bbde7"
+  },
+  "scope": "etf-implementable-frontier",
+  "view": {
+    "facts": [
+      {
+        "decisionId": "band-rule-demoted-scoped",
+        "subject": "Measured ceiling on what trade-policy optimisation can be worth at this capital, replacing the earlier unscoped version",
+        "statement": "At 50,000-100,000 CNY a trade-policy band cannot pay for itself. Commission-floor avoidance is capped at 240 CNY a year for 12 instruments at quarterly cadence (0.32 percent of 75,000). The whole annual trading budget, extending from the floor to total cost, is 40 orders at 8.82 CNY = 353 CNY (0.47 percent), which bounds any possible band saving and sits below the 375 CNY hurdle, so the experiment could not have succeeded on its own terms. Separately, at 50,000 CNY with ten sleeves of 5,000 CNY a 15.1 bp tolerance demands a 5,000 CNY order, the entire sleeve, so no partial drift can clear the gate and the band rule degenerates into a hold. The band rule is demoted to a sensitivity; the project's core is the append-only net-CNY ledger plus the measured per-instrument-class feasibility map, whose value is avoiding the prior projects' loss class rather than producing edge, and the return source is now the open question.",
+        "applicability": "Holds for a China A-share ETF account of 50,000-100,000 CNY with 8-12 sleeves, board lots of 100 shares, commission floored at 5 CNY per non-zero order, ETF stamp duty zero, transfer 1e-05, and one-way slippage around 5 bp. It does not hold for accounts large enough that the fixed 5 CNY becomes a few basis points of a slice, nor for instruments whose measured spreads are far below 5 bp.",
+        "evidence": [
+          "D:/newquant/evidence/prior-project-evidence.md",
+          "round-737a812e-0c76-41cd-be60-d8e660b5f78a"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 34,
+        "at": "2026-11-04T10:05:23.216Z"
+      },
+      {
+        "decisionId": "nn-belongs-at-panel-layer",
+        "subject": "Where the neural network can legitimately live given the sample budget",
+        "statement": "The neural network belongs at the stock-panel layer, not at the monthly allocation layer. A model fitted on about 900 basket-months is capped near 18 parameters by a 50-observations-per-parameter budget, which admits a rule or a tight linear model and rejects a network by construction; a model fitted on the stock panel draws its sample from millions of rows and can carry nonlinearity, after which aggregation and allocation must stay tiny. Both reviewers reached this independently, and it converts the user's neural-network ambition from a statistical impossibility into a well-posed two-layer design.",
+        "applicability": "Holds while the traded book is 6-8 ETF sleeves at 50,000-100,000 CNY and the estimation data is P1's A-share daily panel (12,008,787 rows, 5,820 codes, 20140102-20261015). The parameter-budget arithmetic (900 basket-months / 50 = 18 parameters) applies to any model fitted directly on basket-month rows; it does not bind a model fitted on the stock panel and aggregated afterwards.",
+        "evidence": [
+          "round-8d9f917d-b155-4e92-8514-98b5113a8e8d",
+          "D:/newquant/evidence/prior-project-evidence.md",
+          "D:/minequant/AlphaGPT/data/ashare_v2.duckdb"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 41,
+        "at": "2026-11-04T11:46:47.836Z"
+      },
+      {
+        "decisionId": "decision-93bea6a8-00b6-448e-85ad-d82b8b75f414",
+        "subject": "E1 out-of-sample IC and the ridge-vs-MLP gap",
+        "statement": "E1 first full run: mean monthly rank IC is 0.065 (ridge) and 0.070 (MLP) out of sample on the 3 634-name index-member population, 2016-2025. The MLP's mean \\u0394IC is +0.0051 with a 6-month moving-block bootstrap 90% CI of [-0.0045, +0.0137], so nonlinearity is NOT certified at the pre-registered bar even though it wins 8 of 10 folds; clause (iii), the net-CNY term, is still open until build step 6. Sleeve deviation share is 0.40 (ridge) / 0.32 (MLP) of score variance, so the three bridgeable sleeves are not one factor. Mean coverage runs 0.93 (2016) to 0.998 (2020 onward), so the coverage term is near-inert after 2019. 2017 inverts for both arms (IC -0.053 / -0.037), which is the case for a gate that suppresses trading on a weak score. Refit cost is 2.96 CPU-minutes for ten folds, which closes the refit-budget objection.",
+        "applicability": "Holds for this panel (14 features, 21-session forward return, annual refit, monthly signal dates, 3 634 index-member names, 2016-2025 out-of-sample). Says nothing about other feature sets, other horizons, shorter refit intervals, or the full market population; a longer sample or a different target horizon could move both the level and the ridge-vs-MLP gap.",
+        "evidence": [
+          "evidence/e1-summary.json",
+          "evidence/e1-report.md",
+          "evidence/e1-monthly-ic.parquet",
+          "evidence/sleeve_scores.parquet",
+          "newquant/eval/e1.py",
+          "docs/direction-architecture.md:305-345"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 72,
+        "at": "2026-11-04T12:57:57.566Z"
+      },
+      {
+        "decisionId": "review-budget-exhausted-scoped",
+        "subject": "can the open objections on this line still be closed by a review round",
+        "statement": "Review rounds are permanent per ideaId, so this line cannot obtain another one. kernel.js:4399 counts rounds as filter(round.ideaId === ideaId).length across every version, and kernel.js:497-524 never prunes or closes a round; maxRounds is 6 (kernel.js:2645). The error text's two escapes (\"record the decision\", \"change the idea\") are stale: both were tried and refused. Consequence: the 14 open objections can only be answered by evidence recorded in decisions and handoffs, never by a round; design v13 (seq 80) stays unreviewed; a new ideaId would be a renamed line, not a workaround.",
+        "applicability": "Holds for this kernel and config. Reopens if the owner raises review.maxRounds or a later kernel keys rounds by idea version. Says nothing about whether the objections are valid, only about the instrument available to test them.",
+        "evidence": [
+          "D:/deepseek-harness/presets/personal-quant/kernel.js:4399",
+          "D:/deepseek-harness/presets/personal-quant/kernel.js:497-524",
+          "D:/deepseek-harness/presets/personal-quant/kernel.js:2645"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 81,
+        "at": "2026-11-04T14:00:45.868Z"
+      },
+      {
+        "decisionId": "bond-sleeve-lot-bound",
+        "subject": "is a 35% bond sleeve implementable at 50k-100k on the frozen venue",
+        "statement": "Measured: the bond sleeve is board-lot bound, not cost-floor bound. One lot of a par-quoted bond ETF is 10,000-14,135 CNY, about three times min_notional(15.1 bp) = 3,345-5,066. Realised bond weight at entry is 20.0% against 35% at 50k (-15.0 pp), 26.7% at 75k (-8.3), 30.0% at 100k (-5.0) in 2016, unchanged in 2020; equity is within -1.5 pp and commodity/overseas within -0.5. At 50k only 83.3% of capital is deployed, leaving 16.7% cash against a 10% target. So E2's static arm at 50k was in practice a 44/20/10/10 portfolio with 16.7% idle cash: its 3.19% CAGR describes the executed mandate, not the declared one.",
+        "applicability": "Frozen venue, 35% bond sleeve, 50k-100k CNY, 2016-2022 while 511220 traded near par. After its 2023-01-16 10:1 split (lot 988) the gap is -1.4/-0.7/-0.4 pp. Sleeves priced under ~35 CNY express within 1.5 pp at every NAV.",
+        "evidence": [
+          "evidence/probe-composition/realised.txt",
+          "evidence/probe-composition/table.json",
+          "run-0745f10b-dd29-4053-b595-7dc720c407ab"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 85,
+        "at": "2026-11-04T14:03:07.953Z"
+      },
+      {
+        "decisionId": "entry-year-not-trading-2026",
+        "subject": "What the 2026 out-of-sample read actually measured",
+        "statement": "2026 is a build year, not a trading year: all 7 lots fills and all 5 static fills sit at session 0, so post-entry turnover is exactly 0.000 and post-entry cost is 0.00 CNY, while the 7 post-entry intents are all suppressed (3 below_cost_gate, 4 zero_lot). The cost 42.81 CNY = 8.56 bp of NAV is therefore the whole undivided build, not an annual rate of a trading book. The 2016 entry year carries the identical signature (5 of 5 fills at session 0, 29.55 CNY = 5.91 bp, per-sleeve fill ratios 0.82/1.00/0.88/1.00), and 2026's ratios (0.958/1.000/0.833/0.926) sit in the same band, so the out-of-sample read reproduced 2016 rather than surprising it. The pooled in-sample ratio 0.334 is nine zero-fill years diluting one entry year, not a steady-state fill rate: post-2016 the lots arm placed 57 intents and filled 9 over nine years, with 0 fills in 4 of those 9 years (static 0 fills in 6). Consequence: handoff unverified item 3 is closed mechanically, and no 1-year window can express this book's cost as bp/yr without double-counting the build.",
+        "applicability": "Holds for the frozen 11-code venue at 50,000 CNY with the 15.1 bp gate, board lot 100, measured per-instrument half-tick slippage, T+1/T+2 settlement, both the static and the lots arm. It is a property of a buy-and-hold mandate at this capital, so it does NOT hold for a book that is re-sized every month by construction, nor for capital where a rebalancing order clears the gate. Says nothing about return, only about what the fills are.",
+        "evidence": [
+          "evidence/probe-entry-decomp/summary.json",
+          "evidence/probe-entry-decomp/report.md",
+          "probe/entry_decomp.py",
+          "evidence/e3-ledgers/nav50000_tol15.1_measured_lots.jsonl",
+          "evidence/probe-forward-2026/ledgers/nav50000_tol15.1_measured_lots.jsonl",
+          "run-2a6ad947-abb8-4e46-832b-06a7fe7c9758"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 116,
+        "at": "2026-11-04T16:04:11.116Z"
+      },
+      {
+        "decisionId": "cost-is-smallest-measured-term",
+        "subject": "The relative size of the terms this line measures at 50,000 CNY",
+        "statement": "Transaction cost is the smallest term this project measures. Across the three 50,000 CNY arms it is 0.75-1.86 bp of NAV per year, i.e. 31-43 CNY a year in total, and the one-off build is 8.56 bp (42.81 CNY). In the same E3 table the granularity tracking error is 0.055-0.124, the gate tracking error 0.178-0.268, and the first-order idle-cash drag 70.3-254.2 bp/yr, so the composition terms are one to two orders of magnitude larger than the cost term. Consequence for the conformance book: a criterion on cost cannot carry the acceptance test, because the whole quantity it can certify is worth about 1.5 bp/yr and 43 CNY, and the book that a 50,000 CNY account actually holds is decided by what fits through the lot gate at entry (entry cash 37.4% static, 19.6% lots, 1.9% lots_deploy) and by which sleeves exist at all. This is a statement about the scale of measurable terms, not about the source of the E3 delta.",
+        "applicability": "Holds for the static, lots and lots_deploy arms at 50,000 CNY on the frozen venue over 2016-2025, where cost is 0.75/1.67/1.86 bp of NAV per year and the same table reports granularity TE 0.124/0.062/0.055, gate TE 0.268/0.178/0.240 and first-order idle-cash drag 254.2/142.0/70.3 bp per year. The idle-cash figure is a first-order counterfactual (cash weight x the mandate's own next-month return, cross terms ignored, e3.py:112-146), not realised P&L, and it must not be used to attribute the E3 delta, which the ablation already assigned to commodity+overseas exposure (seq 100). Does not hold at capital where the gate stops binding, because then cost per order rises toward proportionality.",
+        "evidence": [
+          "evidence/e3-summary.json",
+          "newquant/eval/e3.py:112-146",
+          "run-e3c00001-50k0-4c01-9a00-000000000001",
+          "evidence/probe-entry-decomp/report.md"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 118,
+        "at": "2026-11-04T16:06:10.216Z"
+      },
+      {
+        "decisionId": "below-clearing-share-is-regime-not-era",
+        "subject": "Is the below-clearing intent share era-mixed by the 2023 bond lot change",
+        "statement": "The 75.4 percent below-clearing intent share is not era-mixed; it is regime-mixed. The reconstruction reproduces the stored E3 metric exactly (49 of 65 intents, median 1,888.5 CNY), so the population is right. Splitting at the 2023-01-16 511220 split gives 32/43 = 0.7442 before and 17/22 = 0.7727 after, a +2.85 pp move with wide overlapping intervals (0.598-0.851 against 0.566-0.899), so the 2023 lot change is not detectable and the pooled number does not depend on it. What does separate is the build year from the maintenance years: 2016 contributes 3/8 = 0.375 with a median intent of 4,886.6 CNY, while 2017-2025 contributes 46/57 = 0.807 with a median of 1,659.6 CNY and an interval of 0.687-0.889 that does not overlap the build year's 0.137-0.694. Six of the 65 intents round to zero lots and are counted as below clearing, exactly as e2.py:150-168 counts them. Consequence: the number to quote for the maintenance regime is 0.81 (46 of 57), and the pooled 75.4 percent understates it by mixing in one year whose intents were three times larger.",
+        "applicability": "Holds for the E3 50,000 CNY lots arm (65 intents) and identically for the static (102) and lots_deploy (67) arms, whose pooled shares are 0.941 and 0.657 and whose build/maintenance split has the same shape. Applies to a rule that re-targets every instrument to its exact sleeve weight at each month-end (newquant/replay.py:786-800), which is what produced these intents; a rule with a band or a trade threshold would generate a different intent population and this share would not transfer. Does not speak to the 2023 split having any effect: it measured none, but with 22 post-split intents it could not have detected one below roughly 30 pp.",
+        "evidence": [
+          "evidence/probe-below-clearing-era/report.md",
+          "evidence/probe-below-clearing-era/summary.json",
+          "evidence/e3-summary.json",
+          "evidence/e3-ledgers/nav50000_tol15.1_measured_lots.jsonl",
+          "newquant/replay.py:786-800",
+          "newquant/eval/e2.py:150-168",
+          "run-605bf203-0f2e-40aa-a39f-27d64c64f020"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 123,
+        "at": "2026-11-05T01:53:59.159Z"
+      },
+      {
+        "decisionId": "gate-binds-maintenance-not-entry",
+        "subject": "Which side of the account the cost gate actually stops",
+        "statement": "The gate does not bind entry, it binds maintenance, and that is the frontier. At entry every sleeve clears: equity 45% of 50,000 split over 2-3 members is 7,500-11,250 CNY, bond 17,500, commodity 5,000, overseas 5,000, all above the 3,345.02-5,066.23 CNY clearing bound, which is why the 2016 build and the 2026 build both hold all four sleeves and leave only 19.6% cash. In maintenance the same rule forms deltas whose median is 1,659.6 CNY, about 45% of the median clearing bound of 3,669.17, so 46 of 57 intents (81%) cannot be placed; an intent clears only when drift and target change have accumulated past the bound, which is why the book shows 9 post-entry fills in nine years rather than the 60-70 a monthly re-target implies. Consequence: the account is a buy-and-hold with a ratchet, not a rebalancing book, so its return is the entry weights' return minus the entry residual; there is no rebalancing premium to measure, and the only lever E3 could have moved was what is held at entry - which is exactly what the ablation found (commodity+overseas exposure, seq 100). Capital helps sub-linearly: at 120,000 CNY the maintenance share falls to 0.635 (61 of 96 intents) while the median intent rises only to 2,490.1.",
+        "applicability": "Holds at 50,000 and 120,000 CNY on the frozen 11-code venue under a monthly exact re-target (replay.py:786-800). The entry half is a property of the sleeve weights and the gate alone (weight x NAV / members versus 3,345-5,066 CNY) and is therefore closed-form at any capital; the maintenance half depends on the delta distribution the rule generates, which is empirical and does not scale linearly with NAV (median 1,888.5 at 50,000 against 2,490.1 at 120,000 for 2.4x the capital). Does not apply to a rule that trades on a band, on a schedule other than monthly, or on fewer instruments per sleeve, each of which changes the delta distribution.",
+        "evidence": [
+          "evidence/probe-below-clearing-era/report.md",
+          "evidence/probe-composition/table.json",
+          "evidence/probe-composition/realised.txt",
+          "evidence/e3-summary.json",
+          "evidence/e3-ledgers/nav120000_tol15.1_measured_lots.jsonl",
+          "newquant/replay.py:786-800",
+          "newquant/venue.py:133-165",
+          "run-605bf203-0f2e-40aa-a39f-27d64c64f020"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 124,
+        "at": "2026-11-05T01:55:20.543Z"
+      },
+      {
+        "decisionId": "maintenance-share-saturates-with-capital",
+        "subject": "Does the maintenance frontier arrive at a reachable capital",
+        "statement": "Capital does reduce the maintenance below-clearing share, but the reduction saturates by 200,000 CNY and the median maintenance intent never crosses the clearing bound. Measured, all four capitals, lots arm, 2016-2025: 50,000 gives 46 of 57 intents below (0.807, median 1,659.6, ratio to the 3,669.17 bound 0.45); 120,000 gives 61 of 89 (0.685, 2,112.2, 0.576); 200,000 gives 57 of 93 (0.613, 2,821.0, 0.769); 250,000 gives 56 of 93 (0.602, 2,676.0, 0.729). The last 50,000 CNY buys 1.1 pp of share and moves the median backwards, and the ratio peaks at 0.92 and turns over, so the frontier is not crossed at 250,000 and no extrapolation from these points reaches it: the handoff's 250,000-300,000 estimate (seq 127) is refuted. The mechanism is visible in the same table - the mandate's member count rises 5 to 7 to 8, so each capital increment also divides the per-code slice, which is what re-suppresses the delta. Entry is unaffected: build intents clear at every capital (below share 0.0000), so seq 124's entry half now holds measured up to 250,000 rather than argued, and the bond entry gap closes from -14.37 pp at 50,000 to -0.56 at 120,000 to +1.20 at 200,000.",
+        "applicability": "Measured on the frozen 11-code venue at four capitals with the mandate's own member-count rule (5 codes at 50,000, 7 at 120,000, 8 at 200,000 and above), monthly exact re-target, tolerance 15.1 bp, measured cost mode, 2016-01-04 to 2025-12-31. It says nothing about capitals above 250,000 or below 50,000, and nothing about a mandate that fixes its instrument count instead of letting it grow - that is the one variation that would change the answer, because the saturation is driven by member count.",
+        "evidence": [
+          "evidence/probe-capital-ladder/summary.json",
+          "evidence/probe-capital-ladder/report.md",
+          "probe/capital_ladder.py",
+          "run-0d37cec7-3c31-4499-8d51-12834e7420f5",
+          "evidence/probe-below-clearing-era/summary.json"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 130,
+        "at": "2026-11-05T02:29:12.651Z"
+      },
+      {
+        "decisionId": "ratchet-is-a-50k-phenomenon",
+        "subject": "Whether the inert maintenance side generalises past 50,000 CNY",
+        "statement": "The ratcheted-hold description of this book is a 50,000 CNY phenomenon, not a property of the construction. Post-entry intents and fills by capital, 2016-2025: 50,000 gives 57 intents and 9 fills; 120,000 gives 89 and 22; 200,000 gives 93 and 30; 250,000 gives 93 and 32. Post-entry turnover per year stays between 0.11 and 0.15 across all four, so the book is not trading more in total as capital grows - it is trading the same turnover in three times as many, three times smaller pieces. The 50,000 book looks inert because five codes produce deltas at 45 percent of the bound and only a handful of them ever accumulate past it; at 200,000 there are eight codes, 61 percent of intents are still refused, and still 30 fills occur. Consequence for seq 124: state it as 'at 50,000 the book is a ratcheted hold with 9 fills in ten years', and do not generalise the maintenance rate to other capitals. The 2026 forward read, which shows zero post-entry fills in eleven months, is a 50,000 book and inherits the same applicability.",
+        "applicability": "Narrows seq 124's maintenance half without touching its entry half. Measured on the same frozen venue and rule, 2016-2025, so it holds wherever that rule is replayed; it does not extend to a band rule, which would generate fewer and larger intents and could restore inertness at higher capital.",
+        "evidence": [
+          "evidence/probe-capital-ladder/summary.json",
+          "evidence/probe-capital-ladder/report.md",
+          "evidence/probe-below-clearing-era/report.md",
+          "run-0d37cec7-3c31-4499-8d51-12834e7420f5",
+          "run-605bf203-0f2e-40aa-a39f-27d64c64f020"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 131,
+        "at": "2026-11-05T02:30:57.352Z"
+      },
+      {
+        "decisionId": "nav120000-ledger-reproduces-from-config",
+        "subject": "Whether the 120,000 cell is the same configuration as the 50,000 cell",
+        "statement": "The recorded nav120000 lots ledger is reproducible from the current code and data: replaying e3.run_cell at 120,000 into evidence/probe-capital-ladder/ledgers produced a chain head of be32d907b9fc, byte-identical to the recorded evidence/e3-ledgers/nav120000_tol15.1_measured_lots.jsonl. Handoff unverified item 3 ('whether the nav120000 ledgers come from the same E3 configuration as the 50,000 primary, since they have no lots_deploy sibling') therefore closes: the single-arm run is a scope choice, not a different configuration, and the 120,000 row is comparable to the 50,000 row in the capital ladder.",
+        "applicability": "Concerns the 120,000 CNY lots cell only. It establishes configuration and data identity, not that the cell is free of defects - a reproducible ledger can still implement a rule nobody wants.",
+        "evidence": [
+          "evidence/probe-capital-ladder/summary.json",
+          "evidence/e3-ledgers/nav120000_tol15.1_measured_lots.jsonl",
+          "run-0d37cec7-3c31-4499-8d51-12834e7420f5"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 132,
+        "at": "2026-11-05T02:32:06.590Z"
+      }
+    ],
+    "decisions": [
+      {
+        "decisionId": "cross-fixes-v4",
+        "subject": "Six corrections adopted from the cross round before any code is written",
+        "statement": "Adopt all six cross-round corrections. (1) The fee-floor/band test applies to the FINAL post-rounding executable notional and to TOTAL one-way cost (commission + slippage 5bp + transfer 0.1bp), never to the pre-rounding desired notional and never to commission alone; a failing order is suppressed rather than resized. (2) Drop the derived \"3x horizon change\" claim: at 5bp breakeven turnover is 0.53 (a 2.08x reduction) and a horizon change also moves gross spread, so the only defensible statement is that cost-adjusted implementability must enter selection. (3) Never claim either prior project lacked execution-cost accounting; P2 had single_side_rate and breakeven_single_side_rate, P1 had ExecutionCostModel and fee_matrix.json; the defect is that neither gated on cost, so the new claim is a stricter account-level selection contract. (4) Run 75,000 CNY directly alongside 50,000 and 100,000 because lot and fee discontinuities make the interior point non-deducible. (5) Freeze exactly ONE band rule before the first replay and report any grid as sensitivity analysis only; a preregistered grid does not make its winner independent evidence. (6) Restrict feasibility claims to the measured universe: 1,637/1,638 return-seeking instruments cost <=5% of 50k per lot, while 26/26 money-market ETFs cost 20.0% and 49/52 bond ETFs cost 20.6% median, the three cheap bond ETFs all being credit or convertible rather than stabilisers.",
+        "applicability": "Holds for a China A-share ETF account of 50,000-100,000 CNY trading board lots of 100 shares at broker rates commission 0.00025 floored at 5 CNY per non-zero order, stamp duty 0.0005 on sells, transfer 1e-05, slippage 0.0005. The universe figures are a 2026-11 spot snapshot and will drift as new ETFs list at par.",
+        "evidence": [
+          "D:/newquant/evidence/prior-project-evidence.md",
+          "D:/newquant/evidence/etf_universe_classified.csv",
+          "D:/newquant/evidence/bond_etf_measured.csv",
+          "D:/newquant/evidence/etf_spot_raw.csv",
+          "round-46d6561c-96b1-4869-93c6-e78b6bf56322"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 24,
+        "at": "2026-11-04T09:46:37.289Z"
+      },
+      {
+        "decisionId": "direction-v4",
+        "subject": "Direction v4: panel-layer estimation, five-sleeve holding, cost-gated net-CNY account",
+        "statement": "Adopt direction v4 and design v10 as the working plan, provisionally: estimation moves to the A-share panel, holding stays at five ETF sleeves rebalanced at most monthly, the interface is a per-sleeve (mu, sigma, es) vector combined by a rule with at most four fitted parameters, and the only evidence that counts is net CNY in the append-only ledger plus a forward paper book.",
+        "applicability": "Holds for a CN A-share ETF account of 50,000-100,000 CNY with five sleeves, board lot 100, commission 0.00025 floored at 5 CNY per non-zero order, ETF stamp duty 0, transfer 1e-05, one-way slippage 5bp assumed (not measured). Says nothing about accounts large enough that the fixed 5 CNY is a few basis points of a slice.",
+        "evidence": [
+          "D:/newquant/docs/direction-architecture.md",
+          "D:/newquant/docs/new-project-direction-and-plan.md",
+          "round-8d9f917d-b155-4e92-8514-98b5113a8e8d",
+          "nn-belongs-at-panel-layer",
+          "band-rule-demoted-scoped"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "provisional",
+        "seq": 46,
+        "at": "2026-11-04T11:51:50.355Z"
+      },
+      {
+        "decisionId": "ceiling-as-construction",
+        "subject": "The 27% drawdown ceiling is a construction plus a rejection rule, never a realised-drawdown check",
+        "statement": "Define the drawdown mandate in three parts, all inside the allocator or the evaluator, none inferred after the fact: ex-ante, target weights are chosen so the book's 1-month 95% VaR is at most d_max/6, so six consecutive worst months reach the ceiling before rebalance evidence arrives; a state throttle halves the equity target whenever book drawdown from running peak exceeds d_max/2, restoring at recovery; and any walk-forward or paper path whose running drawdown exceeds d_max is rejected regardless of return.",
+        "applicability": "Holds while the mandate is expressed as a maximum drawdown on the total book including cash, and while monthly returns are the decision frequency so that one month is the smallest bet of size. It does not bound intra-month gaps: a single-day move larger than the monthly VaR estimate is outside this construction.",
+        "evidence": [
+          "D:/newquant/docs/direction-architecture.md",
+          "round-8d9f917d-b155-4e92-8514-98b5113a8e8d"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 47,
+        "at": "2026-11-04T11:51:50.385Z"
+      },
+      {
+        "decisionId": "band-line-closed-scoped",
+        "subject": "Band-rule line closed; its four remaining objections retired by scope and by the ETF stamp-duty correction",
+        "statement": "Retire the four remaining band-rule objections; the band rule survives only as a reported sensitivity and cannot set a shipped rule",
+        "applicability": "Holds for NAV 50k-100k at the frozen venue: the annual trading budget is 353 CNY/yr = 0.47% of a 50k NAV (recorded at seq 34), the one-way rate floor is now measured at 7.6 bp, and a 12-rebalance five-sleeve policy therefore pays a fixed friction that no plausible policy edge at this capital is assumed to clear. It covers the four F-60b5f78a-* objections only in so far as they presuppose a shipped band rule; a band rule promoted back into the shipped arm voids this applicability immediately.",
+        "evidence": [
+          "docs/direction-architecture.md",
+          ".quant/ledger.jsonl#seq=34",
+          ".quant/ledger.jsonl#seq=48"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 54,
+        "at": "2026-11-04T11:58:24.079Z"
+      },
+      {
+        "decisionId": "e1-prereg-scoped",
+        "subject": "E1 adoption rule: folded majority, 90% moving-block bootstrap CI excluding zero, and at least 375 CNY/yr at 75,000 CNY",
+        "statement": "E1 preregistration: nonlinearity is adopted at the panel layer only if it beats a same-feature ridge on net CNY under a three-part rule fixed before the first fold is read — (i) MLP >= ridge in >= 70% of folds, (ii) the 6-month moving-block bootstrap 90% CI of the net-CNY difference excludes zero, (iii) the difference is >= 375 CNY/yr at 75,000 CNY.",
+        "applicability": "Holds at monthly decision frequency with annual refit folds over 2016-2025 (10 folds), the frozen venue hash d6a6e438, and the ≤4-parameter combiner whose action space is now 3 states per sleeve over 4 investable sleeves. The 375 CNY/yr threshold is 0.5% of a 75k NAV and remains the right scale for 50k-100k; neither the fold count nor the 70% majority rule depends on the venue correction. It covers the panel-layer arms only: a change of decision frequency, of the frozen feature set, or of the cost gate voids it.",
+        "evidence": [
+          "docs/direction-architecture.md",
+          ".quant/ledger.jsonl#seq=49"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 55,
+        "at": "2026-11-04T11:58:28.839Z"
+      },
+      {
+        "decisionId": "e1-unblocked-id-disposition",
+        "subject": "round-a7972db1 (seq 68) carries no review content; the nine direction-round objections are disposed by id, and E1 (build step 5) proceeds on the verified local panel.",
+        "statement": "1) seq 68 is void as review evidence and must not be cited as \"objections examined\". gpt-6.1-sol returned a 250-character preamble with finishReason=aborted, usage {0,0,0}, complete=false, verdict unknown; gemini4high errored with \"the reviewer returned no text\". No reviewer read any objection this round, so the round's \"hold / R10,R11,R12 unanswered\" is an artefact of the answer-matching defect, not a finding. 2) Cause, recorded so it cannot recur: carried findings are renumbered 1..n every round (kernel.js numberFindings), the nine author responses were written against seq 60's numbering, all nine landed on other objections, and the three left unanswered were F-113a8e8d-5, F-fe8c8bdf-1, F-fe8c8bdf-2. The seq-68 response fields on F-fe8c8bdf-4, F-60b5f78a-1/-2/-3/-5 and F-113a8e8d-1/-2/-3/-4 are therefore not evidence of an answer to those objections. 3) Id-keyed disposition of the nine direction objections: F-fe8c8bdf-1 (three-state grid not deduced) answered by comparing the action set, {0,full} baseline vs half treatment, docs/direction-architecture.md:236-248; F-fe8c8bdf-2 (turnover pool, not per-month per-sleeve cap) answered at :249-256, 300,000 CNY/yr funds 52 lumps so the constraint is resolution not spend; F-fe8c8bdf-3 (7.6 bp is conditional, not measured) answered at :258-270 with the tick-floor bound, half a tick 3.4-7.5 bp, Corwin-Schultz and Roll failures reported in evidence/spread.json; F-fe8c8bdf-4 and F-fe8c8bdf-6 (no stock-to-sleeve mapping or calibration for bond/commodity/overseas) answered by narrowing E1 to the equity sleeve at :261-269 plus the separated calibration at :279-283; F-fe8c8bdf-5 (the 50%-of-months rule has no power basis) withdrawn, replaced by the published MDE 2.8 s/sqrt(120) at :294-300; F-fe8c8bdf-7 (combiner's discrete rule and objective) narrowed at :236-248 and :270-274 to four fitted parameters on (score, vol, ES, deviation) fitted pre-gate, with the grid as one arm; F-fe8c8bdf-8 (the floor rests on unmeasured 5 bp) accepted, the 1 bp half-spread is unreachable against a 3.4 bp tick floor so it stays only as a sensitivity row; F-fe8c8bdf-9 (I-4 settlement blocks a monthly sleeve rotation) answered by invariant 9, two-phase execution, at :200-205. F-113a8e8d-5 (a basket-month-level fit cannot carry a network under 50-observations-per-parameter) is answered in kind by design v12 placing estimation at the stock panel over 12.0 M rows, and stays open only as an unmeasured budget until E1 records refit CPU-minutes per fold. 4) Verified input facts on the local panel D:/minequant/AlphaGPT/data/ashare_v2.duckdb (read-only, queried this session): index_weight_pit holds exactly three indices — 000300.SH 77,050 rows over 257 monthly dates 2005-04-29..2026-08-31, 000905.SH 129,540 over 260, 000852.SH 142,300 over 143 from 2014-10-31 — weights summing 99.5-99.9 per date, and available_date lagging trade_date by a median of 3 days (max 12), so every fold must join on available_date, not trade_date; there is no PIT weight for 399006.SZ, which confirms the equity-sleeve scope 510300/510500/512100 rather than an omission. daily_bar has 12,008,787 rows over 5,820 codes 2014-01-02..2026-10-15 with adj_factor never null, and daily_price_limit (12.3 M), daily_suspension (321,929 S / 14,446 R, with available_at) and daily_basic_pit (12.0 M rows of pe_ttm, pb, turnover_rate, total_mv, circ_mv) supply the tradability filters and the feature base. 5) Adopted: seq 68 is not review evidence; the disposition above stands as the objection record; build step 5 (E1) starts on this panel with ridge and the small MLP on identical features, annual refit, 2016-2025, and the three-part adoption rule unchanged; a future cross round answers by objection id, using the patched responses schema (presets/personal-quant/kernel.js:4004 schema, :4481 id-first matching, :4616 and :4645 unmatched reporting).",
+        "applicability": "Holds while E1 estimates the equity sleeve only (510300/510500/512100) and reads the panel through the DuckDB's available_date columns. If a PIT weight source for 399006.SZ or a constituent bridge for the bond, gold or overseas sleeves appears, the sleeve count in scope changes and objections F-fe8c8bdf-4/-6 reopen at the wider scope, not at this one.",
+        "evidence": [
+          "docs/direction-architecture.md:200-205",
+          "docs/direction-architecture.md:236-248",
+          "docs/direction-architecture.md:249-256",
+          "docs/direction-architecture.md:258-270",
+          "docs/direction-architecture.md:261-269",
+          "docs/direction-architecture.md:274-300",
+          "evidence/spread.json",
+          "evidence/feasibility-d6a6e438.md",
+          ".quant/ledger.jsonl seq 60",
+          ".quant/ledger.jsonl seq 68",
+          "D:/minequant/AlphaGPT/data/ashare_v2.duckdb (index_weight_pit, daily_bar, daily_price_limit, daily_suspension, daily_basic_pit)",
+          "presets/personal-quant/kernel.js:4004,4481,4616,4645"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 69,
+        "at": "2026-11-04T12:34:57.596Z"
+      },
+      {
+        "decisionId": "e1-build-scope-scoped",
+        "subject": "E1 build scope, with its applicability",
+        "statement": "E1 is built in newquant on the local panel; only the per-fold fit loop, the as-of weight reader and the sleeve aggregation with a coverage term are new code",
+        "applicability": "Holds while (i) the only price/fundamental source is the local ashare_v2.duckdb panel with its index_weight_pit table, (ii) the traded instruments are A-share ETFs (stamp-duty exempt) whose sleeve members are the three bridged indices, and (iii) the model layer under test is ridge or a small MLP, for which qlib's expression/handler machinery would have to be replaced rather than reused. It does not claim qlib is unsuitable for price/volume-only Chinese equity research, nor that a borrowed cost model is wrong for stocks.",
+        "evidence": [
+          "newquant/panel/source.py",
+          "newquant/panel/features.py",
+          "newquant/panel/model.py",
+          "newquant/panel/aggregate.py",
+          "newquant/eval/e1.py",
+          "tests/test_panel_features.py",
+          "tests/test_panel_contract.py",
+          "decision-2d48b3bc-1d0a-4676-aacc-c41a70a8168e"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 71,
+        "at": "2026-11-04T12:52:48.353Z"
+      },
+      {
+        "decisionId": "e2-trade-policy-closed",
+        "subject": "trade policy for the ETF-only mandate at 50-100k: which of static-annual / vol-conditioned / four-parameter band rule to run",
+        "statement": "No trade-policy change is adopted, and the question is closed at this capital. The unconditional static-annual mandate at the frozen venue is the operating policy; `vol-conditioned` and `rule` are not adopted at any NAV level. Three consequences are adopted with it: (1) the equal-weight-within-sleeve allocation rule is withdrawn and must be replaced by one in which each member's own sleeve slice clears that member's own post-rounding cost floor, or the sleeve drops to fewer members (design v13 candidate, not recorded as a design version until it can be reviewed); (2) any future arm comparison must run at a gate where the baseline trades, and must report the baseline's terminal wealth across the tolerance sweep as its control; (3) the next build step for this line is forward paper trading of the frozen venue plus the static mandate, not another arm on the same 2016-2025 window.",
+        "applicability": "A-share ETF-only account, 50,000-100,000 CNY NAV, the 11-code frozen venue (venue_hash d6a6e438e32e818f), per-order commission floor 5 CNY with 2.5 bp above it, monthly decision calendar with annual arm refit, 2016-2025 data. Does not apply where the commission floor is absent or proportionally smaller, above roughly 120,000 CNY where the overseas sleeve clears, to intraday or multi-asset mandates, or to instruments outside the frozen venue. The dividend/unito-change accounting and the I-1..I-9 invariants hold independently of this decision and are unaffected by it.",
+        "evidence": [
+          "run-3abc8476-74cd-411f-b230-b644b14d14fa",
+          "evidence/e2-summary.json",
+          "evidence/e2-report.md",
+          "evidence/e2-monthly.parquet",
+          "evidence/e2-ledgers/",
+          "docs/direction-architecture.md#7.1"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 78,
+        "at": "2026-11-04T13:57:31.603Z"
+      },
+      {
+        "decisionId": "composition-mandate-v14-lot-defined",
+        "subject": "which composition form design v14 carries, and what E3 measured for it at 50,000 CNY",
+        "statement": "Design v14 carries the LOT-DEFINED mandate with the residual held in cash, and it supersedes the weight-vector mandate of design v13. Concretely: each sleeve declares a member list; the member count k is the largest value for which each member's slice clears max(that code's 15.1 bp gate, one board lot at that era's price); the sleeve's realised target weight becomes what its whole lots are worth, rounded down; whatever the mandate cannot express in whole lots stays in cash and is priced, not redeployed. `lots_deploy` - the variant that pushes the residual into the sleeves that did express their target - is NOT adopted even though its point estimate is higher, because its gain over the cash-residual form is unmeasurable (lots_deploy - lots = +387 CNY/yr, 90% interval [-71.6, 973.7], MDE 933). The capital-floor option of seq 86 (raise the mandate to 120,000) is recorded as available and NOT adopted: at 120,000 the bond sleeve quantises to 0.6 pp at the last decision and 0.6 pp at entry (34.44 % held against a 35 % mandate), which is better than the 2 pp seq 86 predicted, but it buys about a point of sleeve fidelity for 2.4x the capital, while the lot form delivers the measured composition gain at the capital the mandate names. Sleeve fidelity must from now on be read from `aimed` (the decision target after whole lots) and never from `realised` (the same sleeve a month later, which also contains its own price drift) - seq 86's 15 pp bond deficit was an `aimed`-class statement and stays valid at entry, while the 7 pp `realised` gap at the last 120k decision is drift, not quantisation.",
+        "applicability": "A-share ETF-only accounts, 50,000-100,000 CNY, on the frozen 11-code venue (venue_hash d6a6e438), tolerance 15.1 bp, measured per-instrument slippage, 2016-01-04 .. 2025-12-31. The k rule is venue arithmetic, not a market claim, and travels with the venue.",
+        "evidence": [
+          "evidence/e3-report.md",
+          "evidence/e3-summary.json",
+          "evidence/e3-ledgers/",
+          "run-e3c00001-50k0-4c01-9a00-000000000001",
+          "e3-terminal-values-to-the-cent",
+          "probe-instrument-count-corrected-to-5"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 93,
+        "at": "2026-11-04T15:09:18.630Z"
+      },
+      {
+        "decisionId": "cost-criterion-pair-not-per-turnover",
+        "subject": "Which cost criterion the conformance book can be held to",
+        "statement": "cost_bp_per_unit_turnover is not a cost test for this book; it is (5 CNY commission floor + transfer + slippage) / mean order notional, i.e. a restatement of mean order size in basis points. With the floor at 5 CNY, 7.09-9.20 bp implies orders of 5,400-7,050 CNY, which is exactly what the gate permits (clearing 3,345-5,066 CNY) — so it passes in a build-only year (2026: 42.81/46,549 = 9.20 bp), in the entry year (2016: 29.55/40,487 = 7.30 bp) and in the pooled ten years (83.59/97,695 = 8.56 bp) for the same reason in all three, and cannot fail while the gate is applied. Replacing bp/yr with it therefore removed the failing criterion without adding a test: the 12 bp threshold means only \"every order is at least 4,167 CNY, i.e. 8.3% of a 50,000 NAV\". The cost test that this book can actually fail is a pair: (i) one-off build cost in bp, amortised over the declared hold (42.81 CNY = 8.56 bp one-off, 0.86 bp/yr over ten years, 1.71 bp/yr over five), and (ii) steady-state trade count and cost per year, reported as a count and a CNY figure, with the same pair reported for the control arm. Cost per turnover stays in the table as the order-size diagnostic it is.",
+        "applicability": "Holds for any book on this venue whose orders are near the 5 CNY commission floor, i.e. order notional 2,000-20,000 CNY, which is every order at 50,000-100,000 CNY NAV here. The critique is about the criterion, not about the arithmetic: cost per unit turnover remains a valid one-line diagnostic of mean order size, and should be reported as such. It stops applying if the venue's commission floor is removed or made proportional, because then cost per turnover stops being 5 CNY / order notional.",
+        "evidence": [
+          "evidence/probe-entry-decomp/report.md",
+          "evidence/probe-entry-decomp/summary.json",
+          "newquant/replay.py:925",
+          "evidence/e3-summary.json",
+          "evidence/probe-forward-2026/verdict.json"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 117,
+        "at": "2026-11-04T16:04:58.682Z"
+      },
+      {
+        "decisionId": "conformance-test-is-composition-and-maintenance-count",
+        "subject": "What the forward conformance book is scored on after the regime findings",
+        "statement": "Retire the per-sleeve fill-ratio check (RATIO_FLOOR 0.25 and the no-drop test at probe/conformance_dryrun.py:119-133) and replace it with two observables that can fail. First, the entry composition snapshot: which sleeves are held, each sleeve's realised weight against its target in percentage points, and the entry cash residual - 2016 bond was 20.0% against 17.5% target through lot rounding while 2023 bond was 33.6% against 35%, and neither number is visible in a fill ratio. Second, the maintenance record: post-entry fills per year and what they were, which for this book is 9 fills in nine years and a median intent of 1,659.6 CNY against a 3,669.17 CNY bound, so a normal year contains zero or one fill and that must read as conformance, not as thin evidence. The reason the ratio cannot carry the test is that it is regime-mixed in the same way the cost rate was: 2016 gives 0.82/1.00/0.88/1.00 (build) against maintenance years where 81% of intents are refused and four years have no fill at all, so the reference values 0.334/0.475/0.507/0.561 are maintenance-year mixtures being compared against a build-year 0.958/1.000/0.833/0.926, and 'no drop versus reference' passes for the wrong reason. A book that never trades and never suppresses produces a null ratio, which the current floor marks as a failure - the one case where the check is strict is the case where the book is most conformant.",
+        "applicability": "Applies to any conformance scoring of this book, including the 2026 read already on record and any 2027 forward read. Does not change the E3 return results, which never depended on the conformance evaluator. The replacement pair is designed for a 12-month window with a single session-0 build; a longer window with several builds would need the amortisation denominator stated per window.",
+        "evidence": [
+          "probe/conformance_dryrun.py:32",
+          "probe/conformance_dryrun.py:119-133",
+          "evidence/probe-conformance/dryrun.json",
+          "evidence/probe-forward-2026/verdict.json",
+          "evidence/probe-below-clearing-era/report.md",
+          "run-605bf203-0f2e-40aa-a39f-27d64c64f020"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 126,
+        "at": "2026-11-05T01:58:18.474Z"
+      },
+      {
+        "decisionId": "conformance-ceilings-set-between-inert-and-retargeting",
+        "subject": "Implementing the amended conformance criteria and testing the properties the old ones lacked",
+        "statement": "seq 126 is now coded and tested. The evaluator carries five checks - sleeve occupancy, entry composition, suppression reasons, ledger reproduction, maintenance rate - and reports cost bp per year, cost per unit turnover, per-sleeve fill ratio and the entry gaps without gating any of them. Entry composition passes when every sleeve is realised above zero and the arm idles no more cash than the control. Maintenance passes under 2.0 post-entry fills per year and 0.25 of NAV post-entry turnover per year, with session-0 fills excluded as the build. Both ceilings were argued from both sides rather than fitted: the measured ten-year book is 0.9 fills per year and 0.1144 turnover, and a book that cleared its monthly re-targets would trade roughly 5 codes x 1-2 percent of NAV a month, i.e. 0.7-1.2 per year. The first value tried, 0.10 turnover, was calibrated on the 2026 read where post-entry turnover is exactly zero, and it failed the ten-year book - recorded as a defect in the ceiling, since a criterion that a conformant book fails is measuring the wrong thing. Nine tests in tests/test_conformance.py pin the properties the retired ratio check lacked: a book that never trades passes everything (its ratio is None and no longer gated), a book placing a fill a month fails, session-0 build fills are not maintenance, a dropped sleeve fails, and idling more cash than the control fails. Under the amended criteria the 2016-2025 dry run records failed = [] (evidence/probe-conformance/dryrun-v2.json, with the seq-106 verdict left in dryrun.json for comparison) and the recorded 2026 artefacts also return failed = [].",
+        "applicability": "probe/conformance_dryrun.py as amended, and its two callers (the 2016-2025 dry run and probe/forward_2026.py). The 2026 verdict file on record (seq 111) was produced under the seq-106 criteria and has not been rewritten; the amended evaluator was run against the same recorded artefacts and returns no failure. The ceilings are for a 50,000-250,000 CNY book on this venue; a much larger book would need its own maintenance ceiling because the fill rate rises with capital (seq 131).",
+        "evidence": [
+          "probe/conformance_dryrun.py",
+          "probe/forward_2026.py:38",
+          "tests/test_conformance.py",
+          "evidence/probe-conformance/dryrun-v2.json",
+          "evidence/probe-conformance/dryrun.json"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 133,
+        "at": "2026-11-05T02:32:52.489Z"
+      },
+      {
+        "decisionId": "next-round-composition-benchmark",
+        "subject": "Which measurement the next round spends on, after the direction/architecture/completion review",
+        "statement": "The next round is NOT another significance test on a mean-return edge. It is a prespecified reproduction test: on the realised 2016-01-04..2025-12-31 path, with 12 entry dates, score the adopted lot-defined book against (i) a new hold arm that buys whole lots once at entry and never submits again, (ii) two hand-fixed feasible lot mixes, (iii) buy-and-hold 510300 and 511220 on the qfq series, all under the same 15.1 bp gate, the same etf_std fee profile, and the same engine; report terminal net CNY plus DAILY-marked drawdown and volatility, and report entry-date dispersion as entry sensitivity, not as a regime distribution. The retirement rule is fixed before the run: if one prespecified fixed policy lands inside the declared return tolerance on terminal net CNY and is no worse on daily drawdown and volatility beyond the declared risk tolerances at every entry start, the lot-rule and annual re-submission are retired in favour of it. Idea recorded as etf-composition-carries-the-risk v2, design v2, all eleven design fields carrying a condition and a measure.",
+        "applicability": "Holds while the data window, the venue table and the 15.1 bp gate are the ones recorded here; a different window, a larger instrument set, or a capital above 250,000 CNY changes what the comparison can conclude and reopens the question. The conclusion licensed is retirement or survival of the construction on this path — it licenses no claim about other regimes and no claim of mean-return superiority.",
+        "evidence": [
+          "evidence/e2-summary.json",
+          "evidence/e3-summary.json",
+          "evidence/probe-ablation/summary.json",
+          "newquant/replay.py:807-808",
+          "newquant/replay.py:804",
+          ".quant/ledger.jsonl seq 140 (direction round, 4 open objections)",
+          ".quant/ledger.jsonl seq 146 (idea v2, design v2, designUncheckable empty)"
+        ],
+        "scope": "project",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 147,
+        "at": "2026-11-05T04:25:43.947Z"
+      }
+    ],
+    "hypotheses": [
+      {
+        "decisionId": "lot-size-trades-entry-against-maintenance",
+        "subject": "What the 2023 bond lot reduction actually traded",
+        "statement": "Reducing a board lot improves entry granularity and worsens maintenance granularity, so lot size is not a free parameter on this venue. The 2023-01-16 511220 10:1 split took one lot from about 10,000 CNY to about 1,021. On entry that helped: against a 17,500 CNY bond target the 2016 build bought one lot and realised 20.0% of NAV, a gap of -15.0 pp, while the 2023 build bought 17 lots and realised 33.6% against a 35% target, a gap of -1.4 pp (probe-composition/realised.txt). On maintenance it hurt: the bond below-clearing share went from 2 of 6 intents (0.333) to 4 of 6 (0.667), because a smaller lot means a smaller intent in CNY against a clearing bound that did not move. If that direction is real, the only knob that improves both ends is capital: NAV multiplies the delta while the bound stays fixed, which is consistent with the 50,000 to 120,000 read showing the maintenance share fall from 0.754 to 0.635.",
+        "applicability": "Concerns 511220 and any instrument whose board lot is large relative to its sleeve slice. Measurable in the E3 50,000 lots arm, where the bond sleeve has 6 intents on each side of the split. It does not predict anything about equity, where the lot is 100 shares at 2-8 CNY, i.e. 200-800 CNY, so the lot has never been the binding term; nor about capital above roughly 300,000 CNY, where the gate stops binding on maintenance and lot size stops mattering on both sides.",
+        "evidence": [
+          "evidence/probe-below-clearing-era/report.md",
+          "evidence/probe-composition/realised.txt",
+          "evidence/probe-composition/table.json",
+          "newquant/venue.py:133-165",
+          "run-605bf203-0f2e-40aa-a39f-27d64c64f020"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 125,
+        "at": "2026-11-05T01:56:35.164Z",
+        "unverified": [
+          "declared a hypothesis"
+        ]
+      }
+    ],
+    "retired": [
+      {
+        "decisionId": "band-rule-demoted-by-ceiling",
+        "subject": "Measured ceiling on what trade-policy optimisation can be worth at this capital",
+        "statement": "At 50,000-100,000 CNY a trade-policy band cannot pay for itself, so the band rule is demoted and the project's core is the account ledger plus the measured feasibility map",
+        "applicability": null,
+        "evidence": [
+          "D:/newquant/evidence/prior-project-evidence.md",
+          "round-737a812e-0c76-41cd-be60-d8e660b5f78a"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 32,
+        "at": "2026-11-04T10:03:37.522Z",
+        "replacedBy": [
+          "band-rule-demoted-scoped"
+        ],
+        "reason": "superseded by a later conclusion"
+      },
+      {
+        "decisionId": "band-line-closed",
+        "subject": "Band-rule line closed; its four remaining objections retired by scope and by the ETF stamp-duty correction",
+        "statement": "Retire the four remaining band-rule objections; the band rule survives only as a reported sensitivity and cannot set a shipped rule",
+        "applicability": null,
+        "evidence": [
+          "D:/newquant/evidence/prior-project-evidence.md",
+          "D:/newquant/evidence/etf_universe_classified.csv",
+          "D:/newquant/evidence/bond_etf_measured.csv",
+          "D:/newquant/docs/direction-architecture.md"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 48,
+        "at": "2026-11-04T11:51:59.604Z",
+        "replacedBy": [
+          "band-line-closed-scoped"
+        ],
+        "reason": "superseded by a later conclusion"
+      },
+      {
+        "decisionId": "e1-prereg",
+        "subject": "E1 adoption rule: folded majority, 90% moving-block bootstrap CI excluding zero, and at least 375 CNY/yr at 75,000 CNY",
+        "statement": "E1 preregistration: nonlinearity is adopted at the panel layer only if it beats a same-feature ridge on net CNY under a three-part rule fixed before the first fold is read",
+        "applicability": null,
+        "evidence": [
+          "D:/newquant/docs/direction-architecture.md"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 49,
+        "at": "2026-11-04T11:51:59.636Z",
+        "replacedBy": [
+          "e1-prereg-scoped"
+        ],
+        "reason": "superseded by a later conclusion"
+      },
+      {
+        "decisionId": "decision-2d48b3bc-1d0a-4676-aacc-c41a70a8168e",
+        "subject": "E1 build: reuse what the local panel already implements; reject qlib/rqalpha as dependencies; write the model layer and the sleeve aggregation",
+        "statement": "E1's L1 layer is built in newquant from the local contracts, not on top of qlib or rqalpha. Dispositions: (a) REJECT qlib as a dependency — it is the only open stack that covers rolling-training plus ridge/MLP (RollingGen at qlib/workflow/task/gen.py:142, LinearModel RIDGE at qlib/contrib/model/linear.py:30, DNNModelPytorch at qlib/contrib/model/pytorch_nn.py:39, RollingEnsemble at qlib/model/ens/ensemble.py:65, SigAnaRecord/PortAnaRecord at qlib/workflow/record_temp.py:302/365), but its feature universe is price/volume only (Alpha158 = $close72/$volume33/$low16/$high15/$open13/$vwap2, no size or valuation), its processor layer has no tradability or suspension handling (grep for tradable|suspend over qlib/data/dataset/processor.py returns nothing), it has no index-weight concept (scripts/data_collector/cn_index/collector.py:162 keeps only 证券代码 and drops the weight column; grep for $weight across the repo returns nothing), and trade_unit=100 is inert whenever trade_w_adj_price=True (qlib/backtest/exchange.py:750/775/783). Wiring it to ashare_v2.duckdb would mean writing a handler that replaces the expression layer anyway; the two things worth having (rolling fold generation and per-fold model fit) are ~200 lines against contracts we already own. (b) REJECT rqalpha as an engine (event-driven, commercial licence for production) but ADOPT one semantic: its PIT stamp-duty switch (rqalpha_mod_sys_transaction_cost/deciders.py, STOCK_PIT_TAX_CHANGE_DATE=datetime(2023,8,28), tax_rate=0.001 before and 0.0005 after). Applied here this closes the F-60b5f78a-4/6 contradiction in the only way that matters for us: the traded instruments are ETFs, which are stamp-duty exempt, so any borrowed cost model must set stamp_tax=0 rather than inherit a 0.0005 constant — the local AlphaGPT default at ashare_data/config.py:494 would otherwise charge 5 bp on every sell that does not exist, which is larger than the 3.4-7.5 bp all-in floor this project measured and would corrupt the band gate. (c) ADOPT the local AlphaGPT data contracts as specification, not as import: T+1 entry (ashare_portfolio/rebalance.py:88 entry_offset=1), adjusted-price basis with no ffill (ashare_data/processor.py:421), fail-closed tradability (ashare_model/data_loader.py:926), and the OOS stitch contract (ashare_model/eval_metrics.py:579). Reimplemented in newquant/panel/{source,features,model,aggregate}.py because importing that engine also imports ashare_model/factors.py:227 fillna(0.0), which makes a missing feature indistinguishable from a cross-sectional median and lets a model learn from a stock's absence — a hard defect for supervised learning, and one the 74-name frozen grammar at ashare_model/vocab.py:221 would freeze into E1 too. (d) REJECT vectorbt (Apache-2.0 plus Commons Clause, LICENSE.md withholds the right to sell) and backtrader (GPL-3.0, copyleft). (e) ACCEPT that PIT index weights have no open implementation (akshare's closeweight file carries a single date, 20261030; tushare pro.index_weight needs 2000+ credits; baostock ships membership lists only) and that the point exists locally in index_weight_pit — so the as-of reader is 40 lines (newquant/panel/source.py) and the sleeve aggregation that consumes it (newquant/panel/aggregate.py) is the part of E1 with no prior implementation anywhere, local or open source. Honest consequence recorded: E1's novelty is the aggregation and the coverage term, not the predictor.",
+        "applicability": null,
+        "evidence": [
+          "newquant/panel/source.py",
+          "newquant/panel/features.py",
+          "newquant/panel/model.py",
+          "newquant/panel/aggregate.py",
+          "newquant/eval/e1.py",
+          "tests/test_panel_features.py",
+          "tests/test_panel_contract.py",
+          "docs/direction-architecture.md:256-300",
+          "qlib/workflow/task/gen.py:142",
+          "qlib/contrib/model/linear.py:30",
+          "qlib/scripts/data_collector/cn_index/collector.py:162",
+          "qlib/backtest/exchange.py:750",
+          "rqalpha/mod/rqalpha_mod_sys_transaction_cost/deciders.py",
+          "ashare_model/factors.py:227",
+          "ashare_data/config.py:494",
+          "ashare_model/data_loader.py:926"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 70,
+        "at": "2026-11-04T12:51:02.836Z",
+        "replacedBy": [
+          "e1-build-scope-scoped"
+        ],
+        "reason": "superseded by a later conclusion"
+      },
+      {
+        "decisionId": "composition-entry-condition-v14",
+        "subject": "which entry condition and capital floor the next design version must carry",
+        "statement": "Adopted from bond-sleeve-lot-bound (seq 85). (1) Design v14's entry condition is slice >= max(min_notional(tolerance, side), one board lot at that era's price); a slice can clear the cost gate and still be unbuyable, which is exactly what v13 missed. (2) The mandate stops being a weight vector below ~120,000 CNY: either the bond sleeve is defined in lots and its target weight becomes endogenous, or the capital floor rises to 120,000, where the lot rounds to within 2 pp. No third option on this venue - 511010/511260/511880/511990 are worse at 14,135/13,578/10,093/9,999 per lot. (3) My idea v6 acceptance criterion measured equity weight within 2 pp, which passes at -1.5 pp while bonds sit 15 pp off: the measure must be the worst sleeve, and that pre-registration is recorded as mis-specified rather than quietly amended.",
+        "applicability": "Design v14 for the 50k-100k band on this venue. The 120,000 threshold follows from floor(0.35 x NAV / 10,000) x 10,000 within 2 pp of target and is venue-specific, not general.",
+        "evidence": [
+          "bond-sleeve-lot-bound",
+          "evidence/probe-composition/table.json"
+        ],
+        "scope": "etf-implementable-frontier",
+        "task": "etf-implementable-frontier",
+        "status": "adopted",
+        "seq": 86,
+        "at": "2026-11-04T14:03:12.460Z",
+        "replacedBy": [
+          "composition-mandate-v14-lot-defined"
+        ],
+        "reason": "superseded by a later conclusion"
+      }
+    ],
+    "recheck": [],
+    "open": [
+      {
+        "id": "F-113a8e8d-5",
+        "roundId": "round-a7972db1-5e68-4e22-80da-d8f95050f309",
+        "severity": "high",
+        "target": "method",
+        "text": "If the learned model is fitted on aggregated features at the basket-month level (~900 observations), the hard gate of 50 observations per parameter caps the model at ~18 parameters, which deterministically triggers the failure-handling fallback for any neural network; for a neural network to ever execute without violating the gate, estimation must occur on the stock-level cross-sectional panel before basket aggregation, which contradicts the `scale` assumption that model training is trivial single-process CPU compute on 900 rows.",
+        "citation": "D:/newquant/docs/new-project-direction-and-plan.md:1",
+        "citationCheck": "quote-missing",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-1",
+        "roundId": "round-a7972db1-5e68-4e22-80da-d8f95050f309",
+        "severity": "high",
+        "target": "problem",
+        "text": "现有成本公式不能推出三态接口的必要性；连续目标加不交易带是需要正面对比的可行反例。若三态没有独立优势，该接口属于工程选择，不能承担 framing 的新颖性。",
+        "citation": "docs/direction-architecture.md:192",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-2",
+        "roundId": "round-a7972db1-5e68-4e22-80da-d8f95050f309",
+        "severity": "high",
+        "target": "method",
+        "text": "年换手上限不能推出逐月、逐袖套的硬上限；当前不可行性结论混入了均匀分配政策。允许跨月或跨袖套集中额度后，部分被判超预算的交易可能可行。",
+        "citation": "evidence/feasibility-d6a6e438.md:19",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-3",
+        "roundId": "round-1e234b15-a93f-424c-8246-5456fe8c8bdf",
+        "severity": "high",
+        "target": "evidence",
+        "text": "7.6bp 是含未测滑点的条件性下确界，尚非实测执行成本下界；以日线 bars 直接测量价差与深度也缺少数据基础。需要同口径报价或执行证据后重新生成边界。",
+        "citation": "docs/direction-architecture.md:275",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-5",
+        "roundId": "round-1e234b15-a93f-424c-8246-5456fe8c8bdf",
+        "severity": "high",
+        "target": "evidence",
+        "text": "“低于50%即不可测”没有统计功效依据，并混用了月份与折数。它可能错杀有效低频策略，也可能把高可交易率误认为高辨识能力。",
+        "citation": "docs/direction-architecture.md:219",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-6",
+        "roundId": "round-1e234b15-a93f-424c-8246-5456fe8c8bdf",
+        "severity": "high",
+        "target": "method",
+        "text": "E1 states that the panel model predicts stock-level forward 21-day return signs on the A-share daily panel (`ashare_v2.duckdb`, 5,820 A-share stocks) and aggregates them \"by sleeve membership to a sleeve score\", but three of the four investable sleeves are bond, commodity, and overseas ETFs that have no A-share stock constituents, leaving their L1 estimation sample and rank-to-(mu, sigma, ES) calibration unspecified.",
+        "citation": "docs/direction-architecture.md:204",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-7",
+        "roundId": "round-1e234b15-a93f-424c-8246-5456fe8c8bdf",
+        "severity": "high",
+        "target": "method",
+        "text": "The L2 combiner is constrained to at most 4 fitted parameters emitting discrete states `{0, 1/2, 1}`, and Open Item 4 refers to a \"4-parameter linear combiner\", but projecting 4 features onto a discrete 3-state lattice across 4 sleeves requires a quantization threshold or discrete optimization rule whose fitting objective (pre-gate frictionless return vs. post-gate path-dependent ledger net CNY) and parameter counting are not specified.",
+        "citation": "docs/direction-architecture.md:283",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-60b5f78a-4",
+        "roundId": "round-737a812e-0c76-41cd-be60-d8e660b5f78a",
+        "severity": "medium",
+        "target": "method",
+        "text": "The fee specification is internally inconsistent: the goal applies sell-side stamp duty while the ETF experiment specifies exemption. Resolve the applicable instrument-level charges before hashing the rule, because they change admissibility and reported net returns.",
+        "citation": "record:m00279",
+        "citationCheck": "not-found",
+        "status": "open"
+      },
+      {
+        "id": "F-60b5f78a-6",
+        "roundId": "round-737a812e-0c76-41cd-be60-d8e660b5f78a",
+        "severity": "medium",
+        "target": "task",
+        "text": "The system specification contradicts itself on ETF stamp duty: the goal specifies \"stamp duty 0.0005 on sells\" while the cheapest check specifies \"ETF stamp rate 0\" and the boundary math (10.0bp commission + 5bp slippage + 0.1bp transfer = 15.1bp) assumes zero stamp duty.",
+        "citation": "D:/newquant/evidence/prior-project-evidence.md:10",
+        "citationCheck": "quote-missing",
+        "status": "open"
+      },
+      {
+        "id": "F-60b5f78a-7",
+        "roundId": "round-737a812e-0c76-41cd-be60-d8e660b5f78a",
+        "severity": "medium",
+        "target": "method",
+        "text": "Sizing lots on RAW prices while deriving NAV solely from positions and cash in the append-only ledger without an explicit dividend/split event feed will miscalculate net CNY return whenever bond or equity ETFs pay cash dividends or split.",
+        "citation": "D:/newquant/evidence/prior-project-evidence.md:10",
+        "citationCheck": "quote-missing",
+        "status": "open"
+      },
+      {
+        "id": "F-113a8e8d-6",
+        "roundId": "round-8d9f917d-b155-4e92-8514-98b5113a8e8d",
+        "severity": "medium",
+        "target": "problem",
+        "text": "At 50,000 CNY across 6 sleeves (~8,333 CNY average sleeve size), a 5 CNY minimum commission requires a minimum order of 2,500 CNY (30% sleeve turnover) just to hit a 20bp one-way fee, and 3,000+ CNY once 100-share board-lot rounding and 5bp slippage are included; this will force most marginal monthly weight adjustments into the `FIXED` state, potentially making the learned model's monthly continuous risk-score indistinguishable from the coarse 2-3 parameter rule in realized ledger fills.",
+        "citation": "D:/newquant/evidence/prior-project-evidence.md:1",
+        "citationCheck": "quote-missing",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-8",
+        "roundId": "round-1e234b15-a93f-424c-8246-5456fe8c8bdf",
+        "severity": "medium",
+        "target": "evidence",
+        "text": "The 7.60 bp rate infimum and the 5,000 CNY minimum clearing order at 15.1 bp rest on an inherited, unmeasured 5 bp one-way slippage assumption and an unverified T+0/T+1 settlement table; while the 5 CNY commission floor still keeps 7.6 bp and 10 bp tolerances discrete even at 1 bp slippage, the 15.1 bp clearing threshold drops from 5,000 CNY to 3,571 CNY if slippage is 1 bp.",
+        "citation": "docs/direction-architecture.md:273",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-fe8c8bdf-9",
+        "roundId": "round-1e234b15-a93f-424c-8246-5456fe8c8bdf",
+        "severity": "medium",
+        "target": "method",
+        "text": "Invariant 4 prohibits using sell proceeds for buys until settlement of the instrument class, which means a monthly rebalance that rotates between sleeves when cash is low cannot execute sells and buys in the same single-timestamp monthly batch without either suppressing the buy for insufficient settled cash or introducing a multi-day execution state machine.",
+        "citation": "docs/direction-architecture.md:163",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-c9139705-1",
+        "roundId": "round-3c5aedb6-4ecf-455c-ab66-132ac9139705",
+        "severity": "medium",
+        "target": "method",
+        "text": "[newquant/replay.py] `target_weights` hardcodes `dict(MANDATE)` and annual rebalancing (`is_annual or prev is None`) for both `static` and `lots`, so running a hold-to-end arm (`prev is None` only) or alternative hand-fixed compositions requires parameterizing or bypassing `target_weights` rather than just calling `replay()` with existing `Arm` kinds.",
+        "citation": "newquant/replay.py:507",
+        "citationCheck": "resolved",
+        "status": "open"
+      },
+      {
+        "id": "F-60b5f78a-8",
+        "roundId": "round-737a812e-0c76-41cd-be60-d8e660b5f78a",
+        "severity": "low",
+        "target": "evidence",
+        "text": "The 52-instrument bond ETF granularity census is a single 2026-11 spot snapshot and the historical ETF panel has no forward out-of-sample fills until the paper book begins.",
+        "citation": "D:/newquant/evidence/prior-project-evidence.md:24",
+        "citationCheck": "quote-missing",
+        "status": "open"
+      }
+    ],
+    "designs": [
+      {
+        "ideaId": "etf-implementable-frontier",
+        "ideaVersion": 6,
+        "designVersion": 13,
+        "missing": [],
+        "uncheckable": []
+      },
+      {
+        "ideaId": "etf-composition-carries-the-risk",
+        "ideaVersion": 2,
+        "designVersion": 2,
+        "missing": [],
+        "uncheckable": []
+      }
+    ]
+  }
+}
+  

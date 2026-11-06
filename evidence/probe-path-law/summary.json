@@ -1,0 +1,696 @@
+{
+  "probe": "path-law",
+  "nav0": 50000.0,
+  "starts": [
+    "2016-01-04",
+    "2017-04-05",
+    "2018-07-02",
+    "2020-01-02",
+    "2021-10-08",
+    "2023-10-09"
+  ],
+  "decision_rows": 43,
+  "agree_mandate_weight": 43,
+  "agree_aimed_weight": 43,
+  "per_start": {
+    "2016-01-04": {
+      "decision_rows": 11,
+      "agree_mandate": 11,
+      "agree_aimed": 11
+    },
+    "2017-04-05": {
+      "decision_rows": 9,
+      "agree_mandate": 9,
+      "agree_aimed": 9
+    },
+    "2018-07-02": {
+      "decision_rows": 8,
+      "agree_mandate": 8,
+      "agree_aimed": 8
+    },
+    "2020-01-02": {
+      "decision_rows": 7,
+      "agree_mandate": 7,
+      "agree_aimed": 7
+    },
+    "2021-10-08": {
+      "decision_rows": 5,
+      "agree_mandate": 5,
+      "agree_aimed": 5
+    },
+    "2023-10-09": {
+      "decision_rows": 3,
+      "agree_mandate": 3,
+      "agree_aimed": 3
+    }
+  },
+  "mismatches": [],
+  "rows": [
+    {
+      "start": "2016-01-04",
+      "date": "2016-01-29",
+      "nav": 44725.39,
+      "engine_k": 1,
+      "aimed_overseas": 0.09779679953601299,
+      "realised_overseas": 0.09779679953601299,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2017-01-26",
+      "nav": 49529.49,
+      "engine_k": 1,
+      "aimed_overseas": 0.09874117419743268,
+      "realised_overseas": 0.11393212407396079,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2018-01-31",
+      "nav": 52891.62,
+      "engine_k": 1,
+      "aimed_overseas": 0.09604167919228036,
+      "realised_overseas": 0.1309659261712914,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2019-01-31",
+      "nav": 47333.18,
+      "engine_k": 1,
+      "aimed_overseas": 0.09613763537543854,
+      "realised_overseas": 0.15179626638227137,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2020-01-23",
+      "nav": 57344.08,
+      "engine_k": 1,
+      "aimed_overseas": 0.09704227533164714,
+      "realised_overseas": 0.1819542662468384,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2021-01-29",
+      "nav": 65169.03,
+      "engine_k": 1,
+      "aimed_overseas": 0.09959485356771461,
+      "realised_overseas": 0.10623451047222891,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2022-01-28",
+      "nav": 66692.23,
+      "engine_k": 1,
+      "aimed_overseas": 0.0992139564084152,
+      "realised_overseas": 0.11023772934268355,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2023-01-31",
+      "nav": 64553.6,
+      "engine_k": 1,
+      "aimed_overseas": 0.09924156050166064,
+      "realised_overseas": 0.10310811480692014,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2024-01-31",
+      "nav": 63609.33,
+      "engine_k": 1,
+      "aimed_overseas": 0.09935649377221864,
+      "realised_overseas": 0.1589703900355498,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2025-01-27",
+      "nav": 73625.29,
+      "engine_k": 1,
+      "aimed_overseas": 0.09870928861536572,
+      "realised_overseas": 0.1754831797606502,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2016-01-04",
+      "date": "2026-01-30",
+      "nav": 88815.6,
+      "engine_k": 2,
+      "aimed_overseas": 0.09814154270195777,
+      "realised_overseas": 0.0974220745004256,
+      "k_mandate": 2,
+      "k_aimed": 2,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2018-01-31",
+      "nav": 50981.89,
+      "engine_k": 1,
+      "aimed_overseas": 0.0996393032898545,
+      "realised_overseas": 0.10869742177075037,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2019-01-31",
+      "nav": 45235.69,
+      "engine_k": 1,
+      "aimed_overseas": 0.09530085646974767,
+      "realised_overseas": 0.12706780862633021,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2020-01-23",
+      "nav": 53967.69,
+      "engine_k": 1,
+      "aimed_overseas": 0.09666895136701237,
+      "realised_overseas": 0.1546703221872198,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2021-01-29",
+      "nav": 62070.09,
+      "engine_k": 1,
+      "aimed_overseas": 0.09759612077250089,
+      "realised_overseas": 0.16730763561000153,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2022-01-28",
+      "nav": 63930.86,
+      "engine_k": 1,
+      "aimed_overseas": 0.09918684028339365,
+      "realised_overseas": 0.10062433072228341,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2023-01-31",
+      "nav": 61789.25,
+      "engine_k": 1,
+      "aimed_overseas": 0.09964192800527599,
+      "realised_overseas": 0.09425587784282864,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2024-01-31",
+      "nav": 60500.75,
+      "engine_k": 1,
+      "aimed_overseas": 0.09819382404350359,
+      "realised_overseas": 0.14624612091585643,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2025-01-27",
+      "nav": 71399.81,
+      "engine_k": 1,
+      "aimed_overseas": 0.09952407436378333,
+      "realised_overseas": 0.1583337546696553,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2017-04-05",
+      "date": "2026-01-30",
+      "nav": 93425.57,
+      "engine_k": 2,
+      "aimed_overseas": 0.09792287058029188,
+      "realised_overseas": 0.09060153446213921,
+      "k_mandate": 2,
+      "k_aimed": 2,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2019-01-31",
+      "nav": 47423.9,
+      "engine_k": 1,
+      "aimed_overseas": 0.09595372797260453,
+      "realised_overseas": 0.09595372797260453,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2020-01-23",
+      "nav": 56709.4,
+      "engine_k": 1,
+      "aimed_overseas": 0.09812835261878983,
+      "realised_overseas": 0.11652741873481291,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2021-01-29",
+      "nav": 65505.9,
+      "engine_k": 1,
+      "aimed_overseas": 0.0990826780488475,
+      "realised_overseas": 0.12550472552854017,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2022-01-28",
+      "nav": 67468.4,
+      "engine_k": 1,
+      "aimed_overseas": 0.0994346983180274,
+      "realised_overseas": 0.12940131972893978,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2023-01-31",
+      "nav": 64912.08,
+      "engine_k": 1,
+      "aimed_overseas": 0.09997522803151586,
+      "realised_overseas": 0.12176470080761546,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2024-01-31",
+      "nav": 63418.7,
+      "engine_k": 1,
+      "aimed_overseas": 0.09965514903332928,
+      "realised_overseas": 0.18934478316332565,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2025-01-27",
+      "nav": 73811.04,
+      "engine_k": 1,
+      "aimed_overseas": 0.09846088064874849,
+      "realised_overseas": 0.10940097849860943,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2018-07-02",
+      "date": "2026-01-30",
+      "nav": 90717.26,
+      "engine_k": 2,
+      "aimed_overseas": 0.09815772654509186,
+      "realised_overseas": 0.10367376616092683,
+      "k_mandate": 2,
+      "k_aimed": 2,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2020-01-23",
+      "nav": 50445.3,
+      "engine_k": 1,
+      "aimed_overseas": 0.09652435410236435,
+      "realised_overseas": 0.1034189508239618,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2021-01-29",
+      "nav": 57854.3,
+      "engine_k": 1,
+      "aimed_overseas": 0.09722872802885871,
+      "realised_overseas": 0.11218699387945234,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2022-01-28",
+      "nav": 60477.61,
+      "engine_k": 1,
+      "aimed_overseas": 0.09877209102674527,
+      "realised_overseas": 0.11396779733855224,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2023-01-31",
+      "nav": 57930.97,
+      "engine_k": 1,
+      "aimed_overseas": 0.09909725316182345,
+      "realised_overseas": 0.10771440561067767,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2024-01-31",
+      "nav": 55873.57,
+      "engine_k": 1,
+      "aimed_overseas": 0.0995390128105292,
+      "realised_overseas": 0.16966877183612933,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2025-01-27",
+      "nav": 65924.97,
+      "engine_k": 1,
+      "aimed_overseas": 0.09799018490262491,
+      "realised_overseas": 0.1837315966924217,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2020-01-02",
+      "date": "2026-01-30",
+      "nav": 84782.72,
+      "engine_k": 2,
+      "aimed_overseas": 0.09771448710303232,
+      "realised_overseas": 0.09096311135099228,
+      "k_mandate": 2,
+      "k_aimed": 2,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2021-10-08",
+      "date": "2022-01-28",
+      "nav": 48196.91,
+      "engine_k": 1,
+      "aimed_overseas": 0.09915158461403438,
+      "realised_overseas": 0.08580425591599129,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2021-10-08",
+      "date": "2023-01-31",
+      "nav": 46943.28,
+      "engine_k": 1,
+      "aimed_overseas": 0.09925169268103975,
+      "realised_overseas": 0.07975582447583553,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2021-10-08",
+      "date": "2024-01-31",
+      "nav": 45381.33,
+      "engine_k": 1,
+      "aimed_overseas": 0.09748502302598888,
+      "realised_overseas": 0.1253378867477,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2021-10-08",
+      "date": "2025-01-27",
+      "nav": 52810.53,
+      "engine_k": 1,
+      "aimed_overseas": 0.09785927162632149,
+      "realised_overseas": 0.1376146007245146,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2021-10-08",
+      "date": "2026-01-30",
+      "nav": 68234.03,
+      "engine_k": 1,
+      "aimed_overseas": 0.09924080403868861,
+      "realised_overseas": 0.12405100504836077,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2023-10-09",
+      "date": "2024-01-31",
+      "nav": 46998.64,
+      "engine_k": 1,
+      "aimed_overseas": 0.09950926239567784,
+      "realised_overseas": 0.1183353390651304,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2023-10-09",
+      "date": "2025-01-27",
+      "nav": 55124.04,
+      "engine_k": 1,
+      "aimed_overseas": 0.0996117120588404,
+      "realised_overseas": 0.12890927442908756,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    },
+    {
+      "start": "2023-10-09",
+      "date": "2026-01-30",
+      "nav": 71990.74,
+      "engine_k": 1,
+      "aimed_overseas": 0.09928776951035648,
+      "realised_overseas": 0.1149647857488338,
+      "k_mandate": 1,
+      "k_aimed": 1,
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ]
+    }
+  ],
+  "verdict": "law-holds-on-path"
+}

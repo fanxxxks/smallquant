@@ -1,0 +1,543 @@
+{
+  "probe": "expressibility-entry",
+  "run": "run-ad1ffc67-4f30-48ef-a4f6-c02714f2350c",
+  "starts": [
+    "2016-01-04",
+    "2016-04-01",
+    "2016-07-01",
+    "2016-10-10",
+    "2017-01-03",
+    "2017-04-05",
+    "2017-07-03",
+    "2017-10-09",
+    "2018-01-02",
+    "2018-04-02",
+    "2018-07-02",
+    "2018-10-08",
+    "2019-01-02",
+    "2019-04-01",
+    "2019-07-01",
+    "2019-10-08",
+    "2020-01-02",
+    "2020-04-01",
+    "2020-07-01",
+    "2020-10-09",
+    "2021-01-04",
+    "2021-04-01",
+    "2021-07-01",
+    "2021-10-08",
+    "2022-01-04",
+    "2022-04-01",
+    "2022-07-01",
+    "2022-10-10",
+    "2023-01-03",
+    "2023-04-03",
+    "2023-07-03",
+    "2023-10-09"
+  ],
+  "end": "2026-11-04",
+  "tolerance_bp": 15.1,
+  "cost_mode": "measured",
+  "model": "entry-time only; NAV = capital, no deployment feedback",
+  "p0": {
+    "50000|equity": {
+      "available": [
+        "510300",
+        "510500"
+      ],
+      "kept": [
+        "510300",
+        "510500"
+      ],
+      "bought": [
+        "510300",
+        "510500"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "50000|bond": {
+      "available": [
+        "511220"
+      ],
+      "kept": [
+        "511220"
+      ],
+      "bought": [
+        "511220"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "50000|commodity": {
+      "available": [
+        "518880",
+        "159934"
+      ],
+      "kept": [
+        "518880"
+      ],
+      "bought": [
+        "518880"
+      ],
+      "strict_prefix": true,
+      "subset_ok": true,
+      "exact_ok": true,
+      "ok": true
+    },
+    "50000|overseas": {
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ],
+      "kept": [
+        "513100"
+      ],
+      "bought": [
+        "513100"
+      ],
+      "strict_prefix": true,
+      "subset_ok": true,
+      "exact_ok": true,
+      "ok": true
+    },
+    "75000|equity": {
+      "available": [
+        "510300",
+        "510500"
+      ],
+      "kept": [
+        "510300",
+        "510500"
+      ],
+      "bought": [
+        "510300",
+        "510500"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "75000|bond": {
+      "available": [
+        "511220"
+      ],
+      "kept": [
+        "511220"
+      ],
+      "bought": [
+        "511220"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "75000|commodity": {
+      "available": [
+        "518880",
+        "159934"
+      ],
+      "kept": [
+        "518880",
+        "159934"
+      ],
+      "bought": [],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "75000|overseas": {
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ],
+      "kept": [
+        "513100"
+      ],
+      "bought": [
+        "513100"
+      ],
+      "strict_prefix": true,
+      "subset_ok": true,
+      "exact_ok": true,
+      "ok": true
+    },
+    "100000|equity": {
+      "available": [
+        "510300",
+        "510500"
+      ],
+      "kept": [
+        "510300",
+        "510500"
+      ],
+      "bought": [
+        "510300",
+        "510500"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "100000|bond": {
+      "available": [
+        "511220"
+      ],
+      "kept": [
+        "511220"
+      ],
+      "bought": [
+        "511220"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "100000|commodity": {
+      "available": [
+        "518880",
+        "159934"
+      ],
+      "kept": [
+        "518880",
+        "159934"
+      ],
+      "bought": [
+        "159934",
+        "518880"
+      ],
+      "strict_prefix": false,
+      "subset_ok": true,
+      "exact_ok": null,
+      "ok": true
+    },
+    "100000|overseas": {
+      "available": [
+        "513100",
+        "513500",
+        "159920"
+      ],
+      "kept": [
+        "513100",
+        "513500"
+      ],
+      "bought": [
+        "513100",
+        "513500"
+      ],
+      "strict_prefix": true,
+      "subset_ok": true,
+      "exact_ok": true,
+      "ok": true
+    }
+  },
+  "grid": {
+    "50000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 11,
+        "share_bound": 0.34375,
+        "k_histogram": {
+          "1": 29,
+          "2": 3
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      }
+    },
+    "60000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      }
+    },
+    "70000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      }
+    },
+    "80000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "1": 32
+        }
+      }
+    },
+    "90000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "2": 32
+        }
+      }
+    },
+    "100000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "2": 32
+        }
+      }
+    },
+    "110000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "2": 32
+        }
+      }
+    },
+    "120000": {
+      "equity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 4,
+          "3": 28
+        }
+      },
+      "bond": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "1": 18,
+          "2": 14
+        }
+      },
+      "commodity": {
+        "n_starts": 32,
+        "n_bound": 0,
+        "share_bound": 0.0,
+        "k_histogram": {
+          "2": 32
+        }
+      },
+      "overseas": {
+        "n_starts": 32,
+        "n_bound": 32,
+        "share_bound": 1.0,
+        "k_histogram": {
+          "2": 32
+        }
+      }
+    }
+  },
+  "c_star_per_sleeve": {
+    "equity": 33775,
+    "bond": 56172,
+    "commodity": 73390,
+    "overseas": 133080
+  },
+  "c_star_all_sleeves": 133080,
+  "verdict": "venue-constraint: the last sleeve to become order-free needs 133,080 CNY, so the prefix rule binds across the whole 50-100k range"
+}

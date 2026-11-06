@@ -1,0 +1,28 @@
+# Python 与本地测试缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 虚拟环境与构建产物
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# DuckDB 临时溢写与运行锁
+.duckdb_tmp/
+*.duckdb.wal
+
+# 本机环境变量与凭证文件
+.env
+.env.*
+!.env.example
+
+# 编辑器与系统临时文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

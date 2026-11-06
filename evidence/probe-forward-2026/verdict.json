@@ -1,0 +1,192 @@
+{
+ "checks": {
+  "a_sleeves_held": {
+   "rule": "every sleeve realised > 0 in >= 8 of every 12 months",
+   "measured": {
+    "equity": 11,
+    "bond": 11,
+    "commodity": 11,
+    "overseas": 11
+   },
+   "months_total": 11,
+   "pass": true
+  },
+  "b_cost_bp_per_year": {
+   "rule": "<= 2.0 bp of NAV per year",
+   "measured": 9.3404,
+   "pass": false
+  },
+  "c_suppression_reasons": {
+   "rule": "every suppression in ['below_cost_gate', 'insufficient_settled_cash', 'zero_lot']",
+   "measured": {
+    "zero_lot": 4,
+    "below_cost_gate": 3
+   },
+   "outside_allowed": [],
+   "pass": true
+  },
+  "d_reproduces_from_ledger": {
+   "rule": "chain verifies, head matches the recorded head, fills match the recorded count",
+   "heads": {
+    "static": "88b37cb6711b0cabc169303d18724264e6f24bdc217115d8ea2006d1d64a0f33",
+    "lots": "f035aa550a829333070ceee0ce4ae60fb76e2749481d2f28e7ab1f62f60a7dae"
+   },
+   "recorded_heads": {
+    "lots": "f035aa550a829333070ceee0ce4ae60fb76e2749481d2f28e7ab1f62f60a7dae",
+    "static": "88b37cb6711b0cabc169303d18724264e6f24bdc217115d8ea2006d1d64a0f33"
+   },
+   "counts": {
+    "static": {
+     "records": 36,
+     "fills": 5,
+     "suppressions": 15
+    },
+    "lots": {
+     "records": 30,
+     "fills": 7,
+     "suppressions": 7
+    }
+   },
+   "recorded_n_fills": {
+    "lots": 7,
+    "static": 5
+   },
+   "pass": true
+  },
+  "e_fill_ratio": {
+   "rule": "every sleeve ratio >= 0.25 and not >= 0.1 below reference",
+   "measured": {
+    "equity": {
+     "ratio": 0.9583,
+     "reference": 0.334,
+     "floor_ok": true,
+     "no_drop_ok": true,
+     "pass": true
+    },
+    "bond": {
+     "ratio": 1.0,
+     "reference": 0.475,
+     "floor_ok": true,
+     "no_drop_ok": true,
+     "pass": true
+    },
+    "commodity": {
+     "ratio": 0.8333,
+     "reference": 0.507,
+     "floor_ok": true,
+     "no_drop_ok": true,
+     "pass": true
+    },
+    "overseas": {
+     "ratio": 0.9259,
+     "reference": 0.561,
+     "floor_ok": true,
+     "no_drop_ok": true,
+     "pass": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "intent_fill": {
+  "equity": {
+   "filled_lots": 46,
+   "intended_lots": 48,
+   "fill_ratio": 0.9583333333333334,
+   "suppressed_by_reason": {
+    "zero_lot": 2,
+    "below_cost_gate": 1
+   },
+   "settlement_suppressions": 0
+  },
+  "bond": {
+   "filled_lots": 14,
+   "intended_lots": 14,
+   "fill_ratio": 1.0,
+   "suppressed_by_reason": {
+    "zero_lot": 2
+   },
+   "settlement_suppressions": 0
+  },
+  "commodity": {
+   "filled_lots": 5,
+   "intended_lots": 6,
+   "fill_ratio": 0.8333333333333334,
+   "suppressed_by_reason": {
+    "below_cost_gate": 1
+   },
+   "settlement_suppressions": 0
+  },
+  "overseas": {
+   "filled_lots": 25,
+   "intended_lots": 27,
+   "fill_ratio": 0.9259259259259259,
+   "suppressed_by_reason": {
+    "below_cost_gate": 1
+   },
+   "settlement_suppressions": 0
+  }
+ },
+ "occupancy": {
+  "equity": {
+   "months_held": 11,
+   "months": 11,
+   "first_held": "2026-01-30",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  },
+  "bond": {
+   "months_held": 11,
+   "months": 11,
+   "first_held": "2026-01-30",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  },
+  "commodity": {
+   "months_held": 11,
+   "months": 11,
+   "first_held": "2026-01-30",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  },
+  "overseas": {
+   "months_held": 11,
+   "months": 11,
+   "first_held": "2026-01-30",
+   "years_below_required": {},
+   "members_last": 0,
+   "pass": true
+  }
+ },
+ "failed": [
+  "b_cost_bp_per_year"
+ ],
+ "window": {
+  "start": "2026-01-02",
+  "end": "2026-11-04",
+  "months": 11,
+  "sessions": 201
+ },
+ "unscored": {
+  "lots-static_cny_per_year": {
+   "annual_cny": 535.6100366057562,
+   "annual_cny_lo": NaN,
+   "annual_cny_hi": NaN,
+   "cumulative_cny": 490.97586688860986,
+   "sd_monthly_cny": 549.2420135391304,
+   "mde_annual_cny": 5564.250652826257,
+   "bootstrap": {
+    "block": 6,
+    "draws": 0,
+    "n": 11
+   },
+   "by_year_cny": {
+    "2026": 490.97586688860986
+   }
+  },
+  "note": "reported only: one year cannot decide a return claim"
+ }
+}
