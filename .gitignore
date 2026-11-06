@@ -16,6 +16,9 @@ dist/
 .duckdb_tmp/
 *.duckdb.wal
 
+# 运行遥测会随会话持续追加；研究账本与交接仍保留
+.quant/guard.jsonl
+
 # 本机环境变量与凭证文件
 .env
 .env.*
